@@ -1,9 +1,12 @@
-package com.test.luckydrum
+package com.example2.wallpapercars
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
 class MainActivity : AppCompatActivity() {
+
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -13,8 +16,7 @@ class MainActivity : AppCompatActivity() {
         goBack()
     }
 
-    companion object {
-        lateinit var goBack: () -> Unit
-    }
-
+     companion object {
+         lateinit var goBack: () -> Unit
+     }
 }
