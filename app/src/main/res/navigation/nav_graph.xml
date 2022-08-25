@@ -3,36 +3,78 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/firstFragment">
+    app:startDestination="@id/mainFragment">
 
     <fragment
-        android:id="@+id/firstFragment"
-        android:name="com.test.luckydrum.view.FirstFragment"
-        android:label="fragment_first"
-        tools:layout="@layout/fragment_first" >
+        android:id="@+id/mainFragment"
+        android:name="com.test.luckydrum.RvberuibviuervMainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/rvberuibviuervmain_fragment" >
         <action
-            android:id="@+id/action_firstFragment_to_betFragment"
-            app:destination="@id/betFragment" />
+            android:id="@+id/action_mainFragment_to_gameFragment"
+            app:destination="@id/gameFragment" />
         <action
-            android:id="@+id/action_firstFragment_to_infoFragment"
-            app:destination="@id/infoFragment" />
+            android:id="@+id/action_mainFragment_to_gameFragment6x6"
+            app:destination="@id/gameFragment6x6" />
+        <action
+            android:id="@+id/action_mainFragment_to_gameFragment6x62"
+            app:destination="@id/gameFragment6x6" />
+        <action
+            android:id="@+id/action_mainFragment_to_gameFragment4x4"
+            app:destination="@id/gameFragment4x4" />
     </fragment>
     <fragment
-        android:id="@+id/betFragment"
-        android:name="com.test.luckydrum.view.BetFragment"
-        android:label="fragment_bet"
-        tools:layout="@layout/fragment_bet" >
+        android:id="@+id/gameFragment"
+        android:name="com.test.luckydrum.RehguirghFragment"
+        android:label="fragment_game"
+        tools:layout="@layout/rehguirgh_fragment" >
         <action
-            android:id="@+id/action_betFragment_to_firstFragment"
-            app:destination="@id/firstFragment" />
+            android:id="@+id/action_gameFragment_to_finishFragment"
+            app:destination="@id/finishFragment" />
+        <action
+            android:id="@+id/action_gameFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <argument
+            android:name="list"
+            app:argType="string[]" />
     </fragment>
     <fragment
-        android:id="@+id/infoFragment"
-        android:name="com.test.luckydrum.view.InfoFragment"
-        android:label="fragment_info"
-        tools:layout="@layout/fragment_info" >
+        android:id="@+id/gameFragment4x4"
+        android:name="com.test.luckydrum.Uhuvfhvmvijmif4x4Fragment"
+        android:label="fragment_game_fragment4x4"
+        tools:layout="@layout/uhuvfhvmvijmif4x4_fragment" >
         <action
-            android:id="@+id/action_infoFragment_to_firstFragment"
-            app:destination="@id/firstFragment" />
+            android:id="@+id/action_gameFragment4x4_to_finishFragment"
+            app:destination="@id/finishFragment" />
+        <action
+            android:id="@+id/action_gameFragment4x4_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <argument
+            android:name="list"
+            app:argType="string[]" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameFragment6x6"
+        android:name="com.test.luckydrum.Frgwwgefrrh6x6Fragment"
+        android:label="fragment_game_fragment6x6"
+        tools:layout="@layout/frgwwgefrrh6x6_fragment" >
+        <action
+            android:id="@+id/action_gameFragment6x6_to_finishFragment"
+            app:destination="@id/finishFragment" />
+        <action
+            android:id="@+id/action_gameFragment6x6_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <argument
+            android:name="list"
+            app:argType="string[]" />
+    </fragment>
+    <fragment
+        android:id="@+id/finishFragment"
+        android:name="com.test.luckydrum.NewrvneeeFinishFragment"
+        android:label="fragment_finish"
+        tools:layout="@layout/newrvneeefinish_fragment" >
+        <action
+            android:id="@+id/action_finishFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
     </fragment>
 </navigation>

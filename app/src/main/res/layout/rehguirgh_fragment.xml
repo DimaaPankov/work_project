@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:id="@+id/Mlayout"
+    app:layoutDescription="@xml/fragment_game_scene"
+    tools:context=".RehguirghFragment">
+
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="340dp"
+        android:layout_height="340dp"
+        android:background="@color/gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/TVslot3"
+        android:layout_width="148dp"
+        android:layout_height="148dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@color/pink"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:scaleY="0"
+        android:text="🧟"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="@+id/frame"
+        app:layout_constraintStart_toStartOf="@+id/frame" />
+
+    <TextView
+        android:id="@+id/TVslot33"
+        android:layout_width="148dp"
+        android:layout_height="148dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@color/pink"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:scaleY="1"
+        android:text="\?"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="@+id/frame"
+        app:layout_constraintStart_toStartOf="@+id/frame" />
+
+
+    <TextView
+        android:id="@+id/TVslot4"
+        android:layout_width="148dp"
+        android:layout_height="148dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@color/pink"
+        android:textColor="@color/white"        android:gravity="center"
+        android:scaleY="0.0"
+        android:text="🧛‍♀"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="@+id/frame"
+        app:layout_constraintEnd_toEndOf="@+id/frame" />
+
+    <TextView
+        android:id="@+id/TVslot44"
+        android:layout_width="148dp"
+        android:layout_height="148dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@color/pink"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:scaleY="1"
+        android:text="\?"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="@+id/frame"
+        app:layout_constraintEnd_toEndOf="@+id/frame" />
+
+
+    <TextView
+        android:id="@+id/TVslot2"
+        android:layout_width="148dp"
+        android:layout_height="148dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="@color/pink"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:scaleY="0"
+        android:text="🧟"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="@+id/frame"
+        app:layout_constraintTop_toTopOf="@+id/frame" />
+
+    <TextView
+        android:id="@+id/TVslot22"
+        android:layout_width="148dp"
+        android:layout_height="148dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="@color/pink"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:scaleY="1"
+        android:text="\?"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="@+id/frame"
+        app:layout_constraintTop_toTopOf="@+id/frame"></TextView>
+
+
+    <TextView
+        android:id="@+id/TVslot1"
+        android:layout_width="148dp"
+        android:layout_height="148dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:scaleY="0"
+        android:text="🧛‍♀"
+        android:background="@color/pink"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        app:layout_constraintStart_toStartOf="@+id/frame"
+        app:layout_constraintTop_toTopOf="@+id/frame" />
+
+    <TextView
+        android:id="@+id/TVslot11"
+        android:layout_width="148dp"
+        android:layout_height="148dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/pink"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:scaleY="1"
+        android:text="\?"
+        android:textSize="40sp"
+        app:layout_constraintStart_toStartOf="@+id/frame"
+        app:layout_constraintTop_toTopOf="@+id/frame" />
+
+
+
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

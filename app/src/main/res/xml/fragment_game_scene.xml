@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <MotionScene xmlns:motion="http://schemas.android.com/apk/res-auto"
+     xmlns:android="http://schemas.android.com/apk/res/android">
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:autoTransition="animateToEnd"
+        motion:duration="3500">
+
+
+    <KeyFrameSet>
+
+    <KeyAttribute
+        android:scaleY="1.0"
+        motion:framePosition="0"
+        motion:motionTarget="@+id/TVslot1"/>
+
+          <KeyAttribute
+        android:scaleY="1.0"
+        motion:framePosition="80"
+        motion:motionTarget="@+id/TVslot1"/>
+
+         <KeyAttribute
+        android:scaleY="0.0"
+        motion:framePosition="90"
+        motion:motionTarget="@+id/TVslot1"/>
+
+        <KeyAttribute
+            android:scaleY="0.0"
+            motion:framePosition="90"
+            motion:motionTarget="@+id/TVslot11"/>
+        <KeyAttribute
+            android:scaleY="1.0"
+            motion:framePosition="100"
+            motion:motionTarget="@+id/TVslot11"/>
+
+        <KeyAttribute
+            android:scaleY="1.0"
+            motion:framePosition="0"
+            motion:motionTarget="@+id/TVslot2"/>
+
+        <KeyAttribute
+            android:scaleY="1.0"
+            motion:framePosition="80"
+            motion:motionTarget="@+id/TVslot2"/>
+
+        <KeyAttribute
+            android:scaleY="0.0"
+            motion:framePosition="90"
+            motion:motionTarget="@+id/TVslot2"/>
+
+        <KeyAttribute
+            android:scaleY="0.0"
+            motion:framePosition="90"
+            motion:motionTarget="@+id/TVslot22"/>
+        <KeyAttribute
+            android:scaleY="1.0"
+            motion:framePosition="100"
+            motion:motionTarget="@+id/TVslot22"/>
+
+        <KeyAttribute
+            android:scaleY="1.0"
+            motion:framePosition="0"
+            motion:motionTarget="@+id/TVslot3"/>
+
+        <KeyAttribute
+            android:scaleY="1.0"
+            motion:framePosition="80"
+            motion:motionTarget="@+id/TVslot3"/>
+
+        <KeyAttribute
+            android:scaleY="0.0"
+            motion:framePosition="90"
+            motion:motionTarget="@+id/TVslot3"/>
+
+        <KeyAttribute
+            android:scaleY="0.0"
+            motion:framePosition="0"
+            motion:motionTarget="@+id/TVslot33"/>
+
+        <KeyAttribute
+            android:scaleY="0.0"
+            motion:framePosition="90"
+            motion:motionTarget="@+id/TVslot33"/>
+        <KeyAttribute
+            android:scaleY="1.0"
+            motion:framePosition="100"
+            motion:motionTarget="@+id/TVslot33"/>
+
+        <KeyAttribute
+            android:scaleY="1.0"
+            motion:framePosition="0"
+            motion:motionTarget="@+id/TVslot4"/>
+
+        <KeyAttribute
+            android:scaleY="1.0"
+            motion:framePosition="80"
+            motion:motionTarget="@+id/TVslot4"/>
+
+        <KeyAttribute
+            android:scaleY="0.0"
+            motion:framePosition="90"
+            motion:motionTarget="@+id/TVslot4"/>
+
+        <KeyAttribute
+            android:scaleY="0.0"
+            motion:framePosition="90"
+            motion:motionTarget="@+id/TVslot44"/>
+        <KeyAttribute
+            android:scaleY="1.0"
+            motion:framePosition="100"
+            motion:motionTarget="@+id/TVslot44"/>
+
+</KeyFrameSet>
+
+</Transition>
+
+
+    <ConstraintSet android:id="@+id/start">
+
+        <Constraint
+            android:scaleY="1.0"
+            android:id="@+id/TVslot1"
+            android:textSize="40sp"
+            android:textColor="#757575"
+            android:text="🧟"
+            android:gravity="center"
+            android:background="#CDDC39"
+            android:layout_height="148dp"
+            android:layout_width="148dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            motion:layout_constraintTop_toTopOf="@id/frame"
+            motion:layout_constraintStart_toStartOf="@+id/frame"/>
+
+        <Constraint
+            android:scaleY="0.0"
+            android:id="@+id/TVslot11"
+            android:textSize="40sp"
+            android:textColor="#757575"
+            android:text="🧟"
+            android:gravity="center"
+            android:background="#CDDC39"
+            android:layout_height="148dp"
+            android:layout_width="148dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            motion:layout_constraintTop_toTopOf="@id/frame"
+            motion:layout_constraintStart_toStartOf="@+id/frame"/>
+
+        <Constraint
+            android:scaleY="1.0"
+            android:id="@+id/TVslot2"
+            android:textSize="40sp"
+            android:textColor="#757575"
+            android:text="🧛"
+            android:gravity="center"
+            android:background="#CDDC39"
+            android:layout_height="148dp"
+            android:layout_width="148dp"
+
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            motion:layout_constraintEnd_toEndOf="@+id/frame"
+            motion:layout_constraintTop_toTopOf="@+id/frame"/>
+
+        <Constraint
+            android:scaleY="0.0"
+            android:id="@+id/TVslot22"
+            android:textSize="40sp"
+            android:textColor="#757575"
+            android:text="🧛"
+            android:gravity="center"
+            android:background="#CDDC39"
+            android:layout_height="148dp"
+            android:layout_width="148dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            motion:layout_constraintEnd_toEndOf="@+id/frame"
+            motion:layout_constraintTop_toTopOf="@+id/frame"/>
+
+        <Constraint
+            android:scaleY="1.0"
+            android:id="@+id/TVslot3"
+            android:textSize="40sp"
+            android:textColor="@color/white"
+            android:text="🧟"
+            android:gravity="center"
+            android:background="#CDDC39"
+            android:layout_height="148dp"
+            android:layout_width="148dp"
+            android:layout_marginBottom="15dp"
+            motion:layout_constraintBottom_toBottomOf="@+id/frame"
+            motion:layout_constraintStart_toStartOf="@+id/frame"
+            android:layout_marginStart="15dp" />
+
+        <Constraint
+            android:scaleY="0.0"
+            android:id="@+id/TVslot33"
+            android:textSize="40sp"
+            android:textColor="@color/white"
+            android:text="🧟"
+            android:gravity="center"
+            android:background="#CDDC39"
+            android:layout_height="148dp"
+            android:layout_width="148dp"
+            android:layout_marginBottom="15dp"
+            motion:layout_constraintBottom_toBottomOf="@+id/frame"
+            motion:layout_constraintStart_toStartOf="@+id/frame"
+            android:layout_marginStart="15dp" />
+
+    <Constraint
+        android:scaleY="1.0"
+        android:id="@+id/TVslot4"
+        android:textSize="40sp"
+        android:textColor="#FFFFFF"
+        android:text="🧛"
+        android:gravity="center"
+        android:background="#CDDC39"
+        android:layout_height="148dp"
+        android:layout_width="148dp"
+        android:layout_marginBottom="15dp"
+        motion:layout_constraintStart_toEndOf="@+id/TVslot33"
+        motion:layout_constraintBottom_toBottomOf="@+id/frame"
+        motion:layout_constraintEnd_toEndOf="@+id/frame" />
+
+        <Constraint
+            android:scaleY="0.0"
+            android:id="@+id/TVslot44"
+            android:textSize="40sp"
+            android:textColor="#FFFFFF"
+            android:text="🧛"
+            android:gravity="center"
+            android:background="#CDDC39"
+            android:layout_height="148dp"
+            android:layout_width="148dp"
+            android:layout_marginBottom="15dp"
+            motion:layout_constraintStart_toEndOf="@+id/TVslot33"
+            motion:layout_constraintBottom_toBottomOf="@+id/frame"
+            motion:layout_constraintEnd_toEndOf="@+id/frame" />
+
+</ConstraintSet>
+
+
+    <ConstraintSet
+        android:id="@+id/End">
+
+        <Constraint
+            android:id="@+id/TVslot1"
+            motion:layout_constraintTop_toTopOf="@id/frame"
+            motion:layout_constraintStart_toStartOf="@+id/frame"
+            android:scaleY="0.0"
+            android:textSize="40sp"
+            android:textColor="#757575"
+            android:text=" 🍌 "
+            android:gravity="center"
+            android:background="#CDDC39"
+            android:layout_height="148dp"
+            android:layout_width="148dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp" />
+
+        <Constraint
+            android:id="@+id/TVslot2"
+            motion:layout_constraintTop_toTopOf="@+id/frame"
+            motion:layout_constraintEnd_toEndOf="@+id/frame"
+            android:scaleY="0.0"
+            android:textSize="40sp"
+            android:textColor="#757575"
+            android:text="🍒"
+            android:gravity="center"
+            android:background="#CDDC39"
+            android:layout_height="148dp"
+            android:layout_width="148dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp" />
+
+        <Constraint
+            android:id="@+id/TVslot3"
+            android:textSize="40sp"
+            android:textColor="@color/white"
+            android:scaleY="0.0"
+            android:text=" 🍌 "
+            android:gravity="center"
+            android:background="#CDDC39"
+            android:layout_height="148dp"
+            android:layout_width="148dp"
+            motion:layout_constraintBottom_toBottomOf="@+id/frame"
+            motion:layout_constraintStart_toStartOf="@+id/frame"
+            android:layout_marginStart="15dp"
+            android:layout_marginBottom="15dp" />
+
+    <Constraint
+        android:id="@+id/TVslot4"
+        motion:layout_constraintBottom_toBottomOf="@+id/frame"
+        android:textSize="40sp"
+        android:textColor="#FFFFFF"
+        android:scaleY="0.0"
+        android:text="🍓"
+        android:gravity="center"
+        android:background="#CDDC39"
+        android:layout_height="148dp"
+        android:layout_width="148dp"
+        motion:layout_constraintEnd_toStartOf="@+id/TVslot5"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="15dp" />
+        <Constraint
+            android:layout_marginEnd="15dp"
+            android:layout_height="148dp"
+            android:layout_marginTop="15dp"
+            motion:layout_constraintTop_toTopOf="@+id/frame"
+            motion:layout_constraintEnd_toEndOf="@+id/frame"
+            android:layout_width="148dp"
+            android:id="@+id/TVslot22" />
+        <Constraint
+            android:layout_height="148dp"
+            motion:layout_constraintBottom_toBottomOf="@+id/frame"
+            android:layout_width="148dp"
+            motion:layout_constraintStart_toStartOf="@+id/frame"
+            android:layout_marginStart="15dp"
+            android:id="@+id/TVslot33"
+            android:layout_marginBottom="15dp" />
+
+
+    </ConstraintSet>
+
+</MotionScene>
