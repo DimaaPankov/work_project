@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212121"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".reiuqjvhoirFragment">
+
+
+    <TextView
+        android:id="@+id/domTVvin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="YOUR WIN"
+        android:textColor="#E1BEE7"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/dombetCount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/dombetCountSmile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:text="🤯"
+        android:textColor="#EFEDED"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/domframe"
+        app:layout_constraintEnd_toStartOf="@+id/dombetCount"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/domframe"
+        android:layout_width="340dp"
+        android:layout_height="340dp"
+        android:background="#757575"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/domTVslot5"
+        android:layout_width="98dp"
+        android:layout_height="98dp"
+        android:background="#E1BEE7"
+        android:gravity="center"
+        android:text="🍓"
+        android:textColor="#757575"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="@+id/domframe"
+        app:layout_constraintEnd_toEndOf="@+id/domframe"
+        app:layout_constraintStart_toStartOf="@+id/domframe"
+        app:layout_constraintTop_toTopOf="@+id/domframe" />
+
+    <TextView
+        android:id="@+id/domTVslot55"
+        android:layout_width="98dp"
+        android:layout_height="98dp"
+        android:background="#E1BEE7"
+        android:gravity="center"
+        android:scaleX="0"
+        android:text="\$"
+        android:textStyle="bold"
+        android:textSize="50sp"
+        android:textColor="#757575"
+        app:layout_constraintBottom_toBottomOf="@+id/domframe"
+        app:layout_constraintEnd_toEndOf="@+id/domframe"
+        app:layout_constraintStart_toStartOf="@+id/domframe"
+        app:layout_constraintTop_toTopOf="@+id/domframe" />
+
+
+
+    <TextView
+        android:id="@+id/domTVslot4"
+        android:layout_width="98dp"
+        android:layout_height="98dp"
+        android:background="#E1BEE7"
+        android:gravity="center"
+        android:text="🍓"
+        android:textColor="#757575"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="@+id/domframe"
+        app:layout_constraintEnd_toStartOf="@+id/domTVslot5"
+        app:layout_constraintStart_toStartOf="@+id/domframe"
+        app:layout_constraintTop_toTopOf="@+id/domframe" />
+
+    <TextView
+        android:id="@+id/domTVslot44"
+        android:layout_width="98dp"
+        android:layout_height="98dp"
+        android:background="#E1BEE7"
+        android:gravity="center"
+        android:scaleX="0"
+        android:scaleY="1"
+        android:text="\$"
+        android:textStyle="bold"
+        android:textSize="50sp"
+        android:textColor="#757575"
+        app:layout_constraintBottom_toBottomOf="@+id/domframe"
+        app:layout_constraintEnd_toStartOf="@+id/domTVslot5"
+        app:layout_constraintStart_toStartOf="@+id/domframe"
+        app:layout_constraintTop_toTopOf="@+id/domframe" />
+
+    <TextView
+        android:id="@+id/domTVslot3"
+        android:layout_width="98dp"
+        android:layout_height="98dp"
+        android:background="#E1BEE7"
+        android:gravity="center"
+        android:text=" 🍌 "
+        android:textColor="#757575"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/domTVslot6"
+        app:layout_constraintEnd_toEndOf="@+id/domframe"
+        app:layout_constraintStart_toEndOf="@+id/domTVslot2"
+        app:layout_constraintTop_toTopOf="@+id/domframe">
+    </TextView>
+
+    <TextView
+        android:id="@+id/domTVslot33"
+        android:layout_width="98dp"
+        android:layout_height="98dp"
+        android:background="#E1BEE7"
+        android:gravity="center"
+        android:scaleX="0"
+        android:text="\$"
+        android:textStyle="bold"
+        android:textSize="50sp"
+        android:textColor="#757575"
+        app:layout_constraintBottom_toTopOf="@+id/domTVslot6"
+        app:layout_constraintEnd_toEndOf="@+id/domframe"
+        app:layout_constraintStart_toEndOf="@+id/domTVslot2"
+        app:layout_constraintTop_toTopOf="@+id/domframe"></TextView>
+
+    <TextView
+        android:id="@+id/domTVslot6"
+        android:layout_width="98dp"
+        android:layout_height="98dp"
+        android:background="#E1BEE7"
+        android:gravity="center"
+        android:text=" 🍌 "
+        android:textColor="#757575"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="@+id/domframe"
+        app:layout_constraintEnd_toEndOf="@+id/domframe"
+        app:layout_constraintStart_toEndOf="@+id/domTVslot5"
+        app:layout_constraintTop_toTopOf="@+id/domframe" />
+
+    <TextView
+        android:id="@+id/domTVslot66"
+        android:layout_width="98dp"
+        android:layout_height="98dp"
+        android:background="#E1BEE7"
+        android:gravity="center"
+        android:scaleX="0"
+        android:text="\$"
+        android:textStyle="bold"
+        android:textSize="50sp"
+        android:textColor="#757575"
+        app:layout_constraintBottom_toBottomOf="@+id/domframe"
+        app:layout_constraintEnd_toEndOf="@+id/domframe"
+        app:layout_constraintStart_toEndOf="@+id/domTVslot5"
+        app:layout_constraintTop_toTopOf="@+id/domframe" />
+
+    <TextView
+        android:id="@+id/domTVslot7"
+        android:layout_width="98dp"
+        android:layout_height="98dp"
+        android:background="#E1BEE7"
+        android:gravity="center"
+        android:text="🍓 "
+        android:textColor="#757575"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="@+id/domframe"
+        app:layout_constraintEnd_toStartOf="@+id/domTVslot8"
+        app:layout_constraintStart_toStartOf="@+id/domframe"
+        app:layout_constraintTop_toBottomOf="@+id/domTVslot4" />
+
+    <TextView
+        android:id="@+id/domTVslot77"
+        android:layout_width="98dp"
+        android:layout_height="98dp"
+        android:background="#E1BEE7"
+        android:gravity="center"
+        android:scaleX="0"
+        android:text="\$"
+        android:textStyle="bold"
+        android:textSize="50sp"
+        android:textColor="#757575"
+        app:layout_constraintBottom_toBottomOf="@+id/domframe"
+        app:layout_constraintEnd_toStartOf="@+id/domTVslot8"
+        app:layout_constraintStart_toStartOf="@+id/domframe"
+        app:layout_constraintTop_toBottomOf="@+id/domTVslot4" />
+
+    <TextView
+        android:id="@+id/domTVslot9"
+        android:layout_width="98dp"
+        android:layout_height="98dp"
+        android:gravity="center"
+        android:text="🍒"
+        android:textColor="#757575"
+        android:background="#E1BEE7"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="@+id/domframe"
+        app:layout_constraintEnd_toEndOf="@+id/domframe"
+        app:layout_constraintStart_toEndOf="@+id/domTVslot8"
+        app:layout_constraintTop_toBottomOf="@+id/domTVslot6" />
+
+    <TextView
+        android:id="@+id/domTVslot99"
+        android:layout_width="98dp"
+        android:layout_height="98dp"
+        android:background="#E1BEE7"
+        android:gravity="center"
+        android:scaleX="0"
+        android:text="\$"
+        android:textStyle="bold"
+        android:textSize="50sp"
+        android:textColor="#E1BEE7"
+        app:layout_constraintBottom_toBottomOf="@+id/domframe"
+        app:layout_constraintEnd_toEndOf="@+id/domframe"
+        app:layout_constraintStart_toEndOf="@+id/domTVslot8"
+        app:layout_constraintTop_toBottomOf="@+id/domTVslot6" />
+
+    <TextView
+        android:id="@+id/domTVslot2"
+        android:layout_width="98dp"
+        android:layout_height="98dp"
+        android:background="#E1BEE7"
+        android:gravity="center"
+        android:text="🍒"
+        android:textColor="#757575"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/domTVslot5"
+        app:layout_constraintEnd_toEndOf="@+id/domframe"
+        app:layout_constraintStart_toStartOf="@+id/domframe"
+        app:layout_constraintTop_toTopOf="@+id/domframe"/>
+
+    <TextView
+        android:id="@+id/domTVslot22"
+        android:layout_width="98dp"
+        android:layout_height="98dp"
+        android:background="#E1BEE7"
+        android:gravity="center"
+        android:scaleX="0"
+        android:text="\$"
+        android:textStyle="bold"
+        android:textSize="50sp"
+        android:textColor="#757575"
+        app:layout_constraintBottom_toTopOf="@+id/domTVslot5"
+        app:layout_constraintEnd_toEndOf="@+id/domframe"
+        app:layout_constraintStart_toStartOf="@+id/domframe"
+        app:layout_constraintTop_toTopOf="@+id/domframe">
+
+
+    </TextView>
+
+
+    <TextView
+        android:id="@+id/domTVslot8"
+        android:layout_width="98dp"
+        android:layout_height="98dp"
+        android:background="#E1BEE7"
+        android:gravity="center"
+        android:text=" 🍌 "
+        android:textColor="#757575"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="@+id/domframe"
+        app:layout_constraintEnd_toEndOf="@+id/domframe"
+        app:layout_constraintStart_toStartOf="@+id/domframe"
+        app:layout_constraintTop_toBottomOf="@+id/domTVslot5" />
+
+    <TextView
+        android:id="@+id/domTVslot88"
+        android:layout_width="98dp"
+        android:layout_height="98dp"
+        android:background="#E1BEE7"
+        android:gravity="center"
+        android:scaleX="0"
+        android:text="\$"
+        android:textStyle="bold"
+        android:textSize="50sp"
+        android:textColor="#757575"
+        app:layout_constraintBottom_toBottomOf="@+id/domframe"
+        app:layout_constraintEnd_toEndOf="@+id/domframe"
+        app:layout_constraintStart_toStartOf="@+id/domframe"
+        app:layout_constraintTop_toBottomOf="@+id/domTVslot5" />
+
+    <TextView
+        android:id="@+id/domTVslot1"
+        android:layout_width="98dp"
+        android:layout_height="98dp"
+        android:background="#E1BEE7"
+        android:gravity="center"
+        android:text="🍓"
+        android:textColor="#757575"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/domTVslot4"
+        app:layout_constraintEnd_toStartOf="@+id/domTVslot2"
+        app:layout_constraintStart_toStartOf="@+id/domframe"
+        app:layout_constraintTop_toTopOf="@+id/domframe"></TextView>
+
+    <TextView
+        android:id="@+id/domTVslot11"
+        android:layout_width="98dp"
+        android:layout_height="98dp"
+        android:background="#E1BEE7"
+        android:gravity="center"
+        android:scaleX="0"
+        android:text="\$"
+        android:textStyle="bold"
+        android:textSize="50sp"
+        android:textColor="#757575"
+        app:layout_constraintBottom_toTopOf="@+id/domTVslot4"
+        app:layout_constraintEnd_toStartOf="@+id/domTVslot2"
+        app:layout_constraintStart_toStartOf="@+id/domframe"
+        app:layout_constraintTop_toTopOf="@+id/domframe"></TextView>
+
+    <TextView
+        android:id="@+id/dombetCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:text="300"
+        android:textColor="#FFFFFF"
+        android:textSize="70sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/domframe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/domV_top_horisontal"
+        android:layout_width="0dp"
+        android:layout_height="10dp"
+        android:background="#9C27B0"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/domTVslot2"
+        app:layout_constraintEnd_toEndOf="@+id/domTVslot6"
+        app:layout_constraintStart_toStartOf="@+id/domTVslot1"
+        app:layout_constraintTop_toTopOf="@+id/domTVslot2" />
+
+    <View
+        android:id="@+id/domV_center_horisontal"
+        android:layout_width="0dp"
+        android:layout_height="10dp"
+        android:visibility="invisible"
+        android:background="#9C27B0"
+        app:layout_constraintBottom_toBottomOf="@+id/domframe"
+        app:layout_constraintEnd_toEndOf="@+id/domTVslot6"
+        app:layout_constraintStart_toStartOf="@+id/domTVslot4"
+        app:layout_constraintTop_toTopOf="@+id/domframe" />
+
+    <View
+        android:id="@+id/domV_bottom_horisontal"
+        android:layout_width="0dp"
+        android:layout_height="10dp"
+        android:background="#9C27B0"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/domTVslot8"
+        app:layout_constraintEnd_toEndOf="@+id/domTVslot6"
+        app:layout_constraintStart_toStartOf="@+id/domTVslot1"
+        app:layout_constraintTop_toTopOf="@+id/domTVslot8" />
+
+
+    <TextView
+        android:id="@+id/domTVxxx"
+        android:layout_width="wrap_content"
+        android:layout_height="146dp"
+        android:layout_marginTop="10dp"
+        android:text="10x BET"
+        android:textColor="#FFC107"
+        android:textSize="100sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/domframe" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

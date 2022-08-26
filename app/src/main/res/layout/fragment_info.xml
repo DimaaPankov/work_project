@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="#252525"
+    tools:context=".ohoilhiuhui">
+
+    <TextView
+        android:id="@+id/domTVtextBanan3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1x"
+        android:textColor="#E1BEE7"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/domTVbanan2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toEndOf="@+id/domTVbanan"
+        app:layout_constraintTop_toTopOf="@+id/domTVbanan2" />
+
+    <TextView
+        android:id="@+id/domTVtextBanan2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2x"
+        android:textColor="#E1BEE7"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/domTVbanan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toEndOf="@+id/domTVbanan"
+        app:layout_constraintTop_toTopOf="@+id/domTVbanan" />
+
+    <TextView
+        android:id="@+id/domTVbanan2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="10dp"
+        android:text="🍌"
+        android:textColor="@color/white"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/domTVbanan"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/domTVtextSub2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10x"
+        android:textColor="#E1BEE7"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/domTVfr"
+        app:layout_constraintEnd_toEndOf="@+id/domTVtextSub"
+        app:layout_constraintStart_toStartOf="@+id/domTVtextSub"
+        app:layout_constraintTop_toBottomOf="@+id/domTVSub" />
+
+    <TextView
+        android:id="@+id/domTVSub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:text="🍓"
+        android:textColor="@color/white"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/domTVlimon" />
+
+    <TextView
+        android:id="@+id/domTVtextSub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5x"
+        android:textColor="#E1BEE7"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/domTVSub"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/domTVSub"
+        app:layout_constraintTop_toTopOf="@+id/domTVSub" />
+
+    <TextView
+        android:id="@+id/domTVlimon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:gravity="center"
+        android:text="🍍"
+        android:textColor="@color/white"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/domTVtextLimon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3x"
+        android:textColor="#E1BEE7"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/domTVlimon"
+        app:layout_constraintEnd_toEndOf="@+id/domTVtextBanan2"
+        app:layout_constraintStart_toStartOf="@+id/domTVtextBanan2"
+        app:layout_constraintTop_toTopOf="@+id/domTVlimon"
+        app:layout_constraintVertical_bias="0.793" />
+
+    <TextView
+        android:id="@+id/domTVbanan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="10dp"
+        android:text="🍒"
+        android:textColor="@color/white"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/domTVlimon"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/domtextView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="wining"
+        android:textColor="#E1BEE7"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/domTVbanan2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/domBok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#E1BEE7"
+        android:text="ok"
+        android:textColor="#3F4311"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/domTVfr" />
+
+    <TextView
+        android:id="@+id/domTVfr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="🥥"
+        android:textColor="@color/white"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/domTVSub"
+        app:layout_constraintStart_toStartOf="@+id/domTVSub"
+        app:layout_constraintTop_toBottomOf="@+id/domTVSub" />
+</androidx.constraintlayout.widget.ConstraintLayout>

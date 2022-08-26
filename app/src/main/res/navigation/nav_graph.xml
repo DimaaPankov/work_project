@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.evhoiuerhvuierFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_gameFragment"
+            app:destination="@id/gameFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_infoFragment"
+            app:destination="@id/infoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="com.example.jdjdjoasoaFragment"
+        android:label="fragment_game"
+        tools:layout="@layout/fragment_game" >
+        <action
+            android:id="@+id/action_gameFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_gameFragment_to_newCoinsFragment"
+            app:destination="@id/newCoinsFragment" />
+        <action
+            android:id="@+id/action_gameFragment_to_animationVinFragment"
+            app:destination="@id/animationVinFragment" />
+        <action
+            android:id="@+id/action_gameFragment_to_betFragment"
+            app:destination="@id/betFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="com.example.ohoilhiuhui"
+        android:label="fragment_info"
+        tools:layout="@layout/fragment_info" >
+        <action
+            android:id="@+id/action_infoFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newCoinsFragment"
+        android:name="com.example.vejorjveorjvreotnbn"
+        android:label="NewCoinsFragment" >
+        <action
+            android:id="@+id/action_newCoinsFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/animationVinFragment"
+        android:name="com.example.reiuqjvhoirFragment"
+        android:label="fragment_animation_vin"
+        tools:layout="@layout/fragment_animation_vin" >
+        <action
+            android:id="@+id/action_animationVinFragment_to_gameFragment"
+            app:destination="@id/gameFragment" />
+        <argument
+            android:name="arraySlots"
+            app:argType="string[]" />
+        <argument
+            android:name="xBet"
+            app:argType="integer" />
+        <argument
+            android:name="win"
+            app:argType="integer" />
+        <argument
+            android:name="winLine"
+            app:argType="boolean[]" />
+    </fragment>
+    <fragment
+        android:id="@+id/betFragment"
+        android:name="com.example.vejorjveorjvreotnbn"
+        android:label="fragment_bet"
+        tools:layout="@layout/fragment_bet" >
+        <action
+            android:id="@+id/action_betFragment_to_gameFragment"
+            app:destination="@id/gameFragment" />
+    </fragment>
+</navigation>
