@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/resultFragment"
-        android:name="ru.skillbranch.testnaeblana.view.ResultFragment"
+        android:name="rirf.irjewf.rfi.ehehduie.ehrfhwrej"
         android:label="fragment_result"
         tools:layout="@layout/fragment_result" >
         <action
@@ -25,7 +25,7 @@
     </fragment>
     <fragment
         android:id="@+id/startFragment"
-        android:name="ru.skillbranch.testnaeblana.view.StartFragment"
+        android:name="rirf.irjewf.rfi.ehehduie.j4efur3fyh"
         android:label="fragment_start"
         tools:layout="@layout/fragment_start" >
         <action

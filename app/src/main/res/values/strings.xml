@@ -1,16 +1,19 @@
 <resources>
     <string name="app_name">qestion1</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="question_gey">правда ли что, ты они?</string>
-    <string name="question_foot">правда не нога?</string>
-    <string name="question_eys">правда что глаз?</string>
-    <string name="question_list">бумаги против чёрных, потому что она белая?</string>
-    <string name="question_phone">павда ли что телефоны говорят?</string>
-    <string name="question_live">жизнь - это жизнь</string>
-    <string name="question_kosmos">космос как космополитан, тоже космос</string>
-    <string name="question_trueOrFalse">true или false?</string>
-    <string name="question_mili">мыли выли не курили</string>
-    <string name="question_biznes">бизнес хаки - в рот ебаки</string>
+
+    <string name="XXI">Первое, найденное исследователями слово, похожее на покер, было
+        обнаружено в английском словаре XVII века.</string>
+    <string name="Americans">По данным исследователей, самой азартной нацией на планете являются
+        американцы</string>
+    <string name="sochial_status">Изначально, каждая масть соответствовала конкретной социальной
+        группе граждан</string>
+    <string name="difrient_game">На сегодня известно уже более 130 разновидностей игры в покер</string>
+
+    <string name="five_mastchi">В конце сороковых годов производители карт попытались добавить еще три масти</string>
+    <string name="people">По данным социологических исследований, около 75% людей на планете
+        продолжают утверждать, что покер является азартной игрой, то есть выигрыш по их мнению никак
+        не зависит от уровня профессионализма и подготовки игрока.</string>
 
     <string name="true_button">True</string>
     <string name="false_button">False</string>

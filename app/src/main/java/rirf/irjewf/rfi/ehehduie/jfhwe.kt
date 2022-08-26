@@ -9,14 +9,17 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.view.isVisible
 import androidx.lifecycle.ViewModelProvider
+import rirf.irjewf.rfi.ehcuewcgyuw
+import rirf.irjewf.rfi.falseAnswerSize
+import rirf.irjewf.rfi.trueAnswerSize
 import ru.skillbranch.testnaeblana.*
 import ru.skillbranch.testnaeblana.databinding.FragmentQestionBinding
 
-import ru.skillbranch.testnaeblana.viewModel.qestionViewModel.questionModel
+import ru.skillbranch.testnaeblana.viewModel.qestionViewModel.rejigfujerigjr
 
 class qestionFragment : Fragment() {
     lateinit var binding: FragmentQestionBinding
-    lateinit var quizViewModel: questionModel
+    lateinit var quizViewModel: rejigfujerigjr
     var actionFragment = false
 
 
@@ -40,10 +43,10 @@ class qestionFragment : Fragment() {
     }
 
     private fun setView(){
-        quizViewModel = ViewModelProvider(this).get(questionModel::class.java)
+        quizViewModel = ViewModelProvider(this).get(rejigfujerigjr::class.java)
         binding = FragmentQestionBinding.inflate(layoutInflater)
-        binding.tvQestion.setText(quizViewModel.Data().textResId)
-        binding.imageQestion.setImageResource(quizViewModel.Data().imageResId)
+        binding.tvQestion.setText(quizViewModel.rhfurf().textResId)
+        binding.imageQestion.setImageResource(quizViewModel.rhfurf().imageResId)
     }
 
     override fun onCreateView(
@@ -57,11 +60,11 @@ class qestionFragment : Fragment() {
     }
 
     private fun clickTrue() {
-        quizViewModel.moveData()
-        binding.imageQestion.setImageResource(quizViewModel.Data().imageResId)
-        binding.tvQestion.setText(quizViewModel.Data().textResId)
+        quizViewModel.rehfueryfhurh()
+        binding.imageQestion.setImageResource(quizViewModel.rhfurf().imageResId)
+        binding.tvQestion.setText(quizViewModel.rhfurf().textResId)
 
-        if (quizViewModel.answer()) {
+        if (quizViewModel.ujfireugireyu()) {
             trueAnswerSize++
             binding.imageQestion.isVisible = false
             binding.frameLayout.setBackgroundColor(resources.getColor(R.color.teal_200))
@@ -83,7 +86,7 @@ class qestionFragment : Fragment() {
 
     }
 
-        finish(1000L)
+        wejhfifhewuewfhuhfweu(1000L)
 
 }
 
@@ -92,12 +95,12 @@ class qestionFragment : Fragment() {
     private fun clickFalse() {
 
 
-        quizViewModel.moveData()
+        quizViewModel.rehfueryfhurh()
 
-        binding.imageQestion.setImageResource(quizViewModel.Data().imageResId)
-        binding.tvQestion.setText(quizViewModel.Data().textResId)
+        binding.imageQestion.setImageResource(quizViewModel.rhfurf().imageResId)
+        binding.tvQestion.setText(quizViewModel.rhfurf().textResId)
 
-        if (!quizViewModel.answer()) {
+        if (!quizViewModel.ujfireugireyu()) {
            trueAnswerSize++
             binding.imageQestion.isVisible = false
             binding.frameLayout.setBackgroundColor(resources.getColor(R.color.teal_200))
@@ -118,7 +121,7 @@ class qestionFragment : Fragment() {
 
 
         }
-      finish(1000L)
+      wejhfifhewuewfhuhfweu(1000L)
 
             }
 
@@ -126,26 +129,27 @@ class qestionFragment : Fragment() {
 
 
 
-    private fun finish( sec:Long ){
+    private fun wejhfifhewuewfhuhfweu(sec:Long ){
 
         object : CountDownTimer(sec, 1000) {
             override fun onTick(millisUntilFinished: Long) {}
 
             override fun onFinish() {
-                binding.imageQestion.isVisible = true
-                binding.frameLayout.setBackgroundColor(resources.getColor(R.color.white))
-                binding.tvQestion.isVisible =  true
-                binding.background.setBackgroundColor(resources.getColor(R.color.white))
-                binding.btnTrue.isVisible = true
-                binding.btnFalse.isVisible = true
-                binding.textViewTRUE.isVisible = false
-                binding.textViewFALSE.isVisible = false
-
                 if(actionFragment) {
-                    MAIN.navController.navigate(R.id.action_qestionFragment_to_resultFragment)
+                    ehcuewcgyuw.deuhwe.navigate(R.id.action_qestionFragment_to_resultFragment)
+                } else {
+                    binding.imageQestion.isVisible = true
+                    binding.frameLayout.setBackgroundColor(resources.getColor(R.color.black))
+                    binding.tvQestion.isVisible = true
+                    binding.background.setBackgroundColor(resources.getColor(R.color.black))
+                    binding.btnTrue.isVisible = true
+                    binding.btnFalse.isVisible = true
+                    binding.textViewTRUE.isVisible = false
+                    binding.textViewFALSE.isVisible = false
                 }
 
-                if(quizViewModel.index == 9) {
+
+                if(quizViewModel.efjdhfh == 5) {
                     actionFragment = true
                 }
 
@@ -159,7 +163,7 @@ class qestionFragment : Fragment() {
                 override fun onTick(millisUntilFinished: Long) {}
 
                 override fun onFinish() {
-                    MAIN.navController.navigate(R.id.action_resultFragment_to_qestionFragment)
+                    ehcuewcgyuw.deuhwe.navigate(R.id.action_resultFragment_to_qestionFragment)
                    trueAnswerSize = 0
                    falseAnswerSize = 0
                 }
