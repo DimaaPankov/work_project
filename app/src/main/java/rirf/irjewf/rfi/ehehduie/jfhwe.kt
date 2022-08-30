@@ -9,13 +9,13 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.view.isVisible
 import androidx.lifecycle.ViewModelProvider
+import rirf.irjewf.rfi.R
+import rirf.irjewf.rfi.databinding.FragmentQestionBinding
 import rirf.irjewf.rfi.ehcuewcgyuw
 import rirf.irjewf.rfi.falseAnswerSize
 import rirf.irjewf.rfi.trueAnswerSize
-import ru.skillbranch.testnaeblana.*
-import ru.skillbranch.testnaeblana.databinding.FragmentQestionBinding
 
-import ru.skillbranch.testnaeblana.viewModel.qestionViewModel.rejigfujerigjr
+import rirf.irjewf.rfi.edud2u8d.rejigfujerigjr
 
 class qestionFragment : Fragment() {
     lateinit var binding: FragmentQestionBinding

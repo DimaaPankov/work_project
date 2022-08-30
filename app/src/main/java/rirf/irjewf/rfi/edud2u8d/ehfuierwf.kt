@@ -1,10 +1,8 @@
-package ru.skillbranch.testnaeblana.viewModel.qestionViewModel
-
+package rirf.irjewf.rfi.edud2u8d
 
 import androidx.lifecycle.ViewModel
-import ru.skillbranch.testnaeblana.R
+import rirf.irjewf.rfi.R
 import rirf.irjewf.rfi.wefjdec.qwduqed
-
 
 
 class rejigfujerigjr(): ViewModel() {

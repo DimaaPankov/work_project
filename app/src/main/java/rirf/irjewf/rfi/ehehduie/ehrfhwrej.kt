@@ -5,7 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import ru.skillbranch.testnaeblana.databinding.FragmentResultBinding
+import rirf.irjewf.rfi.databinding.FragmentResultBinding
 import rirf.irjewf.rfi.falseAnswerSize
 import rirf.irjewf.rfi.trueAnswerSize
 
@@ -18,8 +18,8 @@ class ehrfhwrej : Fragment() {
         super.onCreate(savedInstanceState)
         binding = FragmentResultBinding.inflate(layoutInflater)
 
-        binding.tvTrue.text = "TRUE ${trueAnswerSize.toString()}"
-        binding.tvFalse.text = "FALSE ${falseAnswerSize.toString()}"
+        binding.tvTrue.text = "TRUE ${trueAnswerSize}"
+        binding.tvFalse.text = "FALSE ${falseAnswerSize}"
 
     }
 

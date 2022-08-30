@@ -4,8 +4,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
-import ru.skillbranch.testnaeblana.R
-import ru.skillbranch.testnaeblana.databinding.ActivityMainBinding
+import rirf.irjewf.rfi.databinding.ActivityMainBinding
+
 
 class MainActivity : AppCompatActivity() {
 

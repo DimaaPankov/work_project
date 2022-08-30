@@ -11,7 +11,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "ru.skillbranch.testnaeblana"
+        applicationId "rirf.irjewf.rfi"
         minSdk 24
         targetSdk 31
         versionCode 1

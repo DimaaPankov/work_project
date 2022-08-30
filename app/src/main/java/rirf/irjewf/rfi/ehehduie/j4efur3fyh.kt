@@ -6,13 +6,14 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import rirf.irjewf.rfi.R
+import rirf.irjewf.rfi.databinding.FragmentStartBinding
 import rirf.irjewf.rfi.ehcuewcgyuw
-import ru.skillbranch.testnaeblana.R
-import ru.skillbranch.testnaeblana.databinding.FragmentStartBinding
+
 
 
 class j4efur3fyh : Fragment(){
-lateinit var binding:FragmentStartBinding
+lateinit var binding: FragmentStartBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
