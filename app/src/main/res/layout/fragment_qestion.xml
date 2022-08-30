@@ -5,8 +5,123 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/background"
-    android:background="@color/black"
+    android:background="#EDF2EF"
     tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/viewFalse1"
+        android:layout_width="145dp"
+        android:layout_height="42dp"
+        android:visibility="invisible"
+        android:background="@color/red"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_one"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_one" />
+
+    <View
+        android:id="@+id/viewFalse3"
+        android:layout_width="145dp"
+        android:layout_height="42dp"
+        android:background="@color/red"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/viewTrue3"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/viewTrue3" />
+
+    <View
+        android:id="@+id/viewFalse2"
+        android:layout_width="100dp"
+        android:layout_height="43dp"
+        android:visibility="invisible"
+        android:background="@color/red"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_one"
+        app:layout_constraintEnd_toEndOf="@+id/btn_two"
+        app:layout_constraintStart_toStartOf="@+id/btn_two"
+        app:layout_constraintTop_toTopOf="@+id/btn_one"
+/>
+
+    <View
+        android:id="@+id/viewFalse4"
+        android:layout_width="100dp"
+        android:layout_height="43dp"
+        android:visibility="invisible"
+        android:background="@color/red"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_foure"
+        app:layout_constraintEnd_toEndOf="@+id/btn_two"
+        app:layout_constraintStart_toStartOf="@+id/btn_two"
+        app:layout_constraintTop_toTopOf="@+id/btn_foure" />
+
+    <View
+        android:id="@+id/viewTrue1"
+        android:layout_width="145dp"
+        android:layout_height="42dp"
+        android:visibility="invisible"
+        android:background="@color/teal_200"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_one"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_one" />
+
+    <View
+        android:id="@+id/viewTrue3"
+        android:layout_width="145dp"
+        android:layout_height="42dp"
+        android:background="@color/teal_200"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_three"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_three" />
+
+    <View
+        android:id="@+id/viewTrue2"
+        android:layout_width="100dp"
+        android:layout_height="43dp"
+        android:visibility="invisible"
+        android:background="@color/teal_200"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_one"
+        app:layout_constraintEnd_toEndOf="@+id/btn_two"
+        app:layout_constraintStart_toStartOf="@+id/btn_two"
+        app:layout_constraintTop_toTopOf="@+id/btn_one" />
+
+    <View
+        android:id="@+id/viewTrue4"
+        android:layout_width="100dp"
+        android:layout_height="43dp"
+        android:background="@color/teal_200"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_foure"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/btn_foure" />
+
+    <Button
+        android:id="@+id/btn_foure"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="сет"
+        android:backgroundTint="#57C4E5"
+
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/btn_two" />
+
+    <Button
+        android:id="@+id/btn_three"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="стрит флэш"
+        android:backgroundTint="#57C4E5"
+
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_one" />
 
     <FrameLayout
         android:id="@+id/frameLayout"
@@ -26,29 +141,32 @@
     </FrameLayout>
 
     <Button
-        android:id="@+id/btn_true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/btn_one"
+        android:backgroundTint="#57C4E5"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
         android:layout_marginBottom="50dp"
-        android:text="true"
-        android:textSize="30sp"
+        android:text="роял флеш"
+        android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btn_false"
-        app:layout_constraintHorizontal_bias="0.669"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTRUE" />
 
     <Button
-        android:id="@+id/btn_false"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/btn_two"
+        android:backgroundTint="#57C4E5"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
         android:layout_marginBottom="50dp"
-        android:text="false"
-
-        android:textSize="30sp"
+        android:text="стрит"
+        android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.771"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTRUE" />
 
     <TextView
         android:id="@+id/tv_qestion"
@@ -58,9 +176,10 @@
         android:layout_marginBottom="30dp"
         android:gravity="center"
         android:padding="20dp"
-        android:text="TextView"
+        android:textColor="#212738"
+        android:text="как называется комбинация карт на фото?"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/btn_true"
+        app:layout_constraintBottom_toTopOf="@+id/btn_one"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
@@ -87,10 +206,16 @@
         android:textColor="#F3F1F1"
         android:textSize="90sp"
         android:visibility="invisible"
-
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        app:layout_constraintGuide_begin="205dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

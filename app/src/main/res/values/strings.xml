@@ -2,18 +2,19 @@
     <string name="app_name">qestion1</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
-    <string name="XXI">Первое, найденное исследователями слово, похожее на покер, было
-        обнаружено в английском словаре XVII века.</string>
-    <string name="Americans">По данным исследователей, самой азартной нацией на планете являются
-        американцы</string>
-    <string name="sochial_status">Изначально, каждая масть соответствовала конкретной социальной
-        группе граждан</string>
-    <string name="difrient_game">На сегодня известно уже более 130 разновидностей игры в покер</string>
+    <string name="royal_flesh">роял флэш</string>
+    <string name="street">стрит</string>
+    <string name="street_flesh">стрит флэш</string>
+    <string name="set">сет</string>
+    <string name="kare">каре</string>
+    <string name="two_pare">две пары</string>
+    <string name="full_hous">фулхаус</string>
+    <string name="one_pare">одна пара</string>
+    <string name="flesh">флэш</string>
+    <string name="strushnaya_karta">страшная карта</string>
 
-    <string name="five_mastchi">В конце сороковых годов производители карт попытались добавить еще три масти</string>
-    <string name="people">По данным социологических исследований, около 75% людей на планете
-        продолжают утверждать, что покер является азартной игрой, то есть выигрыш по их мнению никак
-        не зависит от уровня профессионализма и подготовки игрока.</string>
+
+
 
     <string name="true_button">True</string>
     <string name="false_button">False</string>

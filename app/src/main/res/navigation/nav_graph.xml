@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/qestionFragment"
-        android:name="ru.skillbranch.testnaeblana.view.qestionFrafment.qestionFragment"
+        android:name="rirf.irjewf.jgeigbuhbd.ijrghirtuhbju.qestionFragment"
         android:label="fragment_qestion"
         tools:layout="@layout/fragment_qestion" >
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/resultFragment"
-        android:name="rirf.irjewf.rfi.ehehduie.ehrfhwrej"
+        android:name="rirf.irjewf.jgeigbuhbd.ijrghirtuhbju.ehrfhwrej"
         android:label="fragment_result"
         tools:layout="@layout/fragment_result" >
         <action
@@ -25,7 +25,7 @@
     </fragment>
     <fragment
         android:id="@+id/startFragment"
-        android:name="rirf.irjewf.rfi.ehehduie.j4efur3fyh"
+        android:name="rirf.irjewf.jgeigbuhbd.ijrghirtuhbju.j4efur3fyh"
         android:label="fragment_start"
         tools:layout="@layout/fragment_start" >
         <action

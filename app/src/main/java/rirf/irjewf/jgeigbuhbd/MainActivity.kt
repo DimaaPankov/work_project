@@ -1,10 +1,10 @@
-package rirf.irjewf.rfi
+package rirf.irjewf.jgeigbuhbd
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
-import rirf.irjewf.rfi.databinding.ActivityMainBinding
+import rirf.irjewf.jgeigbuhbd.databinding.ActivityMainBinding
 
 
 class MainActivity : AppCompatActivity() {
@@ -16,10 +16,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         huercvy = ActivityMainBinding.inflate(layoutInflater)
         setContentView(huercvy.root)
-        ehcuewcgyuw = this
+        erbuvjhbhebhbv = this
         deuhwe = Navigation.findNavController(this, R.id.nav_host_fragment)
 
     }
-//vjewrhjvjh
+
 }
-//edck
