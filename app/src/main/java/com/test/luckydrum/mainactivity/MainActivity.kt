@@ -42,4 +42,4 @@ class DataBasePreferences(val _context: Context) {
      fun setBalans(i:Float) {
         editorSettings.putFloat("size", getBalansFloate() - i).apply()
     }
-}
+}//jvirj/XBet_17.08
