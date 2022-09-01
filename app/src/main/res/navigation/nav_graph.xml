@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example2.a1xbetproject.view.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_deteilFragment"
+            app:destination="@id/deteilFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/deteilFragment"
+        android:name="com.example2.a1xbetproject.view.DeteilFragment"
+        android:label="fragment_deteil"
+        tools:layout="@layout/fragment_deteil" >
+        <action
+            android:id="@+id/action_deteilFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <argument
+            android:name="title"
+            app:argType="string" />
+        <argument android:name="ixbet"
+            app:argType="string" />
+        <argument
+            android:name="iixbet"
+            app:argType="string" />
+        <argument
+            android:name="iiixbet"
+            app:argType="string" />
+    </fragment>
+</navigation>
