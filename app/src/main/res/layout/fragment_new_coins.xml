@@ -4,9 +4,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="#E1BEE7"
+    android:background="#0288D1"
     android:id="@+id/Mlayout"
-    tools:context=".vejorjveorjvreotnbn">
+    tools:context=".view.view.GameFragment">
 
 
 
@@ -16,7 +16,7 @@
         android:id="@+id/frame2"
         android:layout_width="340dp"
         android:layout_height="340dp"
-        android:background="@color/black"
+        android:background="#256080"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -37,7 +37,7 @@
         app:layout_constraintTop_toTopOf="@+id/frame2" />
 
     <Button
-        android:id="@+id/domBreverdCoins"
+        android:id="@+id/BreverdCoins"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="claim"

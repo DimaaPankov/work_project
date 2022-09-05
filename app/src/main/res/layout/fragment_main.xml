@@ -5,15 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#252525"
-    tools:context=".evhoiuerhvuierFragment">
+    tools:context=".view.MainFragment">
 
 
     <Button
-        android:id="@+id/domBplay"
+        android:id="@+id/Bplay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="110dp"
-        android:backgroundTint="#E1BEE7"
+        android:backgroundTint="#CDDC39"
         android:text="play"
         android:textColor="#404513"
         android:textSize="40sp"
@@ -26,8 +26,8 @@
         android:id="@+id/imageView6"
         android:layout_width="187dp"
         android:layout_height="209dp"
-        android:src="@drawable/slots"
-        app:layout_constraintBottom_toTopOf="@+id/domBplay"
+        android:src="@drawable/icon"
+        app:layout_constraintBottom_toTopOf="@+id/Bplay"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -37,10 +37,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="slots"
-        android:textColor="#E1BEE7"
+        android:textColor="#CDDC39"
         android:textSize="45sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/domBplay"
+        app:layout_constraintBottom_toTopOf="@+id/Bplay"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView6" />
@@ -51,7 +51,7 @@
         android:layout_height="46dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="25dp"
-        android:src="@drawable/coin"
+        android:src="@drawable/money"
         app:layout_constraintBottom_toTopOf="@+id/imageView6"
         app:layout_constraintEnd_toStartOf="@+id/TVcoins"
         app:layout_constraintHorizontal_bias="0.0"
@@ -74,13 +74,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/domTVinfo"
+        android:id="@+id/TVinfo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginBottom="25dp"
         android:text="info"
-        android:textColor="#E1BEE7"
+        android:textColor="#CDDC39"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/imageView6"

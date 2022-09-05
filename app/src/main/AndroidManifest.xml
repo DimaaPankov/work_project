@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example">
+    package="com.template">
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/slots"
+        android:icon="@drawable/icon"
         android:label="slots"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar"
         android:usesCleartextTraffic="true">
         <activity
-            android:name="com.example.MainActivity"
+            android:name=".view.MainActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar"
             android:screenOrientation="portrait"
             android:exported="true">

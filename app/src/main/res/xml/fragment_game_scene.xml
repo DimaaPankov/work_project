@@ -49,155 +49,155 @@
                android:scaleX="1.0" />
 
            <KeyAttribute
-               motion:motionTarget="@+id/domTVslot11"
+               motion:motionTarget="@+id/TVslot11"
                motion:framePosition="5"
                android:scaleY="0.0" />
 
            <KeyAttribute
-               motion:motionTarget="@+id/domTVslot1"
+               motion:motionTarget="@+id/TVslot1"
                motion:framePosition="5"
                android:scaleY="0.0" />
 
            <KeyAttribute
-               motion:motionTarget="@+id/domTVslot1"
+               motion:motionTarget="@+id/TVslot1"
                motion:framePosition="10"
                android:scaleY="1.0" />
 
            <KeyAttribute
-               motion:motionTarget="@+id/domTVslot22"
+               motion:motionTarget="@+id/TVslot22"
                motion:framePosition="10"
                android:scaleY="1.0" />
            <KeyAttribute
-               motion:motionTarget="@+id/domTVslot22"
+               motion:motionTarget="@+id/TVslot22"
                motion:framePosition="15"
                android:scaleY="0.0" />
            <KeyAttribute
-               motion:motionTarget="@+id/domTVslot2"
+               motion:motionTarget="@+id/TVslot2"
                motion:framePosition="15"
                android:scaleY="0.0" />
 
            <KeyAttribute
-               motion:motionTarget="@+id/domTVslot2"
+               motion:motionTarget="@+id/TVslot2"
                motion:framePosition="20"
                android:scaleY="1.0" />
 
            <KeyAttribute
-               motion:motionTarget="@+id/domTVslot33"
+               motion:motionTarget="@+id/TVslot33"
                motion:framePosition="20"
                android:scaleY="1.0" />
            <KeyAttribute
-               motion:motionTarget="@+id/domTVslot33"
+               motion:motionTarget="@+id/TVslot33"
                motion:framePosition="25"
                android:scaleY="0.0" />
            <KeyAttribute
-               motion:motionTarget="@+id/domTVslot3"
+               motion:motionTarget="@+id/TVslot3"
                motion:framePosition="25"
                android:scaleY="0.0" />
            <KeyAttribute
-               motion:motionTarget="@+id/domTVslot3"
+               motion:motionTarget="@+id/TVslot3"
                motion:framePosition="30"
                android:scaleY="1.0" />
 
            <KeyAttribute
-               motion:motionTarget="@+id/domTVslot44"
+               motion:motionTarget="@+id/TVslot44"
                motion:framePosition="30"
                android:scaleY="1.0" />
            <KeyAttribute
-               motion:motionTarget="@+id/domTVslot44"
+               motion:motionTarget="@+id/TVslot44"
                motion:framePosition="35"
                android:scaleY="0.0" />
 
            <KeyAttribute
-               motion:motionTarget="@+id/domTVslot4"
+               motion:motionTarget="@+id/TVslot4"
                motion:framePosition="35"
                android:scaleY="0.0" />
            <KeyAttribute
-               motion:motionTarget="@+id/domTVslot4"
+               motion:motionTarget="@+id/TVslot4"
                motion:framePosition="40"
                android:scaleY="1.0" />
 
            <KeyAttribute
-               motion:motionTarget="@+id/domTVslot55"
+               motion:motionTarget="@+id/TVslot55"
                motion:framePosition="40"
                android:scaleY="1.0" />
            <KeyAttribute
-               motion:motionTarget="@+id/domTVslot55"
+               motion:motionTarget="@+id/TVslot55"
                motion:framePosition="45"
                android:scaleY="0" />
            <KeyAttribute
-               motion:motionTarget="@+id/domTVslot5"
+               motion:motionTarget="@+id/TVslot5"
                motion:framePosition="45"
                android:scaleY="0.0" />
            <KeyAttribute
-               motion:motionTarget="@+id/domTVslot5"
+               motion:motionTarget="@+id/TVslot5"
                motion:framePosition="50"
                android:scaleY="1" />
 
            <KeyAttribute
-               motion:motionTarget="@+id/domTVslot66"
+               motion:motionTarget="@+id/TVslot66"
                motion:framePosition="50"
                android:scaleY="1.0" />
            <KeyAttribute
-               motion:motionTarget="@+id/domTVslot66"
+               motion:motionTarget="@+id/TVslot66"
                motion:framePosition="55"
                android:scaleY="0.0" />
 
            <KeyAttribute
-               motion:motionTarget="@+id/domTVslot6"
+               motion:motionTarget="@+id/TVslot6"
                motion:framePosition="55"
                android:scaleY="0.0" />
            <KeyAttribute
-               motion:motionTarget="@+id/domTVslot6"
+               motion:motionTarget="@+id/TVslot6"
                motion:framePosition="60"
                android:scaleY="1.0" />
 
            <KeyAttribute
-               motion:motionTarget="@+id/domTVslot77"
+               motion:motionTarget="@+id/TVslot77"
                motion:framePosition="60"
                android:scaleY="1.0" />
            <KeyAttribute
-               motion:motionTarget="@+id/domTVslot77"
+               motion:motionTarget="@+id/TVslot77"
                motion:framePosition="65"
                android:scaleY="0.0" />
 
            <KeyAttribute
-               motion:motionTarget="@+id/domTVslot7"
+               motion:motionTarget="@+id/TVslot7"
                motion:framePosition="65"
                android:scaleY="0.0" />
            <KeyAttribute
-               motion:motionTarget="@+id/domTVslot7"
+               motion:motionTarget="@+id/TVslot7"
                motion:framePosition="70"
                android:scaleY="1.0" />
            <KeyAttribute
-               motion:motionTarget="@+id/domTVslot88"
+               motion:motionTarget="@+id/TVslot88"
                motion:framePosition="70"
                android:scaleY="1.0" />
            <KeyAttribute
-               motion:motionTarget="@+id/domTVslot88"
+               motion:motionTarget="@+id/TVslot88"
                motion:framePosition="75"
                android:scaleY="0.0" />
            <KeyAttribute
-               motion:motionTarget="@+id/domTVslot8"
+               motion:motionTarget="@+id/TVslot8"
                motion:framePosition="75"
                android:scaleY="0.0" />
            <KeyAttribute
-               motion:motionTarget="@+id/domTVslot8"
+               motion:motionTarget="@+id/TVslot8"
                motion:framePosition="80"
                android:scaleY="1.0" />
            <KeyAttribute
-               motion:motionTarget="@+id/domTVslot99"
+               motion:motionTarget="@+id/TVslot99"
                motion:framePosition="80"
                android:scaleY="1.0" />
            <KeyAttribute
-               motion:motionTarget="@+id/domTVslot99"
+               motion:motionTarget="@+id/TVslot99"
                motion:framePosition="85"
                android:scaleY="0.0" />
            <KeyAttribute
-               motion:motionTarget="@+id/domTVslot9"
+               motion:motionTarget="@+id/TVslot9"
                motion:framePosition="85"
                android:scaleY="0.0" />
            <KeyAttribute
-               motion:motionTarget="@+id/domTVslot9"
+               motion:motionTarget="@+id/TVslot9"
                motion:framePosition="90"
                android:scaleY="1.0" />
 
@@ -210,7 +210,7 @@
     <ConstraintSet android:id="@+id/start">
 
         <Constraint
-            android:id="@+id/domTVslot11"
+            android:id="@+id/TVslot11"
             android:layout_width="98dp"
             android:layout_height="98dp"
             android:background="#CDDC39"
@@ -219,15 +219,15 @@
             android:text="\?"
             android:textColor="#757575"
             android:textSize="40sp"
-            motion:layout_constraintBottom_toTopOf="@+id/domTVslot4"
-            motion:layout_constraintEnd_toStartOf="@+id/domTVslot2"
-            motion:layout_constraintStart_toStartOf="@+id/domframe"
-            motion:layout_constraintTop_toTopOf="@+id/domframe"></Constraint>
+            motion:layout_constraintBottom_toTopOf="@+id/TVslot4"
+            motion:layout_constraintEnd_toStartOf="@+id/TVslot2"
+            motion:layout_constraintStart_toStartOf="@+id/frame"
+            motion:layout_constraintTop_toTopOf="@+id/frame"></Constraint>
 
 
 
         <Constraint
-            android:id="@+id/domTVslot2"
+            android:id="@+id/TVslot2"
             android:layout_width="98dp"
             android:layout_height="98dp"
             android:background="#CDDC39"
@@ -236,13 +236,13 @@
             android:scaleY="0.0"
             android:textColor="#757575"
             android:textSize="40sp"
-            motion:layout_constraintBottom_toTopOf="@+id/domTVslot5"
-            motion:layout_constraintEnd_toEndOf="@+id/domframe"
-            motion:layout_constraintStart_toStartOf="@+id/domframe"
-            motion:layout_constraintTop_toTopOf="@+id/domframe" />
+            motion:layout_constraintBottom_toTopOf="@+id/TVslot5"
+            motion:layout_constraintEnd_toEndOf="@+id/frame"
+            motion:layout_constraintStart_toStartOf="@+id/frame"
+            motion:layout_constraintTop_toTopOf="@+id/frame" />
 
         <Constraint
-            android:id="@+id/domTVslot3"
+            android:id="@+id/TVslot3"
             android:layout_width="98dp"
             android:layout_height="98dp"
             android:background="#CDDC39"
@@ -251,14 +251,14 @@
             android:scaleY="0.0"
             android:textColor="@color/white"
             android:textSize="40sp"
-            motion:layout_constraintBottom_toTopOf="@+id/domTVslot6"
-            motion:layout_constraintEnd_toEndOf="@+id/domframe"
-            motion:layout_constraintStart_toEndOf="@+id/domTVslot2"
-            motion:layout_constraintTop_toTopOf="@+id/domframe" />
+            motion:layout_constraintBottom_toTopOf="@+id/TVslot6"
+            motion:layout_constraintEnd_toEndOf="@+id/frame"
+            motion:layout_constraintStart_toEndOf="@+id/TVslot2"
+            motion:layout_constraintTop_toTopOf="@+id/frame" />
 
 
         <Constraint
-            android:id="@+id/domTVslot5"
+            android:id="@+id/TVslot5"
             android:layout_width="98dp"
             android:layout_height="98dp"
             android:background="#CDDC39"
@@ -267,14 +267,14 @@
             android:text="🍓"
             android:textColor="#FFFFFF"
             android:textSize="40sp"
-            motion:layout_constraintBottom_toBottomOf="@+id/domframe"
-            motion:layout_constraintEnd_toEndOf="@+id/domframe"
-            motion:layout_constraintStart_toStartOf="@+id/domframe"
-            motion:layout_constraintTop_toTopOf="@+id/domframe" />
+            motion:layout_constraintBottom_toBottomOf="@+id/frame"
+            motion:layout_constraintEnd_toEndOf="@+id/frame"
+            motion:layout_constraintStart_toStartOf="@+id/frame"
+            motion:layout_constraintTop_toTopOf="@+id/frame" />
 
 
         <Constraint
-            android:id="@+id/domTVslot4"
+            android:id="@+id/TVslot4"
             android:layout_width="98dp"
             android:layout_height="98dp"
             android:scaleY="0.0"
@@ -283,15 +283,15 @@
             android:text="🍓"
             android:textColor="#FFFFFF"
             android:textSize="40sp"
-            motion:layout_constraintBottom_toBottomOf="@+id/domframe"
-            motion:layout_constraintEnd_toStartOf="@+id/domTVslot5"
-            motion:layout_constraintStart_toStartOf="@+id/domframe"
-            motion:layout_constraintTop_toTopOf="@+id/domframe" />
+            motion:layout_constraintBottom_toBottomOf="@+id/frame"
+            motion:layout_constraintEnd_toStartOf="@+id/TVslot5"
+            motion:layout_constraintStart_toStartOf="@+id/frame"
+            motion:layout_constraintTop_toTopOf="@+id/frame" />
 
 
 
         <Constraint
-            android:id="@+id/domTVslot6"
+            android:id="@+id/TVslot6"
             android:layout_width="98dp"
             android:layout_height="98dp"
             android:background="#CDDC39"
@@ -300,13 +300,13 @@
             android:text=" 🍌 "
             android:textColor="#757575"
             android:textSize="40sp"
-            motion:layout_constraintBottom_toBottomOf="@+id/domframe"
-            motion:layout_constraintEnd_toEndOf="@+id/domframe"
-            motion:layout_constraintStart_toEndOf="@+id/domTVslot5"
-            motion:layout_constraintTop_toTopOf="@+id/domframe" />
+            motion:layout_constraintBottom_toBottomOf="@+id/frame"
+            motion:layout_constraintEnd_toEndOf="@+id/frame"
+            motion:layout_constraintStart_toEndOf="@+id/TVslot5"
+            motion:layout_constraintTop_toTopOf="@+id/frame" />
 
         <Constraint
-            android:id="@+id/domTVslot7"
+            android:id="@+id/TVslot7"
             android:layout_width="98dp"
             android:layout_height="98dp"
             android:background="#CDDC39"
@@ -315,13 +315,13 @@
             android:scaleY="0.0"
             android:textColor="#757575"
             android:textSize="40sp"
-            motion:layout_constraintBottom_toBottomOf="@+id/domframe"
-            motion:layout_constraintEnd_toStartOf="@+id/domTVslot8"
-            motion:layout_constraintStart_toStartOf="@+id/domframe"
-            motion:layout_constraintTop_toBottomOf="@+id/domTVslot4" />
+            motion:layout_constraintBottom_toBottomOf="@+id/frame"
+            motion:layout_constraintEnd_toStartOf="@+id/TVslot8"
+            motion:layout_constraintStart_toStartOf="@+id/frame"
+            motion:layout_constraintTop_toBottomOf="@+id/TVslot4" />
 
         <Constraint
-            android:id="@+id/domTVslot9"
+            android:id="@+id/TVslot9"
             android:layout_width="98dp"
             android:layout_height="98dp"
             android:background="#CDDC39"
@@ -330,16 +330,16 @@
             android:scaleY="0.0"
             android:textColor="#757575"
             android:textSize="40sp"
-            motion:layout_constraintBottom_toBottomOf="@+id/domframe"
-            motion:layout_constraintEnd_toEndOf="@+id/domframe"
-            motion:layout_constraintStart_toEndOf="@+id/domTVslot8"
-            motion:layout_constraintTop_toBottomOf="@+id/domTVslot6" />
+            motion:layout_constraintBottom_toBottomOf="@+id/frame"
+            motion:layout_constraintEnd_toEndOf="@+id/frame"
+            motion:layout_constraintStart_toEndOf="@+id/TVslot8"
+            motion:layout_constraintTop_toBottomOf="@+id/TVslot6" />
 
 
 
 
         <Constraint
-            android:id="@+id/domTVslot8"
+            android:id="@+id/TVslot8"
             android:layout_width="98dp"
             android:layout_height="98dp"
             android:background="#CDDC39"
@@ -348,16 +348,16 @@
             android:scaleY="0.0"
             android:textColor="#757575"
             android:textSize="40sp"
-            motion:layout_constraintBottom_toBottomOf="@+id/domframe"
-            motion:layout_constraintEnd_toEndOf="@+id/domframe"
-            motion:layout_constraintStart_toStartOf="@+id/domframe"
-            motion:layout_constraintTop_toBottomOf="@+id/domTVslot5" />
+            motion:layout_constraintBottom_toBottomOf="@+id/frame"
+            motion:layout_constraintEnd_toEndOf="@+id/frame"
+            motion:layout_constraintStart_toStartOf="@+id/frame"
+            motion:layout_constraintTop_toBottomOf="@+id/TVslot5" />
 
     </ConstraintSet>
 
     <ConstraintSet android:id="@+id/End">
     <Constraint
-        android:id="@+id/domTVslot55"
+        android:id="@+id/TVslot55"
         android:layout_width="98dp"
         android:layout_height="98dp"
         android:background="#CDDC39"
@@ -365,13 +365,13 @@
         android:scaleY="0"
         android:textColor="#FFFFFF"
         android:textSize="40sp"
-        motion:layout_constraintBottom_toBottomOf="@+id/domframe"
-        motion:layout_constraintEnd_toEndOf="@+id/domframe"
-        motion:layout_constraintStart_toStartOf="@+id/domframe"
-        motion:layout_constraintTop_toTopOf="@+id/domframe" />
+        motion:layout_constraintBottom_toBottomOf="@+id/frame"
+        motion:layout_constraintEnd_toEndOf="@+id/frame"
+        motion:layout_constraintStart_toStartOf="@+id/frame"
+        motion:layout_constraintTop_toTopOf="@+id/frame" />
 
         <Constraint
-            android:id="@+id/domTVslot5"
+            android:id="@+id/TVslot5"
             android:layout_width="98dp"
             android:layout_height="98dp"
             android:background="#CDDC39"
@@ -379,13 +379,13 @@
             android:scaleY="1"
             android:textColor="#FFFFFF"
             android:textSize="40sp"
-            motion:layout_constraintBottom_toBottomOf="@+id/domframe"
-            motion:layout_constraintEnd_toEndOf="@+id/domframe"
-            motion:layout_constraintStart_toStartOf="@+id/domframe"
-            motion:layout_constraintTop_toTopOf="@+id/domframe" />
+            motion:layout_constraintBottom_toBottomOf="@+id/frame"
+            motion:layout_constraintEnd_toEndOf="@+id/frame"
+            motion:layout_constraintStart_toStartOf="@+id/frame"
+            motion:layout_constraintTop_toTopOf="@+id/frame" />
 
     <Constraint
-        android:id="@+id/domTVslot44"
+        android:id="@+id/TVslot44"
         android:layout_width="98dp"
         android:layout_height="98dp"
         android:background="#CDDC39"
@@ -393,13 +393,13 @@
         android:scaleY="0"
         android:textColor="#FFFFFF"
         android:textSize="40sp"
-        motion:layout_constraintBottom_toBottomOf="@+id/domframe"
-        motion:layout_constraintEnd_toStartOf="@+id/domTVslot5"
-        motion:layout_constraintStart_toStartOf="@+id/domframe"
-        motion:layout_constraintTop_toTopOf="@+id/domframe" />
+        motion:layout_constraintBottom_toBottomOf="@+id/frame"
+        motion:layout_constraintEnd_toStartOf="@+id/TVslot5"
+        motion:layout_constraintStart_toStartOf="@+id/frame"
+        motion:layout_constraintTop_toTopOf="@+id/frame" />
 
         <Constraint
-            android:id="@+id/domTVslot4"
+            android:id="@+id/TVslot4"
             android:layout_width="98dp"
             android:layout_height="98dp"
             android:background="#CDDC39"
@@ -407,13 +407,13 @@
             android:scaleY="1"
             android:textColor="#FFFFFF"
             android:textSize="40sp"
-            motion:layout_constraintBottom_toBottomOf="@+id/domframe"
-            motion:layout_constraintEnd_toStartOf="@+id/domTVslot5"
-            motion:layout_constraintStart_toStartOf="@+id/domframe"
-            motion:layout_constraintTop_toTopOf="@+id/domframe" />
+            motion:layout_constraintBottom_toBottomOf="@+id/frame"
+            motion:layout_constraintEnd_toStartOf="@+id/TVslot5"
+            motion:layout_constraintStart_toStartOf="@+id/frame"
+            motion:layout_constraintTop_toTopOf="@+id/frame" />
 
     <Constraint
-        android:id="@+id/domTVslot33"
+        android:id="@+id/TVslot33"
         android:layout_width="98dp"
         android:layout_height="98dp"
         android:background="#CDDC39"
@@ -421,13 +421,13 @@
         android:textColor="@color/white"
         android:textSize="40sp"
         android:scaleY="0"
-        motion:layout_constraintBottom_toTopOf="@+id/domTVslot6"
-        motion:layout_constraintEnd_toEndOf="@+id/domframe"
-        motion:layout_constraintStart_toEndOf="@+id/domTVslot2"
-        motion:layout_constraintTop_toTopOf="@+id/domframe" />
+        motion:layout_constraintBottom_toTopOf="@+id/TVslot6"
+        motion:layout_constraintEnd_toEndOf="@+id/frame"
+        motion:layout_constraintStart_toEndOf="@+id/TVslot2"
+        motion:layout_constraintTop_toTopOf="@+id/frame" />
 
         <Constraint
-            android:id="@+id/domTVslot3"
+            android:id="@+id/TVslot3"
             android:layout_width="98dp"
             android:layout_height="98dp"
             android:background="#CDDC39"
@@ -435,13 +435,13 @@
             android:textColor="@color/white"
             android:textSize="40sp"
             android:scaleY="1"
-            motion:layout_constraintBottom_toTopOf="@+id/domTVslot6"
-            motion:layout_constraintEnd_toEndOf="@+id/domframe"
-            motion:layout_constraintStart_toEndOf="@+id/domTVslot2"
-            motion:layout_constraintTop_toTopOf="@+id/domframe" />
+            motion:layout_constraintBottom_toTopOf="@+id/TVslot6"
+            motion:layout_constraintEnd_toEndOf="@+id/frame"
+            motion:layout_constraintStart_toEndOf="@+id/TVslot2"
+            motion:layout_constraintTop_toTopOf="@+id/frame" />
 
     <Constraint
-        android:id="@+id/domTVslot6"
+        android:id="@+id/TVslot6"
         android:layout_width="98dp"
         android:layout_height="98dp"
         android:background="#CDDC39"
@@ -450,13 +450,13 @@
         android:scaleY="1"
         android:textColor="#757575"
         android:textSize="40sp"
-        motion:layout_constraintBottom_toBottomOf="@+id/domframe"
-        motion:layout_constraintEnd_toEndOf="@+id/domframe"
-        motion:layout_constraintStart_toEndOf="@+id/domTVslot5"
-        motion:layout_constraintTop_toTopOf="@+id/domframe" />
+        motion:layout_constraintBottom_toBottomOf="@+id/frame"
+        motion:layout_constraintEnd_toEndOf="@+id/frame"
+        motion:layout_constraintStart_toEndOf="@+id/TVslot5"
+        motion:layout_constraintTop_toTopOf="@+id/frame" />
 
     <Constraint
-        android:id="@+id/domTVslot77"
+        android:id="@+id/TVslot77"
         android:layout_width="98dp"
         android:layout_height="98dp"
         android:background="#CDDC39"
@@ -464,13 +464,13 @@
         android:scaleY="0"
         android:textColor="#757575"
         android:textSize="40sp"
-        motion:layout_constraintBottom_toBottomOf="@+id/domframe"
-        motion:layout_constraintEnd_toStartOf="@+id/domTVslot8"
-        motion:layout_constraintStart_toStartOf="@+id/domframe"
-        motion:layout_constraintTop_toBottomOf="@+id/domTVslot4" />
+        motion:layout_constraintBottom_toBottomOf="@+id/frame"
+        motion:layout_constraintEnd_toStartOf="@+id/TVslot8"
+        motion:layout_constraintStart_toStartOf="@+id/frame"
+        motion:layout_constraintTop_toBottomOf="@+id/TVslot4" />
 
         <Constraint
-            android:id="@+id/domTVslot7"
+            android:id="@+id/TVslot7"
             android:layout_width="98dp"
             android:layout_height="98dp"
             android:background="#CDDC39"
@@ -478,13 +478,13 @@
             android:scaleY="1"
             android:textColor="#757575"
             android:textSize="40sp"
-            motion:layout_constraintBottom_toBottomOf="@+id/domframe"
-            motion:layout_constraintEnd_toStartOf="@+id/domTVslot8"
-            motion:layout_constraintStart_toStartOf="@+id/domframe"
-            motion:layout_constraintTop_toBottomOf="@+id/domTVslot4" />
+            motion:layout_constraintBottom_toBottomOf="@+id/frame"
+            motion:layout_constraintEnd_toStartOf="@+id/TVslot8"
+            motion:layout_constraintStart_toStartOf="@+id/frame"
+            motion:layout_constraintTop_toBottomOf="@+id/TVslot4" />
 
     <Constraint
-        android:id="@+id/domTVslot99"
+        android:id="@+id/TVslot99"
         android:layout_width="98dp"
         android:layout_height="98dp"
         android:background="#CDDC39"
@@ -492,13 +492,13 @@
         android:scaleY="0"
         android:textColor="#757575"
         android:textSize="40sp"
-        motion:layout_constraintBottom_toBottomOf="@+id/domframe"
-        motion:layout_constraintEnd_toEndOf="@+id/domframe"
-        motion:layout_constraintStart_toEndOf="@+id/domTVslot8"
-        motion:layout_constraintTop_toBottomOf="@+id/domTVslot6" />
+        motion:layout_constraintBottom_toBottomOf="@+id/frame"
+        motion:layout_constraintEnd_toEndOf="@+id/frame"
+        motion:layout_constraintStart_toEndOf="@+id/TVslot8"
+        motion:layout_constraintTop_toBottomOf="@+id/TVslot6" />
 
         <Constraint
-            android:id="@+id/domTVslot9"
+            android:id="@+id/TVslot9"
             android:layout_width="98dp"
             android:layout_height="98dp"
             android:background="#CDDC39"
@@ -506,13 +506,13 @@
             android:scaleY="1"
             android:textColor="#757575"
             android:textSize="40sp"
-            motion:layout_constraintBottom_toBottomOf="@+id/domframe"
-            motion:layout_constraintEnd_toEndOf="@+id/domframe"
-            motion:layout_constraintStart_toEndOf="@+id/domTVslot8"
-            motion:layout_constraintTop_toBottomOf="@+id/domTVslot6" />
+            motion:layout_constraintBottom_toBottomOf="@+id/frame"
+            motion:layout_constraintEnd_toEndOf="@+id/frame"
+            motion:layout_constraintStart_toEndOf="@+id/TVslot8"
+            motion:layout_constraintTop_toBottomOf="@+id/TVslot6" />
 
     <Constraint
-        android:id="@+id/domTVslot22"
+        android:id="@+id/TVslot22"
         android:layout_width="98dp"
         android:layout_height="98dp"
         android:background="#CDDC39"
@@ -520,13 +520,13 @@
         android:scaleY="0"
         android:textColor="#757575"
         android:textSize="40sp"
-        motion:layout_constraintBottom_toTopOf="@+id/domTVslot5"
-        motion:layout_constraintEnd_toEndOf="@+id/domframe"
-        motion:layout_constraintStart_toStartOf="@+id/domframe"
-        motion:layout_constraintTop_toTopOf="@+id/domframe" />
+        motion:layout_constraintBottom_toTopOf="@+id/TVslot5"
+        motion:layout_constraintEnd_toEndOf="@+id/frame"
+        motion:layout_constraintStart_toStartOf="@+id/frame"
+        motion:layout_constraintTop_toTopOf="@+id/frame" />
 
         <Constraint
-            android:id="@+id/domTVslot2"
+            android:id="@+id/TVslot2"
             android:layout_width="98dp"
             android:layout_height="98dp"
             android:background="#CDDC39"
@@ -534,14 +534,14 @@
             android:scaleY="1"
             android:textColor="#757575"
             android:textSize="40sp"
-            motion:layout_constraintBottom_toTopOf="@+id/domTVslot5"
-            motion:layout_constraintEnd_toEndOf="@+id/domframe"
-            motion:layout_constraintStart_toStartOf="@+id/domframe"
-            motion:layout_constraintTop_toTopOf="@+id/domframe" />
+            motion:layout_constraintBottom_toTopOf="@+id/TVslot5"
+            motion:layout_constraintEnd_toEndOf="@+id/frame"
+            motion:layout_constraintStart_toStartOf="@+id/frame"
+            motion:layout_constraintTop_toTopOf="@+id/frame" />
 
 
     <Constraint
-        android:id="@+id/domTVslot88"
+        android:id="@+id/TVslot88"
         android:layout_width="98dp"
         android:layout_height="98dp"
         android:background="#CDDC39"
@@ -549,13 +549,13 @@
         android:scaleY="0"
         android:textColor="#757575"
         android:textSize="40sp"
-        motion:layout_constraintBottom_toBottomOf="@+id/domframe"
-        motion:layout_constraintEnd_toEndOf="@+id/domframe"
-        motion:layout_constraintStart_toStartOf="@+id/domframe"
-        motion:layout_constraintTop_toBottomOf="@+id/domTVslot5" />
+        motion:layout_constraintBottom_toBottomOf="@+id/frame"
+        motion:layout_constraintEnd_toEndOf="@+id/frame"
+        motion:layout_constraintStart_toStartOf="@+id/frame"
+        motion:layout_constraintTop_toBottomOf="@+id/TVslot5" />
 
         <Constraint
-            android:id="@+id/domTVslot8"
+            android:id="@+id/TVslot8"
             android:layout_width="98dp"
             android:layout_height="98dp"
             android:background="#CDDC39"
@@ -563,13 +563,13 @@
             android:scaleY="1"
             android:textColor="#757575"
             android:textSize="40sp"
-            motion:layout_constraintBottom_toBottomOf="@+id/domframe"
-            motion:layout_constraintEnd_toEndOf="@+id/domframe"
-            motion:layout_constraintStart_toStartOf="@+id/domframe"
-            motion:layout_constraintTop_toBottomOf="@+id/domTVslot5" />
+            motion:layout_constraintBottom_toBottomOf="@+id/frame"
+            motion:layout_constraintEnd_toEndOf="@+id/frame"
+            motion:layout_constraintStart_toStartOf="@+id/frame"
+            motion:layout_constraintTop_toBottomOf="@+id/TVslot5" />
 
         <Constraint
-            android:id="@+id/domTVslot11"
+            android:id="@+id/TVslot11"
             android:layout_width="98dp"
             android:layout_height="98dp"
             android:background="#CDDC39"
@@ -577,13 +577,13 @@
             android:scaleY="0"
             android:textColor="#757575"
             android:textSize="40sp"
-            motion:layout_constraintBottom_toTopOf="@+id/domTVslot4"
-            motion:layout_constraintEnd_toStartOf="@+id/domTVslot2"
-            motion:layout_constraintStart_toStartOf="@+id/domframe"
-            motion:layout_constraintTop_toTopOf="@+id/domframe"/>
+            motion:layout_constraintBottom_toTopOf="@+id/TVslot4"
+            motion:layout_constraintEnd_toStartOf="@+id/TVslot2"
+            motion:layout_constraintStart_toStartOf="@+id/frame"
+            motion:layout_constraintTop_toTopOf="@+id/frame"/>
 
         <Constraint
-            android:id="@+id/domTVslot1"
+            android:id="@+id/TVslot1"
             android:layout_width="98dp"
             android:layout_height="98dp"
             android:background="#CDDC39"
@@ -592,13 +592,13 @@
             android:scaleY="1"
             android:textColor="#757575"
             android:textSize="40sp"
-            motion:layout_constraintBottom_toTopOf="@+id/domTVslot4"
-            motion:layout_constraintEnd_toStartOf="@+id/domTVslot2"
-            motion:layout_constraintStart_toStartOf="@+id/domframe"
-            motion:layout_constraintTop_toTopOf="@+id/domframe"/>
+            motion:layout_constraintBottom_toTopOf="@+id/TVslot4"
+            motion:layout_constraintEnd_toStartOf="@+id/TVslot2"
+            motion:layout_constraintStart_toStartOf="@+id/frame"
+            motion:layout_constraintTop_toTopOf="@+id/frame"/>
 
         <Constraint
-            android:id="@+id/domTVslot66"
+            android:id="@+id/TVslot66"
             android:layout_width="98dp"
             android:layout_height="98dp"
             android:background="#CDDC39"
@@ -606,14 +606,14 @@
             android:scaleY="0"
             android:textColor="#757575"
             android:textSize="40sp"
-            motion:layout_constraintBottom_toBottomOf="@+id/domframe"
-            motion:layout_constraintEnd_toEndOf="@+id/domframe"
-            motion:layout_constraintStart_toEndOf="@+id/domTVslot5"
-            motion:layout_constraintTop_toTopOf="@+id/domframe"
+            motion:layout_constraintBottom_toBottomOf="@+id/frame"
+            motion:layout_constraintEnd_toEndOf="@+id/frame"
+            motion:layout_constraintStart_toEndOf="@+id/TVslot5"
+            motion:layout_constraintTop_toTopOf="@+id/frame"
             ></Constraint>
 
         <Constraint
-            android:id="@+id/domTVslot6"
+            android:id="@+id/TVslot6"
             android:layout_width="98dp"
             android:layout_height="98dp"
             android:background="#CDDC39"
@@ -621,10 +621,10 @@
             android:scaleY="1"
             android:textColor="#757575"
             android:textSize="40sp"
-            motion:layout_constraintBottom_toBottomOf="@+id/domframe"
-            motion:layout_constraintEnd_toEndOf="@+id/domframe"
-            motion:layout_constraintStart_toEndOf="@+id/domTVslot5"
-            motion:layout_constraintTop_toTopOf="@+id/domframe"
+            motion:layout_constraintBottom_toBottomOf="@+id/frame"
+            motion:layout_constraintEnd_toEndOf="@+id/frame"
+            motion:layout_constraintStart_toEndOf="@+id/TVslot5"
+            motion:layout_constraintTop_toTopOf="@+id/frame"
             ></Constraint>
 
     </ConstraintSet>

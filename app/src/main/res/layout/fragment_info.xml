@@ -6,38 +6,38 @@
     android:layout_height="match_parent"
     android:layout_gravity="center_horizontal"
     android:background="#252525"
-    tools:context=".ohoilhiuhui">
+    tools:context=".view.InfoFragment">
 
     <TextView
-        android:id="@+id/domTVtextBanan3"
+        android:id="@+id/TVtextBanan3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="1x"
-        android:textColor="#E1BEE7"
+        android:textColor="#CDDC39"
         android:textSize="50sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/domTVbanan2"
+        app:layout_constraintBottom_toBottomOf="@+id/TVbanan2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toEndOf="@+id/domTVbanan"
-        app:layout_constraintTop_toTopOf="@+id/domTVbanan2" />
+        app:layout_constraintStart_toEndOf="@+id/TVbanan"
+        app:layout_constraintTop_toTopOf="@+id/TVbanan2" />
 
     <TextView
-        android:id="@+id/domTVtextBanan2"
+        android:id="@+id/TVtextBanan2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="2x"
-        android:textColor="#E1BEE7"
+        android:textColor="#CDDC39"
         android:textSize="50sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/domTVbanan"
+        app:layout_constraintBottom_toBottomOf="@+id/TVbanan"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toEndOf="@+id/domTVbanan"
-        app:layout_constraintTop_toTopOf="@+id/domTVbanan" />
+        app:layout_constraintStart_toEndOf="@+id/TVbanan"
+        app:layout_constraintTop_toTopOf="@+id/TVbanan" />
 
     <TextView
-        android:id="@+id/domTVbanan2"
+        android:id="@+id/TVbanan2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
@@ -47,24 +47,24 @@
         android:textSize="60sp"
         android:textStyle="bold"
         android:visibility="visible"
-        app:layout_constraintBottom_toTopOf="@+id/domTVbanan"
+        app:layout_constraintBottom_toTopOf="@+id/TVbanan"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/domTVtextSub2"
+        android:id="@+id/TVtextSub2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="10x"
-        android:textColor="#E1BEE7"
+        android:textColor="#CDDC39"
         android:textSize="50sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/domTVfr"
-        app:layout_constraintEnd_toEndOf="@+id/domTVtextSub"
-        app:layout_constraintStart_toStartOf="@+id/domTVtextSub"
-        app:layout_constraintTop_toBottomOf="@+id/domTVSub" />
+        app:layout_constraintBottom_toBottomOf="@+id/TVfr"
+        app:layout_constraintEnd_toEndOf="@+id/TVtextSub"
+        app:layout_constraintStart_toStartOf="@+id/TVtextSub"
+        app:layout_constraintTop_toBottomOf="@+id/TVSub" />
 
     <TextView
-        android:id="@+id/domTVSub"
+        android:id="@+id/TVSub"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
@@ -75,23 +75,23 @@
         android:textStyle="bold"
         android:visibility="visible"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/domTVlimon" />
+        app:layout_constraintTop_toBottomOf="@+id/TVlimon" />
 
     <TextView
-        android:id="@+id/domTVtextSub"
+        android:id="@+id/TVtextSub"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="5x"
-        android:textColor="#E1BEE7"
+        android:textColor="#CDDC39"
         android:textSize="50sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/domTVSub"
+        app:layout_constraintBottom_toBottomOf="@+id/TVSub"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/domTVSub"
-        app:layout_constraintTop_toTopOf="@+id/domTVSub" />
+        app:layout_constraintStart_toEndOf="@+id/TVSub"
+        app:layout_constraintTop_toTopOf="@+id/TVSub" />
 
     <TextView
-        android:id="@+id/domTVlimon"
+        android:id="@+id/TVlimon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
@@ -104,21 +104,21 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/domTVtextLimon"
+        android:id="@+id/TVtextLimon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="3x"
-        android:textColor="#E1BEE7"
+        android:textColor="#CDDC39"
         android:textSize="50sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/domTVlimon"
-        app:layout_constraintEnd_toEndOf="@+id/domTVtextBanan2"
-        app:layout_constraintStart_toStartOf="@+id/domTVtextBanan2"
-        app:layout_constraintTop_toTopOf="@+id/domTVlimon"
+        app:layout_constraintBottom_toBottomOf="@+id/TVlimon"
+        app:layout_constraintEnd_toEndOf="@+id/TVtextBanan2"
+        app:layout_constraintStart_toStartOf="@+id/TVtextBanan2"
+        app:layout_constraintTop_toTopOf="@+id/TVlimon"
         app:layout_constraintVertical_bias="0.793" />
 
     <TextView
-        android:id="@+id/domTVbanan"
+        android:id="@+id/TVbanan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
@@ -128,27 +128,27 @@
         android:textSize="60sp"
         android:textStyle="bold"
         android:visibility="visible"
-        app:layout_constraintBottom_toTopOf="@+id/domTVlimon"
+        app:layout_constraintBottom_toTopOf="@+id/TVlimon"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/domtextView5"
+        android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="wining"
-        android:textColor="#E1BEE7"
+        android:textColor="#CDDC39"
         android:textSize="50sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/domTVbanan2"
+        app:layout_constraintBottom_toTopOf="@+id/TVbanan2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/domBok"
+        android:id="@+id/Bok"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="#E1BEE7"
+        android:backgroundTint="#CDDC39"
         android:text="ok"
         android:textColor="#3F4311"
         android:textSize="30sp"
@@ -156,10 +156,10 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/domTVfr" />
+        app:layout_constraintTop_toBottomOf="@+id/TVfr" />
 
     <TextView
-        android:id="@+id/domTVfr"
+        android:id="@+id/TVfr"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -168,7 +168,7 @@
         android:textSize="60sp"
         android:textStyle="bold"
         android:visibility="visible"
-        app:layout_constraintEnd_toEndOf="@+id/domTVSub"
-        app:layout_constraintStart_toStartOf="@+id/domTVSub"
-        app:layout_constraintTop_toBottomOf="@+id/domTVSub" />
+        app:layout_constraintEnd_toEndOf="@+id/TVSub"
+        app:layout_constraintStart_toStartOf="@+id/TVSub"
+        app:layout_constraintTop_toBottomOf="@+id/TVSub" />
 </androidx.constraintlayout.widget.ConstraintLayout>

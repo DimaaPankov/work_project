@@ -1,17 +1,20 @@
-package com.example.view
+package com.template.view
 
-import com.example.ceikweihewohoe
-
-
-object vwi9wovd : ceikweihewohoe {
-
-    private var ew9uvwuyrv = true
-    private val ewcu9weuc = mutableListOf("","","","","","","","","")
-    private var cwuioiioiup98u:Int = 5
-    private var ciuew09uw90e9cw:Int = 1000
+import com.template.mainpresenter.DataApi
 
 
-    var iwcuve90vwue90 = listOf(
+
+object Model: DataApi {
+    private var minus = true
+    private var betCountXXX = 0
+    private var winCount = 0
+    private var winLine = booleanArrayOf(false,false,false)
+    private val listSlots = mutableListOf<String>("","","","","","","","","")
+    private var BET:Int = 5
+    private var MAINcount:Int = 1000
+
+
+    var slots = listOf(
         //26% 🍒
         "\uD83C\uDF52","\uD83C\uDF52","\uD83C\uDF52","\uD83C\uDF52","\uD83C\uDF52",
         "\uD83C\uDF52","\uD83C\uDF52","\uD83C\uDF52","\uD83C\uDF52","\uD83C\uDF52",
@@ -31,32 +34,32 @@ object vwi9wovd : ceikweihewohoe {
     )
 
 
-    override fun ewcweuc0owepu0ocew(bet: Int, minusOrPlus: Boolean) = if(minusOrPlus) ciuew09uw90e9cw += bet
-    else ciuew09uw90e9cw -= bet
+    override fun setMainCount( bet: Int, minusOrPlus: Boolean) = if(minusOrPlus) MAINcount += bet
+    else MAINcount -= bet
 
-    override fun ec0uwe90wev(int: Int) {
-        ciuew09uw90e9cw = int
+    override fun setMainCount(int: Int) {
+        MAINcount = int
     }
 
-    override fun ewcohewivujwe9irvyu98wreyuv() = ciuew09uw90e9cw
+    override fun getMainCount() = MAINcount
 
 
-    override fun ewowjw(string: String) {
-       cwuioiioiup98u = string.toInt()
+    override fun setBet(string: String) {
+       BET = string.toInt()
     }
 
-    override fun ckwewcoci90u90(i: Int) {
-        cwuioiioiup98u = i
+    override fun setBet(i: Int) {
+        BET = i
     }
 
 
-    override fun cjwe90uwc(): Int = cwuioiioiup98u
-    override fun cwj9wevju90wve8tdhggh() {
+    override fun getBet(): Int = BET
+    override fun setSlot() {
         for(i in 0..8)
-        ewcu9weuc[i] = iwcuve90vwue90.random()
+        listSlots[i] = slots.random()
     }
 
-    override fun whev89ihw980av() = ewcu9weuc
+    override fun getSlot() = listSlots
 
 }
 

@@ -1,4 +1,86 @@
-<?xml version="1.0" encoding="utf-8"?>
+package com.template.view
+
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import androidx.navigation.NavController
+import androidx.navigation.Navigation
+import com.template.R
+
+class MainActivity : AppCompatActivity() {
+
+    lateinit var navController:NavController
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+        navController = Navigation.findNavController(this, R.id.nav_host_fragment)
+    }
+}
+/*                        CLASS
+
+class BetFragment : Fragment(), BetViewApi {
+
+    lateinit var binding:FragmentBentBinding
+    val presnter = BetPresnter(Model)
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        binding = FragmentBentBinding.inflate(layoutInflater)
+        presnter.init(this)
+        }
+
+        override fun onCreateView(
+            inflater: LayoutInflater, container: ViewGroup?,
+            savedInstanceState: Bundle?
+        ): View? {
+            return binding.root
+        }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        presnter.distroy()
+    }
+    override fun clickListner() {
+        binding.Button0.setOnClickListener {
+            presnter.click0()
+            }
+
+        binding.Button1.setOnClickListener {
+        presnter.click1()
+        }
+        binding.Button2.setOnClickListener {
+        presnter.click2()
+        }
+        binding.Button3.setOnClickListener {
+            presnter.click3()
+        }
+        binding.Button4.setOnClickListener {
+            presnter.click4()
+        }
+        binding.Button5.setOnClickListener {
+            presnter.click5()
+        }
+        binding.Button6.setOnClickListener {
+            presnter.click6()
+        }
+        binding.Button7.setOnClickListener {
+            presnter.click7()
+        }
+        binding.Button8.setOnClickListener {
+            presnter.click8()
+        }
+        binding.Button9.setOnClickListener {
+            presnter.click9()
+        }
+        binding.ButtonEquals.setOnClickListener {
+            presnter.clickEquels()
+            (requireActivity() as MainActivity).navController.navigate(R.id.action_bentFragment_to_gameFragment)
+
+    }
+}}
+
+                                               ACTIVITY
+
+
 <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -164,4 +246,5 @@
         </TableRow>
     </TableLayout>
 
-</androidx.appcompat.widget.LinearLayoutCompat>
+
+ */

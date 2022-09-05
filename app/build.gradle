@@ -12,7 +12,7 @@ android {
         enabled = true
     }
     defaultConfig {
-        applicationId "com.template.slots"
+        applicationId "com.com.template.slots"
         minSdk 21
         targetSdk 31
         versionCode 1

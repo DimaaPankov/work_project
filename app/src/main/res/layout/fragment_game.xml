@@ -7,7 +7,7 @@
     android:background="#252525"
     android:id="@+id/Mlayout"
     app:layoutDescription="@xml/fragment_game_scene"
-    tools:context=".jdjdjoasoaFragment">
+    tools:context=".view.GameFragment">
 
     <Button
         android:id="@+id/Bspin"
@@ -16,19 +16,19 @@
         android:textColor="#FBFBFB"
         android:textSize="30sp"
         android:textStyle="bold"
-        android:backgroundTint="#E1BEE7"
+        android:backgroundTint="#F84437"
         android:text="spin"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/domframe" />
+        app:layout_constraintTop_toBottomOf="@+id/frame" />
 
     <FrameLayout
-        android:id="@+id/domframe"
+        android:id="@+id/frame"
         android:layout_width="340dp"
         android:layout_height="340dp"
-        android:background="#757575"
+        android:background="#4F5050"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -37,273 +37,274 @@
     </FrameLayout>
 
     <TextView
-        android:id="@+id/domTVslot5"
+        android:id="@+id/TVslot5"
         android:layout_width="98dp"
         android:layout_height="98dp"
-        android:background="#E1BEE7"
+        android:background="#CDDC39"
         android:gravity="center"
         android:text="🍓"
         android:textColor="#757575"
         android:textSize="40sp"
-        app:layout_constraintBottom_toBottomOf="@+id/domframe"
-        app:layout_constraintEnd_toEndOf="@+id/domframe"
-        app:layout_constraintStart_toStartOf="@+id/domframe"
-        app:layout_constraintTop_toTopOf="@+id/domframe" />
+        app:layout_constraintBottom_toBottomOf="@+id/frame"
+        app:layout_constraintEnd_toEndOf="@+id/frame"
+        app:layout_constraintStart_toStartOf="@+id/frame"
+        app:layout_constraintTop_toTopOf="@+id/frame" />
 
     <TextView
-        android:id="@+id/domTVslot55"
+        android:id="@+id/TVslot55"
         android:layout_width="98dp"
         android:layout_height="98dp"
-        android:background="#E1BEE7"
+        android:background="#2196F3"
         android:gravity="center"
         android:text="\$"
-        android:textColor="#37474F"
+        android:textColor="#757575"
         android:textSize="50sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/domframe"
-        app:layout_constraintEnd_toEndOf="@+id/domframe"
-        app:layout_constraintStart_toStartOf="@+id/domframe"
-        app:layout_constraintTop_toTopOf="@+id/domframe" />
+        app:layout_constraintBottom_toBottomOf="@+id/frame"
+        app:layout_constraintEnd_toEndOf="@+id/frame"
+        app:layout_constraintStart_toStartOf="@+id/frame"
+        app:layout_constraintTop_toTopOf="@+id/frame" />
 
 
 
     <TextView
-        android:id="@+id/domTVslot4"
+        android:id="@+id/TVslot4"
         android:layout_width="98dp"
         android:layout_height="98dp"
-        android:background="#E1BEE7"
+        android:background="#CDDC39"
         android:gravity="center"
         android:text="🍓"
         android:textColor="#757575"
         android:textSize="40sp"
-        app:layout_constraintBottom_toBottomOf="@+id/domframe"
-        app:layout_constraintEnd_toStartOf="@+id/domTVslot5"
-        app:layout_constraintStart_toStartOf="@+id/domframe"
-        app:layout_constraintTop_toTopOf="@+id/domframe" />
+        app:layout_constraintBottom_toBottomOf="@+id/frame"
+        app:layout_constraintEnd_toStartOf="@+id/TVslot5"
+        app:layout_constraintStart_toStartOf="@+id/frame"
+        app:layout_constraintTop_toTopOf="@+id/frame" />
 
     <TextView
-        android:id="@+id/domTVslot44"
+        android:id="@+id/TVslot44"
         android:layout_width="98dp"
         android:layout_height="98dp"
-        android:background="#E1BEE7"
+        android:background="#2196F3"
         android:gravity="center"
         android:scaleY="1"
         android:text="\$"
-        android:textColor="#37474F"
+        android:textColor="#757575"
         android:textSize="50sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/domframe"
-        app:layout_constraintEnd_toStartOf="@+id/domTVslot5"
-        app:layout_constraintStart_toStartOf="@+id/domframe"
-        app:layout_constraintTop_toTopOf="@+id/domframe" />
+        app:layout_constraintBottom_toBottomOf="@+id/frame"
+        app:layout_constraintEnd_toStartOf="@+id/TVslot5"
+        app:layout_constraintStart_toStartOf="@+id/frame"
+        app:layout_constraintTop_toTopOf="@+id/frame" />
 
     <TextView
-        android:id="@+id/domTVslot3"
+        android:id="@+id/TVslot3"
         android:layout_width="98dp"
         android:layout_height="98dp"
-        android:background="#E1BEE7"
+        android:background="#CDDC39"
         android:gravity="center"
         android:text=" 🍌 "
         android:textColor="#757575"
         android:textSize="40sp"
-        app:layout_constraintBottom_toTopOf="@+id/domTVslot6"
-        app:layout_constraintEnd_toEndOf="@+id/domframe"
-        app:layout_constraintStart_toEndOf="@+id/domTVslot2"
-        app:layout_constraintTop_toTopOf="@+id/domframe">
+        app:layout_constraintBottom_toTopOf="@+id/TVslot6"
+        app:layout_constraintEnd_toEndOf="@+id/frame"
+        app:layout_constraintStart_toEndOf="@+id/TVslot2"
+        app:layout_constraintTop_toTopOf="@+id/frame">
     </TextView>
 
     <TextView
-        android:id="@+id/domTVslot33"
+        android:id="@+id/TVslot33"
         android:layout_width="98dp"
         android:layout_height="98dp"
-        android:background="#E1BEE7"
+        android:background="#2196F3"
         android:gravity="center"
         android:text="\$"
-        android:textColor="#37474F"
+        android:textColor="#757575"
         android:textSize="50sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/domTVslot6"
-        app:layout_constraintEnd_toEndOf="@+id/domframe"
-        app:layout_constraintStart_toEndOf="@+id/domTVslot2"
-        app:layout_constraintTop_toTopOf="@+id/domframe"></TextView>
+        app:layout_constraintBottom_toTopOf="@+id/TVslot6"
+        app:layout_constraintEnd_toEndOf="@+id/frame"
+        app:layout_constraintStart_toEndOf="@+id/TVslot2"
+        app:layout_constraintTop_toTopOf="@+id/frame"></TextView>
 
     <TextView
-        android:id="@+id/domTVslot6"
+        android:id="@+id/TVslot6"
         android:layout_width="98dp"
         android:layout_height="98dp"
-        android:background="#E1BEE7"
+        android:background="#CDDC39"
         android:gravity="center"
         android:text=" 🍌 "
         android:textColor="#757575"
         android:textSize="40sp"
-        app:layout_constraintBottom_toBottomOf="@+id/domframe"
-        app:layout_constraintEnd_toEndOf="@+id/domframe"
-        app:layout_constraintStart_toEndOf="@+id/domTVslot5"
-        app:layout_constraintTop_toTopOf="@+id/domframe" />
+        app:layout_constraintBottom_toBottomOf="@+id/frame"
+        app:layout_constraintEnd_toEndOf="@+id/frame"
+        app:layout_constraintStart_toEndOf="@+id/TVslot5"
+        app:layout_constraintTop_toTopOf="@+id/frame" />
 
     <TextView
-        android:id="@+id/domTVslot66"
+        android:id="@+id/TVslot66"
         android:layout_width="98dp"
         android:layout_height="98dp"
-        android:background="#E1BEE7"
+        android:background="#2196F3"
         android:gravity="center"
         android:text="\$"
-        android:textColor="#37474F"
+        android:textColor="#757575"
         android:textSize="50sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/domframe"
-        app:layout_constraintEnd_toEndOf="@+id/domframe"
-        app:layout_constraintStart_toEndOf="@+id/domTVslot5"
-        app:layout_constraintTop_toTopOf="@+id/domframe" />
+        app:layout_constraintBottom_toBottomOf="@+id/frame"
+        app:layout_constraintEnd_toEndOf="@+id/frame"
+        app:layout_constraintStart_toEndOf="@+id/TVslot5"
+        app:layout_constraintTop_toTopOf="@+id/frame" />
 
     <TextView
-        android:id="@+id/domTVslot7"
+        android:id="@+id/TVslot7"
         android:layout_width="98dp"
         android:layout_height="98dp"
-        android:background="#E1BEE7"
+        android:background="#CDDC39"
         android:gravity="center"
         android:text="🍓 "
         android:textColor="#757575"
         android:textSize="40sp"
-        app:layout_constraintBottom_toBottomOf="@+id/domframe"
-        app:layout_constraintEnd_toStartOf="@+id/domTVslot8"
-        app:layout_constraintStart_toStartOf="@+id/domframe"
-        app:layout_constraintTop_toBottomOf="@+id/domTVslot4" />
+        app:layout_constraintBottom_toBottomOf="@+id/frame"
+        app:layout_constraintEnd_toStartOf="@+id/TVslot8"
+        app:layout_constraintStart_toStartOf="@+id/frame"
+        app:layout_constraintTop_toBottomOf="@+id/TVslot4" />
 
     <TextView
-        android:id="@+id/domTVslot77"
+        android:id="@+id/TVslot77"
         android:layout_width="98dp"
         android:layout_height="98dp"
-        android:background="#E1BEE7"
+        android:background="#2196F3"
         android:gravity="center"
         android:text="\$"
-        android:textColor="#37474F"
+        android:textColor="#757575"
         android:textSize="50sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/domframe"
-        app:layout_constraintEnd_toStartOf="@+id/domTVslot8"
-        app:layout_constraintStart_toStartOf="@+id/domframe"
-        app:layout_constraintTop_toBottomOf="@+id/domTVslot4" />
+        app:layout_constraintBottom_toBottomOf="@+id/frame"
+        app:layout_constraintEnd_toStartOf="@+id/TVslot8"
+        app:layout_constraintStart_toStartOf="@+id/frame"
+        app:layout_constraintTop_toBottomOf="@+id/TVslot4" />
 
     <TextView
-        android:id="@+id/domTVslot9"
+        android:id="@+id/TVslot9"
         android:layout_width="98dp"
         android:layout_height="98dp"
-        android:background="#E1BEE7"
+        android:background="#CDDC39"
         android:gravity="center"
         android:text="🍒"
         android:textColor="#757575"
         android:textSize="40sp"
-        app:layout_constraintBottom_toBottomOf="@+id/domframe"
-        app:layout_constraintEnd_toEndOf="@+id/domframe"
-        app:layout_constraintStart_toEndOf="@+id/domTVslot8"
-        app:layout_constraintTop_toBottomOf="@+id/domTVslot6" />
+        app:layout_constraintBottom_toBottomOf="@+id/frame"
+        app:layout_constraintEnd_toEndOf="@+id/frame"
+        app:layout_constraintStart_toEndOf="@+id/TVslot8"
+        app:layout_constraintTop_toBottomOf="@+id/TVslot6" />
 
     <TextView
-        android:id="@+id/domTVslot99"
+        android:id="@+id/TVslot99"
         android:layout_width="98dp"
         android:layout_height="98dp"
-        android:background="#E1BEE7"
+        android:background="#2196F3"
         android:gravity="center"
         android:text="\$"
-        android:textColor="#37474F"
+        android:textColor="#757575"
         android:textSize="50sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/domframe"
-        app:layout_constraintEnd_toEndOf="@+id/domframe"
-        app:layout_constraintStart_toEndOf="@+id/domTVslot8"
-        app:layout_constraintTop_toBottomOf="@+id/domTVslot6" />
+        app:layout_constraintBottom_toBottomOf="@+id/frame"
+        app:layout_constraintEnd_toEndOf="@+id/frame"
+        app:layout_constraintStart_toEndOf="@+id/TVslot8"
+        app:layout_constraintTop_toBottomOf="@+id/TVslot6" />
 
     <TextView
-        android:id="@+id/domTVslot2"
+        android:id="@+id/TVslot2"
         android:layout_width="98dp"
         android:layout_height="98dp"
-        android:background="#E1BEE7"
+        android:background="#CDDC39"
         android:gravity="center"
         android:text="🍒"
         android:textColor="#757575"
         android:textSize="40sp"
-        app:layout_constraintBottom_toTopOf="@+id/domTVslot5"
-        app:layout_constraintEnd_toEndOf="@+id/domframe"
-        app:layout_constraintStart_toStartOf="@+id/domframe"
-        app:layout_constraintTop_toTopOf="@+id/domframe"/>
+        app:layout_constraintBottom_toTopOf="@+id/TVslot5"
+        app:layout_constraintEnd_toEndOf="@+id/frame"
+        app:layout_constraintStart_toStartOf="@+id/frame"
+        app:layout_constraintTop_toTopOf="@+id/frame"/>
 
     <TextView
-        android:id="@+id/domTVslot22"
+        android:id="@+id/TVslot22"
         android:layout_width="98dp"
         android:layout_height="98dp"
-        android:background="#E1BEE7"
+        android:background="#2196F3"
         android:gravity="center"
         android:text="\$"
-        android:textColor="#37474F"
+        android:textColor="#757575"
         android:textSize="50sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/domTVslot5"
-        app:layout_constraintEnd_toEndOf="@+id/domframe"
-        app:layout_constraintStart_toStartOf="@+id/domframe"
-        app:layout_constraintTop_toTopOf="@+id/domframe">
+        app:layout_constraintBottom_toTopOf="@+id/TVslot5"
+        app:layout_constraintEnd_toEndOf="@+id/frame"
+        app:layout_constraintStart_toStartOf="@+id/frame"
+        app:layout_constraintTop_toTopOf="@+id/frame">
 
 
     </TextView>
 
 
     <TextView
-        android:id="@+id/domTVslot8"
+        android:id="@+id/TVslot8"
         android:layout_width="98dp"
         android:layout_height="98dp"
-        android:background="#E1BEE7"
+        android:background="#CDDC39"
         android:gravity="center"
         android:text=" 🍌 "
         android:textColor="#757575"
         android:textSize="40sp"
-        app:layout_constraintBottom_toBottomOf="@+id/domframe"
-        app:layout_constraintEnd_toEndOf="@+id/domframe"
-        app:layout_constraintStart_toStartOf="@+id/domframe"
-        app:layout_constraintTop_toBottomOf="@+id/domTVslot5" />
+        app:layout_constraintBottom_toBottomOf="@+id/frame"
+        app:layout_constraintEnd_toEndOf="@+id/frame"
+        app:layout_constraintStart_toStartOf="@+id/frame"
+        app:layout_constraintTop_toBottomOf="@+id/TVslot5" />
 
     <TextView
-        android:id="@+id/domTVslot88"
+        android:id="@+id/TVslot88"
         android:layout_width="98dp"
         android:layout_height="98dp"
-        android:background="#E1BEE7"
+        android:background="#2196F3"
         android:gravity="center"
         android:text="\$"
-        android:textColor="#37474F"
+        android:textColor="#757575"
         android:textSize="50sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/domframe"
-        app:layout_constraintEnd_toEndOf="@+id/domframe"
-        app:layout_constraintStart_toStartOf="@+id/domframe"
-        app:layout_constraintTop_toBottomOf="@+id/domTVslot5" />
+        app:layout_constraintBottom_toBottomOf="@+id/frame"
+        app:layout_constraintEnd_toEndOf="@+id/frame"
+        app:layout_constraintStart_toStartOf="@+id/frame"
+        app:layout_constraintTop_toBottomOf="@+id/TVslot5" />
 
     <TextView
-        android:id="@+id/domTVslot1"
+        android:id="@+id/TVslot1"
         android:layout_width="98dp"
         android:layout_height="98dp"
-        android:background="#E1BEE7"
+        android:background="#CDDC39"
         android:gravity="center"
+
         android:text="🍓"
         android:textColor="#757575"
         android:textSize="40sp"
-        app:layout_constraintBottom_toTopOf="@+id/domTVslot4"
-        app:layout_constraintEnd_toStartOf="@+id/domTVslot2"
-        app:layout_constraintStart_toStartOf="@+id/domframe"
-        app:layout_constraintTop_toTopOf="@+id/domframe"></TextView>
+        app:layout_constraintBottom_toTopOf="@+id/TVslot4"
+        app:layout_constraintEnd_toStartOf="@+id/TVslot2"
+        app:layout_constraintStart_toStartOf="@+id/frame"
+        app:layout_constraintTop_toTopOf="@+id/frame"></TextView>
 
     <TextView
-        android:id="@+id/domTVslot11"
+        android:id="@+id/TVslot11"
         android:layout_width="98dp"
         android:layout_height="98dp"
-        android:background="#E1BEE7"
+        android:background="#2196F3"
         android:gravity="center"
         android:text="\$"
-        android:textColor="#37474F"
+        android:textColor="#757575"
         android:textSize="50sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/domTVslot4"
-        app:layout_constraintEnd_toStartOf="@+id/domTVslot2"
-        app:layout_constraintStart_toStartOf="@+id/domframe"
-        app:layout_constraintTop_toTopOf="@+id/domframe"></TextView>
+        app:layout_constraintBottom_toTopOf="@+id/TVslot4"
+        app:layout_constraintEnd_toStartOf="@+id/TVslot2"
+        app:layout_constraintStart_toStartOf="@+id/frame"
+        app:layout_constraintTop_toTopOf="@+id/frame"></TextView>
 
     <ImageView
         android:id="@+id/imageView"
@@ -311,13 +312,13 @@
         android:layout_height="60dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
-        android:src="@drawable/coin"
-        app:layout_constraintBottom_toTopOf="@+id/domframe"
-        app:layout_constraintEnd_toStartOf="@+id/dombetCount"
+        android:src="@drawable/money"
+        app:layout_constraintBottom_toTopOf="@+id/frame"
+        app:layout_constraintEnd_toStartOf="@+id/betCount"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/dombetCount"
+        android:id="@+id/betCount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
@@ -326,7 +327,7 @@
         android:textColor="#EFEDED"
         android:textSize="50sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/domframe"
+        app:layout_constraintBottom_toTopOf="@+id/frame"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -337,10 +338,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:text="5"
+        android:textColor="#F84437"
         android:textSize="30sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/dombetCount"
-        app:layout_constraintStart_toEndOf="@+id/dombetCount" />
+        app:layout_constraintBottom_toBottomOf="@+id/betCount"
+        app:layout_constraintStart_toEndOf="@+id/betCount" />
 
     <Button
         android:id="@+id/Bbet"
@@ -348,12 +350,12 @@
         android:layout_height="50dp"
 
         android:layout_marginEnd="10dp"
-        android:backgroundTint="#E1BEE7"
+        android:backgroundTint="#F84437"
         android:text="bet"
         android:textColor="#FBFBFB"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/dombetCount"
+        app:layout_constraintBottom_toTopOf="@+id/betCount"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -361,7 +363,7 @@
         android:id="@+id/IVback"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:src="@drawable/back_button"
+        android:src="@drawable/back"
         app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toStartOf="@+id/imageView"
         app:layout_constraintStart_toStartOf="parent"
