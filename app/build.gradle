@@ -12,7 +12,7 @@ android {
         enabled = true
     }
     defaultConfig {
-        applicationId "com.template.slots"
+        applicationId "com.orewjgbioerbj"
         minSdk 21
         targetSdk 31
         versionCode 1
@@ -37,7 +37,8 @@ android {
 }
 
 dependencies {
-
+    implementation 'androidx.viewpager2:viewpager2:1.0.0'
+    implementation 'com.github.chrisbanes:PhotoView:2.3.0'
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.4.2'
     implementation 'com.google.android.material:material:1.6.1'
