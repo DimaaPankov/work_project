@@ -7,21 +7,24 @@
 
     <fragment
         android:id="@+id/mainFragment"
-        android:name="com.template.view.MainFragment"
+        android:name="com.wvhhvwaaaaa.rjibvhf.MainFragmentUim"
         android:label="fragment_main"
-        tools:layout="@layout/fragment_main" >
+        tools:layout="@layout/fragment_mainiii" >
         <action
             android:id="@+id/action_mainFragment_to_gameFragment"
             app:destination="@id/gameFragment" />
         <action
             android:id="@+id/action_mainFragment_to_infoFragment"
             app:destination="@id/infoFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_shopFragment"
+            app:destination="@id/shopFragment" />
     </fragment>
     <fragment
         android:id="@+id/gameFragment"
-        android:name="com.template.view.GameFragment"
+        android:name="com.wvhhvwaaaaa.rjibvhf.GameFragmentKKK"
         android:label="fragment_game"
-        tools:layout="@layout/fragment_game" >
+        tools:layout="@layout/fragment_gameiii" >
         <action
             android:id="@+id/action_gameFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
@@ -38,16 +41,16 @@
     </fragment>
     <fragment
         android:id="@+id/infoFragment"
-        android:name="com.template.view.InfoFragment"
+        android:name="com.wvhhvwaaaaa.rjibvhf.InfoFragmentUI"
         android:label="fragment_info"
-        tools:layout="@layout/fragment_info" >
+        tools:layout="@layout/fragment_infoiii" >
         <action
             android:id="@+id/action_infoFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
     </fragment>
     <fragment
         android:id="@+id/newCoinsFragment"
-        android:name="com.template.view.NewCoinsFragment"
+        android:name="com.wvhhvwaaaaa.rjibvhf.NewCoinsFragmentU"
         android:label="NewCoinsFragment" >
         <action
             android:id="@+id/action_newCoinsFragment_to_mainFragment"
@@ -55,15 +58,15 @@
     </fragment>
     <fragment
         android:id="@+id/animationVinFragment"
-        android:name="com.template.view.AnimationVinFragment"
+        android:name="com.wvhhvwaaaaa.rjibvhf.AnimationVinFragmentVBV"
         android:label="fragment_animation_vin"
-        tools:layout="@layout/fragment_animation_vin" >
+        tools:layout="@layout/fragment_animation_viniii" >
         <action
             android:id="@+id/action_animationVinFragment_to_gameFragment"
             app:destination="@id/gameFragment" />
         <argument
             android:name="arraySlots"
-            app:argType="string[]" />
+            app:argType="integer[]" />
         <argument
             android:name="xBet"
             app:argType="integer" />
@@ -76,11 +79,37 @@
     </fragment>
     <fragment
         android:id="@+id/betFragment"
-        android:name="com.template.view.BetFragment"
+        android:name="com.wvhhvwaaaaa.rjibvhf.BetFragmentJkl"
         android:label="fragment_bet"
-        tools:layout="@layout/fragment_bet" >
+        tools:layout="@layout/fragment_betiii" >
         <action
             android:id="@+id/action_betFragment_to_gameFragment"
             app:destination="@id/gameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/shopFragment"
+        android:name="com.wvhhvwaaaaa.rjibvhf.ShopFragmentoo"
+        android:label="ShopFragment" >
+        <action
+            android:id="@+id/action_shopFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_shopFragment_to_deteilFragment"
+            app:destination="@id/deteilFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/deteilFragment"
+        android:name="com.wvhhvwaaaaa.rjibvhf.DeteilFragmentLLL"
+        android:label="fragment_deteil"
+        tools:layout="@layout/fragment_deteiii" >
+        <action
+            android:id="@+id/action_deteilFragment_to_shopFragment"
+            app:destination="@id/shopFragment" />
+        <argument
+            android:name="img"
+            app:argType="integer" />
+        <argument
+            android:name="buy"
+            app:argType="integer" />
     </fragment>
 </navigation>
