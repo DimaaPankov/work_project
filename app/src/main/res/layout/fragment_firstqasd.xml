@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".e3jhivh.FirstFragment"
+    android:background="#ffffc7">
+
+    <ImageView
+        android:id="@+id/TVinfoqasd"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/ic_baseline_info_24"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/TVbetSumqasd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="50"
+        android:textColor="#548687"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/TVbetqasd"
+        app:layout_constraintStart_toStartOf="@+id/TVbetqasd"
+        app:layout_constraintTop_toBottomOf="@+id/TVbetqasd" />
+
+    <TextView
+        android:id="@+id/TVbetMainqasd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="15"
+        android:textColor="#548687"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewqasd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView3qasd" />
+
+    <TextView
+        android:id="@+id/TVbalansqasd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="1000"
+        android:textColor="#548687"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/TV2qasd"
+        app:layout_constraintStart_toStartOf="@+id/TV2qasd"
+        app:layout_constraintTop_toBottomOf="@+id/TV2qasd" />
+
+    <ImageView
+        android:id="@+id/imageViewqasd"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:src="@drawable/lucky_drum_icon"
+        android:rotation="29"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.501" />
+
+    <ImageView
+        android:id="@+id/IV_bonusqasd"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/star"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVinfoqasd"></ImageView>
+
+
+    <Button
+        android:id="@+id/bPlayqasd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#548687"
+        android:text="играть"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewqasd" />
+
+    <Button
+        android:id="@+id/Bbetqasd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#757575"
+        android:text="сделать ставку"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3qasd"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/load"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewqasd"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewqasd"
+        app:layout_constraintStart_toStartOf="@+id/imageViewqasd"
+        app:layout_constraintTop_toTopOf="@+id/imageViewqasd" />
+
+    <TextView
+        android:id="@+id/TV2qasd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ваш баланс:"
+        android:textSize="20sp"
+        android:textColor="#548687"
+        app:layout_constraintBottom_toTopOf="@+id/imageView3qasd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TVbetqasd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="ставка:"
+        android:textColor="#548687"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/VbetColorqasd"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="15dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/TVbetMainqasd"
+        app:layout_constraintStart_toEndOf="@+id/TVbetMainqasd"
+        app:layout_constraintTop_toTopOf="@+id/TVbetMainqasd" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CVbonusqasd"
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:layout_marginEnd="300dp"
+        android:backgroundTint="#FCAA67"
+        app:cardCornerRadius="20dp"
+        android:alpha="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView4qasd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="поздравляем!"
+                android:textColor="#F94C66"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></TextView>
+
+            <TextView
+                android:id="@+id/textView5qasd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Вы выйграли бонус:"
+                android:textColor="#548687"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/TVcountBonusqasd"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4qasd"></TextView>
+
+            <TextView
+                android:id="@+id/TVcountBonusqasd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="1000"
+                android:textColor="@color/white"
+                android:textSize="50sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></TextView>
+
+
+            <Button
+                android:id="@+id/Bbonusqasd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#548687"
+                android:text="ok"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TVcountBonusqasd" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

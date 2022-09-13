@@ -7,32 +7,44 @@
 
     <fragment
         android:id="@+id/firstFragment"
-        android:name="com.test.luckydrum.view.FirstFragment"
+        android:name="com.test.luckydrum.e3jhivh.FirstFragment"
         android:label="fragment_first"
-        tools:layout="@layout/fragment_first" >
+        tools:layout="@layout/fragment_firstqasd" >
         <action
             android:id="@+id/action_firstFragment_to_betFragment"
             app:destination="@id/betFragment" />
         <action
             android:id="@+id/action_firstFragment_to_infoFragment"
             app:destination="@id/infoFragment" />
+        <action
+            android:id="@+id/action_firstFragment_to_bonusFragment"
+            app:destination="@id/bonusFragment" />
     </fragment>
     <fragment
         android:id="@+id/betFragment"
-        android:name="com.test.luckydrum.view.BetFragment"
+        android:name="com.test.luckydrum.e3jhivh.BetFragmentqasd"
         android:label="fragment_bet"
-        tools:layout="@layout/fragment_bet" >
+        tools:layout="@layout/fragment_betqasd" >
         <action
             android:id="@+id/action_betFragment_to_firstFragment"
             app:destination="@id/firstFragment" />
     </fragment>
     <fragment
         android:id="@+id/infoFragment"
-        android:name="com.test.luckydrum.view.InfoFragment"
+        android:name="com.test.luckydrum.e3jhivh.InfoFragmentqasd"
         android:label="fragment_info"
-        tools:layout="@layout/fragment_info" >
+        tools:layout="@layout/fragment_infoqasd" >
         <action
             android:id="@+id/action_infoFragment_to_firstFragment"
+            app:destination="@id/firstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bonusFragment"
+        android:name="com.test.luckydrum.e3jhivh.BonusFragmentqasd"
+        android:label="fragment_bonus"
+        tools:layout="@layout/fragment_bonusqasd" >
+        <action
+            android:id="@+id/action_bonusFragment_to_firstFragment"
             app:destination="@id/firstFragment" />
     </fragment>
 </navigation>
