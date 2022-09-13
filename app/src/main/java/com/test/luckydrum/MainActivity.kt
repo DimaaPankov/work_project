@@ -18,5 +18,5 @@ class MainActivity : AppCompatActivity() {
     companion object {
         lateinit var goBack: () -> Unit
     }
-
+//eg0egv
 }
