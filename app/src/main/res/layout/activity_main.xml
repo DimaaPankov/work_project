@@ -30,7 +30,7 @@
         android:alpha="0.0"
         android:text="game tutorial"
         android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
-        android:textColor="#FEDB39"
+        android:textColor="@color/white"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

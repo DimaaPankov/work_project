@@ -3,24 +3,22 @@
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
-    <string name="XXI">Первое, найденное исследователями слово, похожее на покер, было
-        обнаружено в английском словаре XVII века.</string>
-    <string name="Americans">По данным исследователей, самой азартной нацией на планете являются
-        американцы</string>
-    <string name="sochial_status">Изначально, каждая масть соответствовала конкретной социальной
-        группе граждан</string>
-    <string name="difrient_game">На сегодня известно уже более 130 разновидностей игры в покер</string>
+    <string name="XXI">The first word found by researchers similar to poker was found in the English dictionary of the XVII century</string>
+    <string name="Americans">According to researchers, the most gambling nation on the planet are Americans</string>
+    <string name="sochial_status">Initially, each suit corresponded to a specific social a group of citizens</string>
+    <string name="difrient_game">Today, more than 130 varieties of poker games are already known</string>
+    <string name="five_mastchi">In the late forties , card manufacturers tried to add three more suits</string>
+    <string name="people">According to sociological research, about 75% of people on the planet they continue to claim that poker is a gambling game, that is, in thei opinion, there is no way to win it does not depend on the level of professionalis and training of the player.</string>
+    <string name="seven">The main profit is formed when we have a Position</string>
+    <string name="eight">The optimal ratio of PFR to VPIP should be 80-90%</string>
+    <string name="nine">In the position we have to play more hands against against regs</string>
+    <string name="ten">The 3-beta polar range is half in bluff, half in semi-bluff</string>
+    <string name="eleven">Potential bank chances are a Call not based on the chances of a big bet bank, in order to beat your opponent later</string>
+   <string name="twelwe">The reverse potential chances of the bank is a situation where we catch our own outs, but they won t help us</string>
 
-    <string name="five_mastchi">В конце сороковых годов производители карт попытались добавить еще три масти</string>
-    <string name="people">По данным социологических исследований, около 75% людей на планете
-        продолжают утверждать, что покер является азартной игрой, то есть выигрыш по их мнению никак
-        не зависит от уровня профессионализма и подготовки игрока.</string>
-    <string name="seven">Основной профит формируется, когда у нас Позиция</string>
-    <string name="eight">Оптимальное соотношение PFR к VPIP должно быть 80-90%</string>
-    <string name="nine">В позиции мы должны играть большее количество рук против против регов</string>
-    <string name="ten">Полярный диапазон 3-бета это половина в блеф, половина в полу-блеф</string>
-    <string name="eleven">Потенциальные шансы банка - это Колл не по шансам банка большой ставки, чтобы в последствие обыграть оппонента</string>
-    <string name="twelwe">Обратные потенциальные шансы банка - это Ситуация, когда мы ловим свои ауты, но они не помогут нам</string>
+
+
+
 
     <string name="true_button">True</string>
     <string name="false_button">False</string>

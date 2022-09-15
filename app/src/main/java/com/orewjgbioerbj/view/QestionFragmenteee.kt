@@ -9,13 +9,17 @@ import android.view.ViewGroup
 import androidx.core.view.isVisible
 import androidx.navigation.fragment.findNavController
 import com.orewjgbioerbj.R
+
 import com.orewjgbioerbj.databinding.FragmentQestionBinding
+//import com.test.luckydrum.databinding.FragmentQestionBinding
+
+
 import com.orewjgbioerbj.wi0fuea9opf
 import com.orewjgbioerbj.models.Model
 import com.orewjgbioerbj.wufv9iud
 
 class QestionFragment : Fragment() {
-     val wfjgiehgoiehj by lazy {FragmentQestionBinding.inflate(layoutInflater)}
+     val wfjgiehgoiehj by lazy { FragmentQestionBinding.inflate(layoutInflater)}
     var efiheihei = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -32,16 +36,16 @@ class QestionFragment : Fragment() {
     private fun eiaugf9ueg9(){
         wfjgiehgoiehj.tvQestionwqwqlok.setText(eu9gfur9v.ewau9fuw90().udsh)
         wfjgiehgoiehj.imageQestionwqwqlok.setImageResource(eu9gfur9v.ewau9fuw90().avjhhdiv)
-        wfjgiehgoiehj.btnTruewqwqlok.isVisible = true
+      //  wfjgiehgoiehj.btnTrue.isVisible = true
 }
 
 
      private fun egu9ueopgv(){
-        wfjgiehgoiehj.btnTruewqwqlok.setOnClickListener {
+        wfjgiehgoiehj.btnTrue .setOnClickListener {
             efi0euf9()
         }
 
-        wfjgiehgoiehj.btnFalsewqwqlok.setOnClickListener {
+        wfjgiehgoiehj.btnFalse .setOnClickListener {
             eif9ue9()
         }
     }
@@ -58,8 +62,8 @@ class QestionFragment : Fragment() {
             wfjgiehgoiehj.frameLayoutwqwqlok.setBackgroundColor(resources.getColor(R.color.teal_200))
             wfjgiehgoiehj.tvQestionwqwqlok.isVisible = false
             wfjgiehgoiehj.background.setBackgroundColor(resources.getColor(R.color.teal_200))
-            wfjgiehgoiehj.btnTruewqwqlok.isVisible = false
-            wfjgiehgoiehj.btnFalsewqwqlok.isVisible = false
+            wfjgiehgoiehj.btnTrue.isVisible = false
+            wfjgiehgoiehj.btnFalse.isVisible = false
             wfjgiehgoiehj.textViewTRUEwqwqlok.isVisible = true
             wfjgiehgoiehj.pdfToolbarwqwqlok.isVisible = false
 
@@ -70,8 +74,8 @@ class QestionFragment : Fragment() {
             wfjgiehgoiehj.frameLayoutwqwqlok.setBackgroundColor(resources.getColor(R.color.red))
             wfjgiehgoiehj.tvQestionwqwqlok.isVisible = false
             wfjgiehgoiehj.background.setBackgroundColor(resources.getColor(R.color.red))
-            wfjgiehgoiehj.btnTruewqwqlok.isVisible = false
-            wfjgiehgoiehj.btnFalsewqwqlok.isVisible = false
+            wfjgiehgoiehj.btnTrue.isVisible = false
+            wfjgiehgoiehj.btnFalse.isVisible = false
             wfjgiehgoiehj.textViewFALSEwqwqlok.isVisible = true
             wfjgiehgoiehj.pdfToolbarwqwqlok.isVisible = false
 
@@ -97,8 +101,8 @@ class QestionFragment : Fragment() {
             wfjgiehgoiehj.frameLayoutwqwqlok.setBackgroundColor(resources.getColor(R.color.teal_200))
             wfjgiehgoiehj.tvQestionwqwqlok.isVisible =  false
             wfjgiehgoiehj.background.setBackgroundColor(resources.getColor(R.color.teal_200))
-            wfjgiehgoiehj.btnTruewqwqlok.isVisible = false
-            wfjgiehgoiehj.btnFalsewqwqlok.isVisible = false
+            wfjgiehgoiehj.btnTrue.isVisible = false
+            wfjgiehgoiehj.btnFalse.isVisible = false
             wfjgiehgoiehj.textViewTRUEwqwqlok.isVisible = true
             wfjgiehgoiehj.pdfToolbarwqwqlok.isVisible = false
 
@@ -108,8 +112,8 @@ class QestionFragment : Fragment() {
             wfjgiehgoiehj.frameLayoutwqwqlok.setBackgroundColor(resources.getColor(R.color.red))
             wfjgiehgoiehj.tvQestionwqwqlok.isVisible =  false
             wfjgiehgoiehj.background.setBackgroundColor(resources.getColor(R.color.red))
-            wfjgiehgoiehj.btnTruewqwqlok.isVisible = false
-            wfjgiehgoiehj.btnFalsewqwqlok.isVisible = false
+            wfjgiehgoiehj.btnTrue.isVisible = false
+            wfjgiehgoiehj.btnFalse.isVisible = false
             wfjgiehgoiehj.textViewFALSEwqwqlok.isVisible = true
             wfjgiehgoiehj.pdfToolbarwqwqlok.isVisible = false
 
@@ -131,8 +135,8 @@ class QestionFragment : Fragment() {
                     wfjgiehgoiehj.frameLayoutwqwqlok.setBackgroundColor(resources.getColor(R.color.black))
                     wfjgiehgoiehj.tvQestionwqwqlok.isVisible = true
                     wfjgiehgoiehj.background.setBackgroundColor(resources.getColor(R.color.black))
-                    wfjgiehgoiehj.btnTruewqwqlok.isVisible = true
-                    wfjgiehgoiehj.btnFalsewqwqlok.isVisible = true
+                    wfjgiehgoiehj.btnTrue.isVisible = true
+                    wfjgiehgoiehj.btnFalse.isVisible = true
                     wfjgiehgoiehj.textViewTRUEwqwqlok.isVisible = false
                     wfjgiehgoiehj.textViewFALSEwqwqlok.isVisible = false
                     wfjgiehgoiehj.pdfToolbarwqwqlok.isVisible = true
