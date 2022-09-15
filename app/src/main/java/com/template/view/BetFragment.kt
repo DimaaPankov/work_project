@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import com.template.R
 import com.template.betpresenter.BetPresnter
 import com.template.betpresenter.BetViewApi
@@ -19,6 +20,7 @@ class BetFragment : Fragment(), BetViewApi {
         super.onCreate(savedInstanceState)
         binding = FragmentBetBinding.inflate(layoutInflater)
         presnter.init(this)
+        (requireContext() as MainActivity).goBack = {findNavController().navigate(R.id.action_betFragment_to_gameFragment)}
     }
 
     override fun onCreateView(
