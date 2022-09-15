@@ -7,8 +7,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
-import android.widget.Toast
+
 import androidx.core.content.ContextCompat
 import androidx.navigation.fragment.findNavController
 import com.template.R
@@ -20,18 +19,13 @@ import com.template.gamepresenter.GameViewApi
 class GameFragment : Fragment(), GameViewApi {
     var clicable = true
     val presenter = GamePresenter(Model)
-    private var egirwe0giw:Long = 0
     lateinit var binding: FragmentGameBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = FragmentGameBinding.inflate(layoutInflater)
-        (requireContext() as MainActivity).goBack = {     if (egirwe0giw+2000 > System.currentTimeMillis()) {
-            (requireContext() as MainActivity).onBackPressed()
-        } else {
-            Toast.makeText(requireContext(), "Press the back button twice to exit", Toast.LENGTH_SHORT).show();
+        (requireContext() as MainActivity).goBack = {
+            findNavController().navigate(R.id.action_gameFragment_to_mainFragment)
         }
-            egirwe0giw = System.currentTimeMillis()}
-
         presenter.init(this)
 
 
