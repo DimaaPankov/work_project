@@ -10,28 +10,28 @@
         motion:duration="5000">
        <KeyFrameSet>
            <KeyAttribute
-               motion:motionTarget="@+id/logoImageView"
+               motion:motionTarget="@+id/logoImageViewwqwqlok"
                motion:framePosition="10"
                android:translationY="0dp"
                android:scaleX="1.0"
                android:scaleY="1.0" />
            <KeyAttribute
-               motion:motionTarget="@+id/logoImageView"
+               motion:motionTarget="@+id/logoImageViewwqwqlok"
                motion:framePosition="40"
                android:translationY="-70dp"
                android:scaleX="0.5"
                android:scaleY="0.5" />
            <KeyAttribute
-               motion:motionTarget="@+id/titleTextView"
+               motion:motionTarget="@+id/titleTextViewwqwqlok"
                motion:framePosition="40"
                android:alpha="0.0" />
            <KeyAttribute
-               motion:motionTarget="@+id/titleTextView"
+               motion:motionTarget="@+id/titleTextViewwqwqlok"
                motion:framePosition="60"
                android:alpha="1.0" />
 
            <KeyAttribute
-               motion:motionTarget="@+id/logoImageView"
+               motion:motionTarget="@+id/logoImageViewwqwqlok"
                motion:framePosition="25"
                android:translationY="-10dp" />
        </KeyFrameSet>
@@ -43,7 +43,7 @@
     <ConstraintSet android:id="@+id/end">
 
         <Constraint
-            android:id="@+id/titleTextView"
+            android:id="@+id/titleTextViewwqwqlok"
             motion:layout_constraintEnd_toEndOf="parent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -52,7 +52,7 @@
             motion:layout_constraintTop_toTopOf="parent"
             motion:layout_constraintStart_toStartOf="parent" />
         <Constraint
-            android:id="@+id/logoImageView"
+            android:id="@+id/logoImageViewwqwqlok"
             motion:layout_constraintEnd_toEndOf="parent"
             android:layout_width="200dp"
             android:layout_height="200dp"

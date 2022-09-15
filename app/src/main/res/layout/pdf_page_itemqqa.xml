@@ -7,9 +7,11 @@
     android:gravity="center">
 
     <com.github.chrisbanes.photoview.PhotoView
-        android:id="@+id/pageImgView"
+        android:id="@+id/pageImgViewwqwqlok"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
