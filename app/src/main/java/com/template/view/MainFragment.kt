@@ -7,20 +7,18 @@ import android.view.View
 import android.view.ViewGroup
 import com.template.R
 import com.template.databinding.FragmentMainBinding
-import com.template.mainpresenter.MainPresenter
-import com.template.mainpresenter.MainViewApi
 
 
-class MainFragment : Fragment(),MainViewApi {
+
+class MainFragment : Fragment() {
 
     lateinit var binding: FragmentMainBinding
-    val presenter = MainPresenter(Model)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = FragmentMainBinding.inflate(layoutInflater)
-        presenter.init(this)
-
+        clickInfo()
+        clickPlay()
 
     }
     override fun onCreateView(
@@ -33,24 +31,19 @@ class MainFragment : Fragment(),MainViewApi {
 
     override fun onDestroy() {
         super.onDestroy()
-        presenter.distroy()
     }
 
 
 
-    override fun clickPlay() {
+    fun clickPlay() {
         binding.Bplay.setOnClickListener {
             (requireActivity() as MainActivity).navController.navigate(R.id.action_mainFragment_to_gameFragment)
         }
     }
 
-    override fun clickInfo() {
+     fun clickInfo() {
         binding.TVinfo.setOnClickListener {
             (requireActivity() as MainActivity).navController.navigate(R.id.action_mainFragment_to_infoFragment)
-        }
-        binding.Ishope.setOnClickListener{
-            (requireActivity() as MainActivity).navController.navigate(R.id.action_mainFragment_to_shopFragment)
-
         }
     }
 }

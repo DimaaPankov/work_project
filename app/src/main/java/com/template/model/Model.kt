@@ -3,7 +3,6 @@ package com.template.view
 import android.content.Context
 import android.content.SharedPreferences
 import com.template.R
-import com.template.mainpresenter.DataApi
 
 
 
@@ -26,7 +25,7 @@ class DataBasePreferences(val _context: Context) {
     }
 }
 
-object Model: DataApi {
+object Model {
     private var minus = true
     private val listSlots = mutableListOf(0,0,0,0,0,0,0,0,0)
     private var BET:Int = 5
@@ -49,36 +48,35 @@ object Model: DataApi {
         //20%
         R.drawable.strawberry,R.drawable.strawberry,R.drawable.strawberry,R.drawable.strawberry,R.drawable.strawberry,
         R.drawable.strawberry,R.drawable.strawberry,R.drawable.strawberry,R.drawable.strawberry,R.drawable.strawberry,//10
+)
 
-    )
 
-
-    override fun setMainCount( bet: Int, minusOrPlus: Boolean) = if(minusOrPlus) MAINcount += bet
+     fun setMainCount( bet: Int, minusOrPlus: Boolean) = if(minusOrPlus) MAINcount += bet
     else MAINcount -= bet
 
-    override fun setMainCount(int: Int) {
+     fun setMainCount(int: Int) {
         MAINcount = int
     }
 
-    override fun getMainCount() = MAINcount
+     fun getMainCount() = MAINcount
 
 
-    override fun setBet(string: String) {
+     fun setBet(string: String) {
        BET = string.toInt()
     }
 
-    override fun setBet(i: Int) {
+     fun setBet(i: Int) {
         BET = i
     }
 
 
-    override fun getBet(): Int = BET
-    override fun setSlot() {
+     fun getBet(): Int = BET
+     fun setSlot() {
         for(i in 0..8)
         listSlots[i] = slots.random()
     }
 
-    override fun getSlot() = listSlots
+     fun getSlot() = listSlots
 
 }
 

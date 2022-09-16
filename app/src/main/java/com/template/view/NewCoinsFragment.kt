@@ -6,19 +6,16 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
-import com.template.NewCoinsPresenter.NewCoinsPresenter
-import com.template.NewCoinsPresenter.NewCoinsViewApi
+
 import com.template.R
 import com.template.databinding.FragmentNewCoinsBinding
 
 
-class NewCoinsFragment : Fragment(),NewCoinsViewApi {
-    val presenter = NewCoinsPresenter(Model)
+class NewCoinsFragment : Fragment() {
     lateinit var binding: FragmentNewCoinsBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
       binding = FragmentNewCoinsBinding.inflate(layoutInflater)
-       presenter.init(this)
 
         MainActivity.goBack = {findNavController().
         navigate(NewCoinsFragmentDirections.actionNewCoinsFragmentToMainFragment())}
@@ -36,12 +33,10 @@ class NewCoinsFragment : Fragment(),NewCoinsViewApi {
 
     override fun onDestroy() {
         super.onDestroy()
-        presenter.distroy()
     }
 
-    override fun clickNewCoins() {
+   fun clickNewCoins() {
         binding.BreverdCoins.setOnClickListener {
-            presenter.setMainCount()
             (requireActivity() as MainActivity).navController.navigate(R.id.action_newCoinsFragment_to_mainFragment)
             DataBasePreferences(requireContext()).setBalans(1000)
 

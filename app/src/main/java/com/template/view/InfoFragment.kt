@@ -8,17 +8,14 @@ import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.template.R
 import com.template.databinding.FragmentInfoBinding
-import com.template.infopresenter.InfoPresenter
-import com.template.infopresenter.InfoViewApi
 
 
-class InfoFragment : Fragment(),InfoViewApi {
+
+class InfoFragment : Fragment() {
 lateinit var binding: FragmentInfoBinding
- val presenter  = InfoPresenter()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = FragmentInfoBinding.inflate(layoutInflater)
-        presenter.init(this)
 
         MainActivity.goBack = {
             findNavController().
@@ -27,7 +24,7 @@ lateinit var binding: FragmentInfoBinding
         }
 
 
-    override fun clickOk() {
+    fun clickOk() {
         binding.Bok.setOnClickListener {
             (requireActivity() as MainActivity).navController.navigate(R.id
                 .action_infoFragment_to_mainFragment)
@@ -36,13 +33,12 @@ lateinit var binding: FragmentInfoBinding
 
     override fun onDestroy() {
         super.onDestroy()
-        presenter.distroy()
     }
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
         return binding.root
     }
 }
