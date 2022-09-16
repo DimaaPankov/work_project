@@ -4,6 +4,7 @@ import android.animation.ObjectAnimator
 import android.os.Handler
 import android.os.Looper
 import android.view.View
+import android.widget.ImageView
 import android.widget.TextView
 
 class AnimationPresenter () {
@@ -15,9 +16,9 @@ class AnimationPresenter () {
         context!!.startAnimation()
     }
 
-     fun animationVin(view1: TextView, view11: TextView, view2: TextView, view22: TextView,
-                             view3: TextView, view33: TextView, viewLine: View,betCount:TextView,
-                             betCountSmile:TextView,TVvin:TextView,TVxxx:TextView){
+     fun animationVin(view1: ImageView, view11: TextView, view2: ImageView, view22: TextView,
+                      view3: ImageView, view33: TextView, viewLine: View, betCount:TextView,
+                      betCountSmile:TextView, TVvin:TextView, TVxxx:TextView){
 
 
 
@@ -93,7 +94,7 @@ class AnimationPresenter () {
         }
     }
 
-    private fun animationSlot(view1: TextView, view2: TextView,betCount:TextView,betCountSmile:TextView,TVvin:TextView) {
+    private fun animationSlot(view1: TextView, view2: ImageView,betCount:TextView,betCountSmile:TextView,TVvin:TextView) {
         var timer = 0L
 
 

@@ -7,7 +7,6 @@ class MainPresenter(val data: DataApi) {
         context = _view
         context!!.clickInfo()
         context!!.clickPlay()
-        context!!.showCoins()
     }
     fun getCoins() = data.getMainCount()
 

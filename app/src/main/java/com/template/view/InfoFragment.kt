@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import com.template.R
 import com.template.databinding.FragmentInfoBinding
 import com.template.infopresenter.InfoPresenter
@@ -18,6 +19,11 @@ lateinit var binding: FragmentInfoBinding
         super.onCreate(savedInstanceState)
         binding = FragmentInfoBinding.inflate(layoutInflater)
         presenter.init(this)
+
+        MainActivity.goBack = {
+            findNavController().
+            navigate(InfoFragmentDirections.actionInfoFragmentToMainFragment())
+        }
         }
 
 

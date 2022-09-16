@@ -20,6 +20,8 @@ class MainFragment : Fragment(),MainViewApi {
         super.onCreate(savedInstanceState)
         binding = FragmentMainBinding.inflate(layoutInflater)
         presenter.init(this)
+
+
     }
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -34,9 +36,7 @@ class MainFragment : Fragment(),MainViewApi {
         presenter.distroy()
     }
 
-    override fun showCoins() {
-        binding.TVcoins.text = presenter.getCoins().toString()
-    }
+
 
     override fun clickPlay() {
         binding.Bplay.setOnClickListener {
@@ -47,6 +47,10 @@ class MainFragment : Fragment(),MainViewApi {
     override fun clickInfo() {
         binding.TVinfo.setOnClickListener {
             (requireActivity() as MainActivity).navController.navigate(R.id.action_mainFragment_to_infoFragment)
+        }
+        binding.Ishope.setOnClickListener{
+            (requireActivity() as MainActivity).navController.navigate(R.id.action_mainFragment_to_shopFragment)
+
         }
     }
 }

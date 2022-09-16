@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import com.template.NewCoinsPresenter.NewCoinsPresenter
 import com.template.NewCoinsPresenter.NewCoinsViewApi
 import com.template.R
@@ -18,6 +19,9 @@ class NewCoinsFragment : Fragment(),NewCoinsViewApi {
         super.onCreate(savedInstanceState)
       binding = FragmentNewCoinsBinding.inflate(layoutInflater)
        presenter.init(this)
+
+        MainActivity.goBack = {findNavController().
+        navigate(NewCoinsFragmentDirections.actionNewCoinsFragmentToMainFragment())}
     }
 
     override fun onCreateView(
@@ -28,6 +32,8 @@ class NewCoinsFragment : Fragment(),NewCoinsViewApi {
         return binding.root
     }
 
+
+
     override fun onDestroy() {
         super.onDestroy()
         presenter.distroy()
@@ -37,6 +43,7 @@ class NewCoinsFragment : Fragment(),NewCoinsViewApi {
         binding.BreverdCoins.setOnClickListener {
             presenter.setMainCount()
             (requireActivity() as MainActivity).navController.navigate(R.id.action_newCoinsFragment_to_mainFragment)
+            DataBasePreferences(requireContext()).setBalans(1000)
 
         }
     }

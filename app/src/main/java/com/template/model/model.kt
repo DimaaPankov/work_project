@@ -1,36 +1,55 @@
 package com.template.view
 
+import android.content.Context
+import android.content.SharedPreferences
+import com.template.R
 import com.template.mainpresenter.DataApi
 
 
 
+class DataBasePreferences(val _context: Context) {
+    private var prefs: SharedPreferences
+    private val prefsSetting = _context.getSharedPreferences("databaseInfo", Context.MODE_PRIVATE)
+    private var editor: SharedPreferences.Editor
+    private val editorSettings = prefsSetting.edit()
+    init {
+        prefs = _context.getSharedPreferences(getBalans().toString(), Context.MODE_PRIVATE)
+        editor = prefs.edit()
+    }
+
+    fun getBalans(): Int {
+        return prefsSetting.getInt("size",0)
+    }
+
+    fun setBalans(i:Int) {
+        editorSettings.putInt("size",i).apply()
+    }
+}
+
 object Model: DataApi {
     private var minus = true
-    private var betCountXXX = 0
-    private var winCount = 0
-    private var winLine = booleanArrayOf(false,false,false)
-    private val listSlots = mutableListOf<String>("","","","","","","","","")
+    private val listSlots = mutableListOf(0,0,0,0,0,0,0,0,0)
     private var BET:Int = 5
     private var MAINcount:Int = 1000
 
+    val slots = listOf(
+        //26%
+        R.drawable.kiwi,R.drawable.kiwi,R.drawable.kiwi,R.drawable.kiwi,R.drawable.kiwi,
+        R.drawable.kiwi,R.drawable.kiwi,R.drawable.kiwi,R.drawable.kiwi,R.drawable.kiwi,
+        R.drawable.kiwi,R.drawable.kiwi,R.drawable.kiwi, //13
+        //14%
+        R.drawable.seven2,R.drawable.seven2,R.drawable.seven2,R.drawable.seven2,R.drawable.seven2,
+        R.drawable.seven2,R.drawable.seven2,//7
+        //10%
+        R.drawable.cherry,R.drawable.cherry,R.drawable.cherry,R.drawable.cherry,R.drawable.cherry,//5
+        //30%
+        R.drawable.raspberry,R.drawable.raspberry,R.drawable.raspberry,R.drawable.raspberry,R.drawable.raspberry,
+        R.drawable.raspberry,R.drawable.raspberry,R.drawable.raspberry,R.drawable.raspberry,R.drawable.raspberry,
+        R.drawable.raspberry,R.drawable.raspberry,R.drawable.raspberry,R.drawable.raspberry,R.drawable.raspberry,//15
+        //20%
+        R.drawable.strawberry,R.drawable.strawberry,R.drawable.strawberry,R.drawable.strawberry,R.drawable.strawberry,
+        R.drawable.strawberry,R.drawable.strawberry,R.drawable.strawberry,R.drawable.strawberry,R.drawable.strawberry,//10
 
-    var slots = listOf(
-        //26% 🍒
-        "\uD83C\uDF52","\uD83C\uDF52","\uD83C\uDF52","\uD83C\uDF52","\uD83C\uDF52",
-        "\uD83C\uDF52","\uD83C\uDF52","\uD83C\uDF52","\uD83C\uDF52","\uD83C\uDF52",
-        "\uD83C\uDF52","\uD83C\uDF52","\uD83C\uDF52",
-        //14%🍓
-        "\uD83C\uDF53","\uD83C\uDF53", "\uD83C\uDF53","\uD83C\uDF53", "\uD83C\uDF53",
-        "\uD83C\uDF53","\uD83C\uDF53",
-        //10% 🥥
-        "\uD83E\uDD65","\uD83E\uDD65","\uD83E\uDD65","\uD83E\uDD65","\uD83E\uDD65",
-        //30%🍌
-        "\uD83C\uDF4C", "\uD83C\uDF4C","\uD83C\uDF4C","\uD83C\uDF4C","\uD83C\uDF4C",
-        "\uD83C\uDF4C", "\uD83C\uDF4C","\uD83C\uDF4C","\uD83C\uDF4C","\uD83C\uDF4C",
-        "\uD83C\uDF4C", "\uD83C\uDF4C","\uD83C\uDF4C","\uD83C\uDF4C","\uD83C\uDF4C",
-        //20%🍍
-        "\uD83C\uDF4D","\uD83C\uDF4D","\uD83C\uDF4D","\uD83C\uDF4D","\uD83C\uDF4D",
-        "\uD83C\uDF4D","\uD83C\uDF4D","\uD83C\uDF4D","\uD83C\uDF4D","\uD83C\uDF4D"
     )
 
 

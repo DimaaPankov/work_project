@@ -10,6 +10,6 @@ interface DataApi {
    fun getBet():Int
 
    fun setSlot()
-   fun getSlot():MutableList<String>
+   fun getSlot():MutableList<Int>
 
 }

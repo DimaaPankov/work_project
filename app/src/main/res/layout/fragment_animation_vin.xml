@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#252525"
+    android:background="#F38181"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".view.AnimationVinFragment">
 
@@ -31,15 +31,15 @@
         android:textColor="#EFEDED"
         android:textSize="50sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/frame"
+        app:layout_constraintBottom_toTopOf="@+id/frame3"
         app:layout_constraintEnd_toStartOf="@+id/betCount"
         app:layout_constraintTop_toTopOf="parent" />
 
     <FrameLayout
-        android:id="@+id/frame"
+        android:id="@+id/frame3"
         android:layout_width="340dp"
         android:layout_height="340dp"
-        android:background="#4F5050"
+        android:background="#F9ED69"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -47,19 +47,18 @@
 
     </FrameLayout>
 
-    <TextView
+    <ImageView
         android:id="@+id/TVslot5"
         android:layout_width="98dp"
         android:layout_height="98dp"
-        android:background="#CDDC39"
+        android:background="#930077"
+        android:padding="20dp"
         android:gravity="center"
-        android:text="🍓"
-        android:textColor="#757575"
-        android:textSize="40sp"
-        app:layout_constraintBottom_toBottomOf="@+id/frame"
-        app:layout_constraintEnd_toEndOf="@+id/frame"
-        app:layout_constraintStart_toStartOf="@+id/frame"
-        app:layout_constraintTop_toTopOf="@+id/frame" />
+        android:src="@drawable/cherry"
+        app:layout_constraintBottom_toBottomOf="@+id/frame3"
+        app:layout_constraintEnd_toEndOf="@+id/frame3"
+        app:layout_constraintStart_toStartOf="@+id/frame3"
+        app:layout_constraintTop_toTopOf="@+id/frame3" />
 
     <TextView
         android:id="@+id/TVslot55"
@@ -72,26 +71,25 @@
         android:textStyle="bold"
         android:textSize="50sp"
         android:textColor="#757575"
-        app:layout_constraintBottom_toBottomOf="@+id/frame"
-        app:layout_constraintEnd_toEndOf="@+id/frame"
-        app:layout_constraintStart_toStartOf="@+id/frame"
-        app:layout_constraintTop_toTopOf="@+id/frame" />
+        app:layout_constraintBottom_toBottomOf="@+id/frame3"
+        app:layout_constraintEnd_toEndOf="@+id/frame3"
+        app:layout_constraintStart_toStartOf="@+id/frame3"
+        app:layout_constraintTop_toTopOf="@+id/frame3" />
 
 
 
-    <TextView
+    <ImageView
         android:id="@+id/TVslot4"
         android:layout_width="98dp"
         android:layout_height="98dp"
-        android:background="#CDDC39"
+        android:background="#930077"
+        android:padding="20dp"
         android:gravity="center"
-        android:text="🍓"
-        android:textColor="#757575"
-        android:textSize="40sp"
-        app:layout_constraintBottom_toBottomOf="@+id/frame"
+        android:src="@drawable/cherry"
+        app:layout_constraintBottom_toBottomOf="@+id/frame3"
         app:layout_constraintEnd_toStartOf="@+id/TVslot5"
-        app:layout_constraintStart_toStartOf="@+id/frame"
-        app:layout_constraintTop_toTopOf="@+id/frame" />
+        app:layout_constraintStart_toStartOf="@+id/frame3"
+        app:layout_constraintTop_toTopOf="@+id/frame3" />
 
     <TextView
         android:id="@+id/TVslot44"
@@ -105,25 +103,24 @@
         android:textStyle="bold"
         android:textSize="50sp"
         android:textColor="#757575"
-        app:layout_constraintBottom_toBottomOf="@+id/frame"
+        app:layout_constraintBottom_toBottomOf="@+id/frame3"
         app:layout_constraintEnd_toStartOf="@+id/TVslot5"
-        app:layout_constraintStart_toStartOf="@+id/frame"
-        app:layout_constraintTop_toTopOf="@+id/frame" />
+        app:layout_constraintStart_toStartOf="@+id/frame3"
+        app:layout_constraintTop_toTopOf="@+id/frame3" />
 
-    <TextView
-        android:id="@+id/TVslot3"
+    <ImageView
+        android:id="@+id/TVslot9"
         android:layout_width="98dp"
         android:layout_height="98dp"
-        android:background="#CDDC39"
+        android:background="#930077"
+        android:padding="20dp"
         android:gravity="center"
-        android:text=" 🍌 "
-        android:textColor="#757575"
-        android:textSize="40sp"
+        android:src="@drawable/cherry"
         app:layout_constraintBottom_toTopOf="@+id/TVslot6"
-        app:layout_constraintEnd_toEndOf="@+id/frame"
-        app:layout_constraintStart_toEndOf="@+id/TVslot2"
-        app:layout_constraintTop_toTopOf="@+id/frame">
-    </TextView>
+        app:layout_constraintEnd_toEndOf="@+id/frame3"
+        app:layout_constraintStart_toEndOf="@+id/TVslot8"
+        app:layout_constraintTop_toTopOf="@+id/frame3">
+    </ImageView>
 
     <TextView
         android:id="@+id/TVslot33"
@@ -137,23 +134,22 @@
         android:textSize="50sp"
         android:textColor="#757575"
         app:layout_constraintBottom_toTopOf="@+id/TVslot6"
-        app:layout_constraintEnd_toEndOf="@+id/frame"
-        app:layout_constraintStart_toEndOf="@+id/TVslot2"
-        app:layout_constraintTop_toTopOf="@+id/frame"></TextView>
+        app:layout_constraintEnd_toEndOf="@+id/frame3"
+        app:layout_constraintStart_toEndOf="@+id/TVslot8"
+        app:layout_constraintTop_toTopOf="@+id/frame3"></TextView>
 
-    <TextView
+    <ImageView
         android:id="@+id/TVslot6"
         android:layout_width="98dp"
         android:layout_height="98dp"
-        android:background="#CDDC39"
+        android:background="#930077"
+        android:padding="20dp"
         android:gravity="center"
-        android:text=" 🍌 "
-        android:textColor="#757575"
-        android:textSize="40sp"
-        app:layout_constraintBottom_toBottomOf="@+id/frame"
-        app:layout_constraintEnd_toEndOf="@+id/frame"
+        android:src="@drawable/cherry"
+        app:layout_constraintBottom_toBottomOf="@+id/frame3"
+        app:layout_constraintEnd_toEndOf="@+id/frame3"
         app:layout_constraintStart_toEndOf="@+id/TVslot5"
-        app:layout_constraintTop_toTopOf="@+id/frame" />
+        app:layout_constraintTop_toTopOf="@+id/frame3" />
 
     <TextView
         android:id="@+id/TVslot66"
@@ -166,23 +162,22 @@
         android:textStyle="bold"
         android:textSize="50sp"
         android:textColor="#757575"
-        app:layout_constraintBottom_toBottomOf="@+id/frame"
-        app:layout_constraintEnd_toEndOf="@+id/frame"
+        app:layout_constraintBottom_toBottomOf="@+id/frame3"
+        app:layout_constraintEnd_toEndOf="@+id/frame3"
         app:layout_constraintStart_toEndOf="@+id/TVslot5"
-        app:layout_constraintTop_toTopOf="@+id/frame" />
+        app:layout_constraintTop_toTopOf="@+id/frame3" />
 
-    <TextView
+    <ImageView
         android:id="@+id/TVslot7"
         android:layout_width="98dp"
         android:layout_height="98dp"
-        android:background="#CDDC39"
+        android:background="#930077"
+        android:padding="20dp"
         android:gravity="center"
-        android:text="🍓 "
-        android:textColor="#757575"
-        android:textSize="40sp"
-        app:layout_constraintBottom_toBottomOf="@+id/frame"
+        android:src="@drawable/cherry"
+        app:layout_constraintBottom_toBottomOf="@+id/frame3"
         app:layout_constraintEnd_toStartOf="@+id/TVslot8"
-        app:layout_constraintStart_toStartOf="@+id/frame"
+        app:layout_constraintStart_toStartOf="@+id/frame3"
         app:layout_constraintTop_toBottomOf="@+id/TVslot4" />
 
     <TextView
@@ -196,22 +191,21 @@
         android:textStyle="bold"
         android:textSize="50sp"
         android:textColor="#757575"
-        app:layout_constraintBottom_toBottomOf="@+id/frame"
+        app:layout_constraintBottom_toBottomOf="@+id/frame3"
         app:layout_constraintEnd_toStartOf="@+id/TVslot8"
-        app:layout_constraintStart_toStartOf="@+id/frame"
+        app:layout_constraintStart_toStartOf="@+id/frame3"
         app:layout_constraintTop_toBottomOf="@+id/TVslot4" />
 
-    <TextView
+    <ImageView
         android:id="@+id/TVslot9"
         android:layout_width="98dp"
         android:layout_height="98dp"
-        android:background="#CDDC39"
+        android:background="#930077"
+        android:padding="20dp"
         android:gravity="center"
-        android:text="🍒"
-        android:textColor="#757575"
-        android:textSize="40sp"
-        app:layout_constraintBottom_toBottomOf="@+id/frame"
-        app:layout_constraintEnd_toEndOf="@+id/frame"
+        android:src="@drawable/cherry"
+        app:layout_constraintBottom_toBottomOf="@+id/frame3"
+        app:layout_constraintEnd_toEndOf="@+id/frame3"
         app:layout_constraintStart_toEndOf="@+id/TVslot8"
         app:layout_constraintTop_toBottomOf="@+id/TVslot6" />
 
@@ -226,24 +220,23 @@
         android:textStyle="bold"
         android:textSize="50sp"
         android:textColor="#757575"
-        app:layout_constraintBottom_toBottomOf="@+id/frame"
-        app:layout_constraintEnd_toEndOf="@+id/frame"
+        app:layout_constraintBottom_toBottomOf="@+id/frame3"
+        app:layout_constraintEnd_toEndOf="@+id/frame3"
         app:layout_constraintStart_toEndOf="@+id/TVslot8"
         app:layout_constraintTop_toBottomOf="@+id/TVslot6" />
 
-    <TextView
-        android:id="@+id/TVslot2"
+    <ImageView
+        android:id="@+id/TVslot8"
         android:layout_width="98dp"
         android:layout_height="98dp"
-        android:background="#CDDC39"
+        android:background="#930077"
+        android:padding="20dp"
         android:gravity="center"
-        android:text="🍒"
-        android:textColor="#757575"
-        android:textSize="40sp"
+        android:src="@drawable/cherry"
         app:layout_constraintBottom_toTopOf="@+id/TVslot5"
-        app:layout_constraintEnd_toEndOf="@+id/frame"
-        app:layout_constraintStart_toStartOf="@+id/frame"
-        app:layout_constraintTop_toTopOf="@+id/frame"/>
+        app:layout_constraintEnd_toEndOf="@+id/frame3"
+        app:layout_constraintStart_toStartOf="@+id/frame3"
+        app:layout_constraintTop_toTopOf="@+id/frame3"/>
 
     <TextView
         android:id="@+id/TVslot22"
@@ -257,26 +250,25 @@
         android:textSize="50sp"
         android:textColor="#757575"
         app:layout_constraintBottom_toTopOf="@+id/TVslot5"
-        app:layout_constraintEnd_toEndOf="@+id/frame"
-        app:layout_constraintStart_toStartOf="@+id/frame"
-        app:layout_constraintTop_toTopOf="@+id/frame">
+        app:layout_constraintEnd_toEndOf="@+id/frame3"
+        app:layout_constraintStart_toStartOf="@+id/frame3"
+        app:layout_constraintTop_toTopOf="@+id/frame3">
 
 
     </TextView>
 
 
-    <TextView
+    <ImageView
         android:id="@+id/TVslot8"
         android:layout_width="98dp"
         android:layout_height="98dp"
-        android:background="#CDDC39"
+        android:background="#930077"
+        android:padding="20dp"
         android:gravity="center"
-        android:text=" 🍌 "
-        android:textColor="#757575"
-        android:textSize="40sp"
-        app:layout_constraintBottom_toBottomOf="@+id/frame"
-        app:layout_constraintEnd_toEndOf="@+id/frame"
-        app:layout_constraintStart_toStartOf="@+id/frame"
+        android:src="@drawable/cherry"
+        app:layout_constraintBottom_toBottomOf="@+id/frame3"
+        app:layout_constraintEnd_toEndOf="@+id/frame3"
+        app:layout_constraintStart_toStartOf="@+id/frame3"
         app:layout_constraintTop_toBottomOf="@+id/TVslot5" />
 
     <TextView
@@ -290,25 +282,23 @@
         android:textStyle="bold"
         android:textSize="50sp"
         android:textColor="#757575"
-        app:layout_constraintBottom_toBottomOf="@+id/frame"
-        app:layout_constraintEnd_toEndOf="@+id/frame"
-        app:layout_constraintStart_toStartOf="@+id/frame"
+        app:layout_constraintBottom_toBottomOf="@+id/frame3"
+        app:layout_constraintEnd_toEndOf="@+id/frame3"
+        app:layout_constraintStart_toStartOf="@+id/frame3"
         app:layout_constraintTop_toBottomOf="@+id/TVslot5" />
 
-    <TextView
-        android:id="@+id/TVslot1"
+    <ImageView
+        android:id="@+id/TVslot7"
         android:layout_width="98dp"
         android:layout_height="98dp"
-        android:background="#CDDC39"
+        android:background="#930077"
+        android:padding="20dp"
         android:gravity="center"
-
-        android:text="🍓"
-        android:textColor="#757575"
-        android:textSize="40sp"
+        android:src="@drawable/cherry"
         app:layout_constraintBottom_toTopOf="@+id/TVslot4"
-        app:layout_constraintEnd_toStartOf="@+id/TVslot2"
-        app:layout_constraintStart_toStartOf="@+id/frame"
-        app:layout_constraintTop_toTopOf="@+id/frame"></TextView>
+        app:layout_constraintEnd_toStartOf="@+id/TVslot8"
+        app:layout_constraintStart_toStartOf="@+id/frame3"
+        app:layout_constraintTop_toTopOf="@+id/frame3"></ImageView>
 
     <TextView
         android:id="@+id/TVslot11"
@@ -322,9 +312,9 @@
         android:textSize="50sp"
         android:textColor="#757575"
         app:layout_constraintBottom_toTopOf="@+id/TVslot4"
-        app:layout_constraintEnd_toStartOf="@+id/TVslot2"
-        app:layout_constraintStart_toStartOf="@+id/frame"
-        app:layout_constraintTop_toTopOf="@+id/frame"></TextView>
+        app:layout_constraintEnd_toStartOf="@+id/TVslot8"
+        app:layout_constraintStart_toStartOf="@+id/frame3"
+        app:layout_constraintTop_toTopOf="@+id/frame3"></TextView>
 
     <TextView
         android:id="@+id/betCount"
@@ -333,10 +323,10 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="40dp"
         android:text="300"
-        android:textColor="#FFFFFF"
+        android:textColor="#3E3E3E"
         android:textSize="70sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/frame"
+        app:layout_constraintBottom_toTopOf="@+id/frame3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -347,10 +337,10 @@
         android:layout_height="10dp"
         android:background="#F84437"
         android:visibility="invisible"
-        app:layout_constraintBottom_toBottomOf="@+id/TVslot2"
+        app:layout_constraintBottom_toBottomOf="@+id/TVslot8"
         app:layout_constraintEnd_toEndOf="@+id/TVslot6"
-        app:layout_constraintStart_toStartOf="@+id/TVslot1"
-        app:layout_constraintTop_toTopOf="@+id/TVslot2" />
+        app:layout_constraintStart_toStartOf="@+id/TVslot7"
+        app:layout_constraintTop_toTopOf="@+id/TVslot8" />
 
     <View
         android:id="@+id/V_center_horisontal"
@@ -358,10 +348,10 @@
         android:layout_height="10dp"
         android:visibility="invisible"
         android:background="#F84437"
-        app:layout_constraintBottom_toBottomOf="@+id/frame"
+        app:layout_constraintBottom_toBottomOf="@+id/frame3"
         app:layout_constraintEnd_toEndOf="@+id/TVslot6"
         app:layout_constraintStart_toStartOf="@+id/TVslot4"
-        app:layout_constraintTop_toTopOf="@+id/frame" />
+        app:layout_constraintTop_toTopOf="@+id/frame3" />
 
     <View
         android:id="@+id/V_bottom_horisontal"
@@ -371,7 +361,7 @@
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="@+id/TVslot8"
         app:layout_constraintEnd_toEndOf="@+id/TVslot6"
-        app:layout_constraintStart_toStartOf="@+id/TVslot1"
+        app:layout_constraintStart_toStartOf="@+id/TVslot7"
         app:layout_constraintTop_toTopOf="@+id/TVslot8" />
 
 
@@ -381,11 +371,11 @@
         android:layout_height="146dp"
         android:layout_marginTop="10dp"
         android:text="10x BET"
-        android:textColor="#FFC107"
+        android:textColor="#469EC6"
         android:textSize="100sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/frame" />
+        app:layout_constraintTop_toBottomOf="@+id/frame3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

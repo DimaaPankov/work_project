@@ -1,5 +1,6 @@
 package com.template.gamepresenter
 
+import com.template.R
 import com.template.mainpresenter.DataApi
 
 class GamePresenter (val data: DataApi) {
@@ -9,7 +10,6 @@ class GamePresenter (val data: DataApi) {
     var winLine3 = false
     var minus = false
     var betCountXXX = 0
-//gitrigvhrewdhttps://github.com/DimaaPankov/work_project.git4g3v34gh5g34fe
 
     fun init(_view: GameViewApi){
         context = _view
@@ -18,7 +18,6 @@ context!!.showData()
 context!!.clickBack()
 context!!.clickBet()
 context!!.clickSpin()
-//erbhotrejbhitbgit
 }
 
 
@@ -53,28 +52,29 @@ win()
     }
 }
 
-private fun checkLine(string1:String, string2: String, string3:String):Boolean{
-if(( string1 == string2) and (string2 == string3)) {
-    when(string1 ) {
-        "\uD83C\uDF4C" -> {
+
+private fun checkLine(int1:Int, int2: Int, int3 : Int):Boolean{
+if(( int1 == int2) and (int2 == int3)) {
+    when(int1 ) {
+        R.drawable.kiwi -> {
             winBet = winBet+getBet()
             betCountXXX += 1
 
         }
 
-        "\uD83C\uDF52" -> {
+        R.drawable.raspberry -> {
             winBet = winBet+getBet()*2
             betCountXXX += 2
         }
-        "\uD83C\uDF53" -> {
+        R.drawable.strawberry -> {
             winBet = winBet+getBet()*5
             betCountXXX += 5
         }
-        "\uD83E\uDD65" -> {
+        R.drawable.seven2-> {
             winBet = winBet+getBet()*10
             betCountXXX += 10
         }
-        "\uD83C\uDF4D" -> {
+        R.drawable.cherry -> {
             winBet = winBet+getBet()*3
             betCountXXX += 3
         }
@@ -83,6 +83,6 @@ if(( string1 == string2) and (string2 == string3)) {
     setMainCount(data.getBet(),false)
 
 }
-return ( string1 ==  string2) and ( string2 ==  string3)
+return ( int1 ==  int2) and ( int2 == int3  )
 }
 }

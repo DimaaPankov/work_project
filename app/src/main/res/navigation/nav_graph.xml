@@ -16,6 +16,9 @@
         <action
             android:id="@+id/action_mainFragment_to_infoFragment"
             app:destination="@id/infoFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_shopFragment"
+            app:destination="@id/shopFragment" />
     </fragment>
     <fragment
         android:id="@+id/gameFragment"
@@ -63,7 +66,7 @@
             app:destination="@id/gameFragment" />
         <argument
             android:name="arraySlots"
-            app:argType="string[]" />
+            app:argType="integer[]" />
         <argument
             android:name="xBet"
             app:argType="integer" />
@@ -82,5 +85,31 @@
         <action
             android:id="@+id/action_betFragment_to_gameFragment"
             app:destination="@id/gameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/shopFragment"
+        android:name="com.template.view.ShopFragment"
+        android:label="ShopFragment" >
+        <action
+            android:id="@+id/action_shopFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_shopFragment_to_deteilFragment"
+            app:destination="@id/deteilFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/deteilFragment"
+        android:name="com.template.view.DeteilFragment"
+        android:label="fragment_deteil"
+        tools:layout="@layout/fragment_deteil" >
+        <action
+            android:id="@+id/action_deteilFragment_to_shopFragment"
+            app:destination="@id/shopFragment" />
+        <argument
+            android:name="img"
+            app:argType="integer" />
+        <argument
+            android:name="buy"
+            app:argType="integer" />
     </fragment>
 </navigation>

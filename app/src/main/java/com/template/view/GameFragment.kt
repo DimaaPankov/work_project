@@ -7,7 +7,6 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.core.content.ContextCompat
 import androidx.navigation.fragment.findNavController
 import com.template.R
@@ -17,17 +16,17 @@ import com.template.gamepresenter.GameViewApi
 
 
 class GameFragment : Fragment(), GameViewApi {
-    var clicable = true
-    val presenter = GamePresenter(Model)
-
+    val presenter by lazy {GamePresenter(Model)}
     lateinit var binding: FragmentGameBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = FragmentGameBinding.inflate(layoutInflater)
 
         presenter.init(this)
-
-
+        MainActivity.goBack = {
+            findNavController().
+            navigate(GameFragmentDirections.actionGameFragmentToMainFragment())
+        }
     }
 
     override fun onCreateView(
@@ -52,15 +51,15 @@ class GameFragment : Fragment(), GameViewApi {
             binding.Bbet.isClickable = false
                 binding.Bspin.visibility = View.INVISIBLE
                 presenter.setSlots()
-                binding.TVslot1.text = presenter.getSlots()[0]
-                binding.TVslot2.text = presenter.getSlots()[1]
-                binding.TVslot3.text = presenter.getSlots()[2]
-                binding.TVslot4.text = presenter.getSlots()[3]
-                binding.TVslot5.text = presenter.getSlots()[4]
-                binding.TVslot6.text = presenter.getSlots()[5]
-                binding.TVslot7.text = presenter.getSlots()[6]
-                binding.TVslot8.text = presenter.getSlots()[7]
-                binding.TVslot9.text = presenter.getSlots()[8]
+                binding.TVslot1.setImageResource( presenter.getSlots()[0])
+                binding.TVslot2.setImageResource( presenter.getSlots()[1])
+                binding.TVslot3.setImageResource( presenter.getSlots()[2])
+                binding.TVslot4.setImageResource( presenter.getSlots()[3])
+                binding.TVslot5.setImageResource( presenter.getSlots()[4])
+                binding.TVslot6.setImageResource( presenter.getSlots()[5])
+                binding.TVslot7.setImageResource( presenter.getSlots()[6])
+                binding.TVslot8.setImageResource( presenter.getSlots()[7])
+                binding.TVslot9.setImageResource( presenter.getSlots()[8])
                 binding.betCount.text = presenter.getBet().toString()
                 binding.betCount.setTextColor(
                     ContextCompat.getColor(
@@ -90,7 +89,7 @@ class GameFragment : Fragment(), GameViewApi {
                                         presenter.getSlots()[6],
                                         presenter.getSlots()[7],
                                         presenter.getSlots()[8],
-                                    )  /* presenter.getSlots()*/,
+                                    ).toIntArray(),
                                     presenter.betCountXXX,
                                     presenter.winBet,
                                     booleanArrayOf(
@@ -100,18 +99,21 @@ class GameFragment : Fragment(), GameViewApi {
                                     )
                                 )
                             findNavController().navigate(directions)
-
+                            DataBasePreferences(requireContext()).setBalans(presenter.getMainCont()+
+                                    presenter.betCountXXX - 1)
                         }, 3000)
+
                     }
                 } else {
-                    (requireActivity() as MainActivity).navController.navigate(R.id.action_gameFragment_to_newCoinsFragment)
+                    (requireActivity() as MainActivity).navController.navigate(R.id
+                        .action_gameFragment_to_newCoinsFragment)
                     presenter.minus = true
                 }
             Handler(Looper.getMainLooper()).postDelayed({
                 binding.Bspin.isClickable = true
                 binding.IVback.isClickable = true
-                binding.Bbet.isClickable = true                                        },3000)
-
+                binding.Bbet.isClickable = true},3000)
+            DataBasePreferences(requireContext()).setBalans(presenter.getMainCont())
         }
 
     }
@@ -133,7 +135,6 @@ class GameFragment : Fragment(), GameViewApi {
             }
 
             override fun showData() {
-
                 binding.betCount.text = presenter.getMainCont().toString()
                 binding.betCountMinus.text = presenter.getBet().toString()
             }
