@@ -35,33 +35,26 @@ class AnimationVinFragment : Fragment(), AnimationViewApi {
 
    override fun setData(){
         val listSlots = args.arraySlots
-        binding.TVslot1.text = listSlots[0]
-        binding.TVslot2.text = listSlots[1]
-        binding.TVslot3.text = listSlots[2]
-        binding.TVslot4.text = listSlots[3]
+        binding.TVslot1.setImageResource(listSlots[0])
+        binding.TVslot2.setImageResource(listSlots[1])
+        binding.TVslot3.setImageResource(listSlots[2])
+/**     binding.TVslot4.text = listSlots[3]
         binding.TVslot5.text = listSlots[4]
         binding.TVslot6.text = listSlots[5]
         binding.TVslot7.text = listSlots[6]
         binding.TVslot8.text = listSlots[7]
-        binding.TVslot9.text = listSlots[8]
+        binding.TVslot9.text = listSlots[8]**/
         binding.TVxxx.text = args.xBet.toString()+"X BET "
         binding.betCount.text = args.win.toString()
     }
 
     override fun startAnimation() {
-        if(args.winLine[0]){
+
             presenter.animationVin( binding.TVslot1, binding.TVslot11, binding.TVslot2,
-                binding.TVslot22, binding.TVslot3, binding.TVslot33,binding.VTopHorisontal,binding.betCount,
-                binding.betCountSmile,binding.TVvin,binding.TVxxx
-            )}
-        if(args.winLine[1]){
-            presenter.animationVin( binding.TVslot4, binding.TVslot44, binding.TVslot5,
-                binding.TVslot55, binding.TVslot6, binding.TVslot66,binding.VCenterHorisontal,
-                binding.betCount, binding.betCountSmile,binding.TVvin,binding.TVxxx)}
-        if(args.winLine[2]){
-            presenter.animationVin( binding.TVslot7, binding.TVslot77, binding.TVslot8,
-                binding.TVslot88, binding.TVslot9, binding.TVslot99,binding.VBottomHorisontal,
-                binding.betCount, binding.betCountSmile,binding.TVvin,binding.TVxxx)}
+                binding.TVslot22, binding.TVslot3, binding.TVslot33,binding.betCount,
+                binding.betCountSmile,binding.TVvin,binding.TVxxx)
+
+
 
 
         Handler(Looper.getMainLooper()).postDelayed({

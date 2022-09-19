@@ -4,6 +4,7 @@ import android.animation.ObjectAnimator
 import android.os.Handler
 import android.os.Looper
 import android.view.View
+import android.widget.ImageView
 import android.widget.TextView
 
 class AnimationPresenter () {
@@ -15,23 +16,17 @@ class AnimationPresenter () {
         context!!.startAnimation()
     }
 
-     fun animationVin(view1: TextView, view11: TextView, view2: TextView, view22: TextView,
-                             view3: TextView, view33: TextView, viewLine: View,betCount:TextView,
+     fun animationVin(view1:ImageView , view11: TextView, view2:ImageView , view22: TextView,
+                             view3:ImageView , view33: TextView,betCount:TextView,
                              betCountSmile:TextView,TVvin:TextView,TVxxx:TextView){
 
-
-
-
-        animationSlot(view11, view1,betCount,betCountSmile,TVvin)
+         animationSlot(view11, view1,betCount,betCountSmile,TVvin)
         animationSlot(view22, view2,betCount,betCountSmile,TVvin)
         animationSlot(view33, view3,betCount,betCountSmile,TVvin)
-        animationLine(viewLine,betCount,TVxxx)
+        animationLine(betCount,TVxxx)
+}
 
-
-
-    }
-
-    private fun animationLine(viewLine:View,betCount:TextView,TVxxx: TextView){
+    private fun animationLine(betCount:TextView,TVxxx: TextView){
         var visibility = true
         var timer = 0L
 
@@ -43,12 +38,10 @@ class AnimationPresenter () {
 
             Handler(Looper.getMainLooper()).postDelayed({
                 if (visibility) {
-                    viewLine.visibility = View.VISIBLE
                     TVxxx.visibility = View.VISIBLE
                     visibility = false
 
                 } else {
-                    viewLine.visibility = View.INVISIBLE
                     TVxxx.visibility = View.INVISIBLE
                     visibility = true
                 }
@@ -93,7 +86,7 @@ class AnimationPresenter () {
         }
     }
 
-    private fun animationSlot(view1: TextView, view2: TextView,betCount:TextView,betCountSmile:TextView,TVvin:TextView) {
+    private fun animationSlot(view1: TextView, view2: ImageView,betCount:TextView,betCountSmile:TextView,TVvin:TextView) {
         var timer = 0L
 
 
@@ -133,7 +126,7 @@ class AnimationPresenter () {
                     val animator22 = ObjectAnimator.ofFloat(view2, View.SCALE_X, 0.7F)
                     animator22.duration = 100
                     animator22.start()
-                }, timer+300)/**/
+                }, timer+300)
                 timer+=400
             }
         },500)

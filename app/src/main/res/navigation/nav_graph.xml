@@ -63,7 +63,7 @@
             app:destination="@id/gameFragment" />
         <argument
             android:name="arraySlots"
-            app:argType="string[]" />
+            app:argType="integer[]" />
         <argument
             android:name="xBet"
             app:argType="integer" />

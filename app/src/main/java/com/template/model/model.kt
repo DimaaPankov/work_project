@@ -1,6 +1,7 @@
 package com.template.view
 
 import com.template.mainpresenter.DataApi
+import com.template.R
 
 
 
@@ -9,28 +10,24 @@ object Model: DataApi {
     private var betCountXXX = 0
     private var winCount = 0
     private var winLine = booleanArrayOf(false,false,false)
-    private val listSlots = mutableListOf<String>("","","","","","","","","")
+    private val listSlots = mutableListOf(0,0,0)
     private var BET:Int = 5
     private var MAINcount:Int = 1000
 
 
-    var slots = listOf(
-        //26% 🍒
-        "\uD83C\uDF52","\uD83C\uDF52","\uD83C\uDF52","\uD83C\uDF52","\uD83C\uDF52",
-        "\uD83C\uDF52","\uD83C\uDF52","\uD83C\uDF52","\uD83C\uDF52","\uD83C\uDF52",
-        "\uD83C\uDF52","\uD83C\uDF52","\uD83C\uDF52",
-        //14%🍓
-        "\uD83C\uDF53","\uD83C\uDF53", "\uD83C\uDF53","\uD83C\uDF53", "\uD83C\uDF53",
-        "\uD83C\uDF53","\uD83C\uDF53",
-        //10% 🥥
-        "\uD83E\uDD65","\uD83E\uDD65","\uD83E\uDD65","\uD83E\uDD65","\uD83E\uDD65",
-        //30%🍌
-        "\uD83C\uDF4C", "\uD83C\uDF4C","\uD83C\uDF4C","\uD83C\uDF4C","\uD83C\uDF4C",
-        "\uD83C\uDF4C", "\uD83C\uDF4C","\uD83C\uDF4C","\uD83C\uDF4C","\uD83C\uDF4C",
-        "\uD83C\uDF4C", "\uD83C\uDF4C","\uD83C\uDF4C","\uD83C\uDF4C","\uD83C\uDF4C",
-        //20%🍍
-        "\uD83C\uDF4D","\uD83C\uDF4D","\uD83C\uDF4D","\uD83C\uDF4D","\uD83C\uDF4D",
-        "\uD83C\uDF4D","\uD83C\uDF4D","\uD83C\uDF4D","\uD83C\uDF4D","\uD83C\uDF4D"
+    val slots = listOf(
+        R.drawable.kiwi,R.drawable.kiwi,R.drawable.kiwi,R.drawable.kiwi,R.drawable.kiwi,
+        R.drawable.kiwi,R.drawable.kiwi,R.drawable.kiwi,R.drawable.kiwi,R.drawable.kiwi,
+        R.drawable.kiwi,R.drawable.kiwi,R.drawable.kiwi, //13
+        R.drawable.seven2,R.drawable.seven2,R.drawable.seven2,R.drawable.seven2,R.drawable.seven2,
+        R.drawable.seven2,R.drawable.seven2,//7
+        R.drawable.cherry,R.drawable.cherry,R.drawable.cherry,R.drawable.cherry,R.drawable.cherry,//5
+        R.drawable.raspberry,R.drawable.raspberry,R.drawable.raspberry,R.drawable.raspberry,R.drawable.raspberry,
+        R.drawable.raspberry,R.drawable.raspberry,R.drawable.raspberry,R.drawable.raspberry,R.drawable.raspberry,
+        R.drawable.raspberry,R.drawable.raspberry,R.drawable.raspberry,R.drawable.raspberry,R.drawable.raspberry,//15
+        R.drawable.strawberry,R.drawable.strawberry,R.drawable.strawberry,R.drawable.strawberry,R.drawable.strawberry,
+        R.drawable.strawberry,R.drawable.strawberry,R.drawable.strawberry,R.drawable.strawberry,R.drawable.strawberry,//10
+
     )
 
 
@@ -54,8 +51,9 @@ object Model: DataApi {
 
 
     override fun getBet(): Int = BET
+
     override fun setSlot() {
-        for(i in 0..8)
+        for(i in 0..2)
         listSlots[i] = slots.random()
     }
 

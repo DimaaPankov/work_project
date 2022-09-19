@@ -37,8 +37,8 @@
 
     <FrameLayout
         android:id="@+id/frame"
-        android:layout_width="340dp"
-        android:layout_height="340dp"
+        android:layout_width="350dp"
+        android:layout_height="120dp"
         android:background="#4F5050"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -47,83 +47,20 @@
 
     </FrameLayout>
 
-    <TextView
-        android:id="@+id/TVslot5"
-        android:layout_width="98dp"
-        android:layout_height="98dp"
-        android:background="#CDDC39"
-        android:gravity="center"
-        android:text="🍓"
-        android:textColor="#757575"
-        android:textSize="40sp"
-        app:layout_constraintBottom_toBottomOf="@+id/frame"
-        app:layout_constraintEnd_toEndOf="@+id/frame"
-        app:layout_constraintStart_toStartOf="@+id/frame"
-        app:layout_constraintTop_toTopOf="@+id/frame" />
 
-    <TextView
-        android:id="@+id/TVslot55"
-        android:layout_width="98dp"
-        android:layout_height="98dp"
-        android:background="#2196F3"
-        android:gravity="center"
-        android:scaleX="0"
-        android:text="\$"
-        android:textStyle="bold"
-        android:textSize="50sp"
-        android:textColor="#757575"
-        app:layout_constraintBottom_toBottomOf="@+id/frame"
-        app:layout_constraintEnd_toEndOf="@+id/frame"
-        app:layout_constraintStart_toStartOf="@+id/frame"
-        app:layout_constraintTop_toTopOf="@+id/frame" />
-
-
-
-    <TextView
-        android:id="@+id/TVslot4"
-        android:layout_width="98dp"
-        android:layout_height="98dp"
-        android:background="#CDDC39"
-        android:gravity="center"
-        android:text="🍓"
-        android:textColor="#757575"
-        android:textSize="40sp"
-        app:layout_constraintBottom_toBottomOf="@+id/frame"
-        app:layout_constraintEnd_toStartOf="@+id/TVslot5"
-        app:layout_constraintStart_toStartOf="@+id/frame"
-        app:layout_constraintTop_toTopOf="@+id/frame" />
-
-    <TextView
-        android:id="@+id/TVslot44"
-        android:layout_width="98dp"
-        android:layout_height="98dp"
-        android:background="#2196F3"
-        android:gravity="center"
-        android:scaleX="0"
-        android:scaleY="1"
-        android:text="\$"
-        android:textStyle="bold"
-        android:textSize="50sp"
-        android:textColor="#757575"
-        app:layout_constraintBottom_toBottomOf="@+id/frame"
-        app:layout_constraintEnd_toStartOf="@+id/TVslot5"
-        app:layout_constraintStart_toStartOf="@+id/frame"
-        app:layout_constraintTop_toTopOf="@+id/frame" />
-
-    <TextView
+    <ImageView
         android:id="@+id/TVslot3"
         android:layout_width="98dp"
         android:layout_height="98dp"
         android:background="#CDDC39"
         android:gravity="center"
-        android:text=" 🍌 "
+        android:src="@drawable/cherry"
         android:textColor="#757575"
-        android:textSize="40sp"
-        app:layout_constraintBottom_toTopOf="@+id/TVslot6"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/frame"
         app:layout_constraintEnd_toEndOf="@+id/frame"
         app:layout_constraintStart_toEndOf="@+id/TVslot2"
-        app:layout_constraintTop_toTopOf="@+id/frame">
-    </TextView>
+        app:layout_constraintTop_toTopOf="@+id/frame"></ImageView>
 
     <TextView
         android:id="@+id/TVslot33"
@@ -133,117 +70,26 @@
         android:gravity="center"
         android:scaleX="0"
         android:text="\$"
-        android:textStyle="bold"
-        android:textSize="50sp"
         android:textColor="#757575"
-        app:layout_constraintBottom_toTopOf="@+id/TVslot6"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/frame"
         app:layout_constraintEnd_toEndOf="@+id/frame"
         app:layout_constraintStart_toEndOf="@+id/TVslot2"
         app:layout_constraintTop_toTopOf="@+id/frame"></TextView>
 
-    <TextView
-        android:id="@+id/TVslot6"
-        android:layout_width="98dp"
-        android:layout_height="98dp"
-        android:background="#CDDC39"
-        android:gravity="center"
-        android:text=" 🍌 "
-        android:textColor="#757575"
-        android:textSize="40sp"
-        app:layout_constraintBottom_toBottomOf="@+id/frame"
-        app:layout_constraintEnd_toEndOf="@+id/frame"
-        app:layout_constraintStart_toEndOf="@+id/TVslot5"
-        app:layout_constraintTop_toTopOf="@+id/frame" />
-
-    <TextView
-        android:id="@+id/TVslot66"
-        android:layout_width="98dp"
-        android:layout_height="98dp"
-        android:background="#2196F3"
-        android:gravity="center"
-        android:scaleX="0"
-        android:text="\$"
-        android:textStyle="bold"
-        android:textSize="50sp"
-        android:textColor="#757575"
-        app:layout_constraintBottom_toBottomOf="@+id/frame"
-        app:layout_constraintEnd_toEndOf="@+id/frame"
-        app:layout_constraintStart_toEndOf="@+id/TVslot5"
-        app:layout_constraintTop_toTopOf="@+id/frame" />
-
-    <TextView
-        android:id="@+id/TVslot7"
-        android:layout_width="98dp"
-        android:layout_height="98dp"
-        android:background="#CDDC39"
-        android:gravity="center"
-        android:text="🍓 "
-        android:textColor="#757575"
-        android:textSize="40sp"
-        app:layout_constraintBottom_toBottomOf="@+id/frame"
-        app:layout_constraintEnd_toStartOf="@+id/TVslot8"
-        app:layout_constraintStart_toStartOf="@+id/frame"
-        app:layout_constraintTop_toBottomOf="@+id/TVslot4" />
-
-    <TextView
-        android:id="@+id/TVslot77"
-        android:layout_width="98dp"
-        android:layout_height="98dp"
-        android:background="#2196F3"
-        android:gravity="center"
-        android:scaleX="0"
-        android:text="\$"
-        android:textStyle="bold"
-        android:textSize="50sp"
-        android:textColor="#757575"
-        app:layout_constraintBottom_toBottomOf="@+id/frame"
-        app:layout_constraintEnd_toStartOf="@+id/TVslot8"
-        app:layout_constraintStart_toStartOf="@+id/frame"
-        app:layout_constraintTop_toBottomOf="@+id/TVslot4" />
-
-    <TextView
-        android:id="@+id/TVslot9"
-        android:layout_width="98dp"
-        android:layout_height="98dp"
-        android:background="#CDDC39"
-        android:gravity="center"
-        android:text="🍒"
-        android:textColor="#757575"
-        android:textSize="40sp"
-        app:layout_constraintBottom_toBottomOf="@+id/frame"
-        app:layout_constraintEnd_toEndOf="@+id/frame"
-        app:layout_constraintStart_toEndOf="@+id/TVslot8"
-        app:layout_constraintTop_toBottomOf="@+id/TVslot6" />
-
-    <TextView
-        android:id="@+id/TVslot99"
-        android:layout_width="98dp"
-        android:layout_height="98dp"
-        android:background="#2196F3"
-        android:gravity="center"
-        android:scaleX="0"
-        android:text="\$"
-        android:textStyle="bold"
-        android:textSize="50sp"
-        android:textColor="#757575"
-        app:layout_constraintBottom_toBottomOf="@+id/frame"
-        app:layout_constraintEnd_toEndOf="@+id/frame"
-        app:layout_constraintStart_toEndOf="@+id/TVslot8"
-        app:layout_constraintTop_toBottomOf="@+id/TVslot6" />
-
-    <TextView
+    <ImageView
         android:id="@+id/TVslot2"
         android:layout_width="98dp"
         android:layout_height="98dp"
         android:background="#CDDC39"
         android:gravity="center"
-        android:text="🍒"
-        android:textColor="#757575"
-        android:textSize="40sp"
-        app:layout_constraintBottom_toTopOf="@+id/TVslot5"
+        android:src="@drawable/cherry"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/frame"
         app:layout_constraintEnd_toEndOf="@+id/frame"
         app:layout_constraintStart_toStartOf="@+id/frame"
-        app:layout_constraintTop_toTopOf="@+id/frame"/>
+        app:layout_constraintTop_toTopOf="@+id/frame" />
 
     <TextView
         android:id="@+id/TVslot22"
@@ -253,10 +99,10 @@
         android:gravity="center"
         android:scaleX="0"
         android:text="\$"
-        android:textStyle="bold"
-        android:textSize="50sp"
         android:textColor="#757575"
-        app:layout_constraintBottom_toTopOf="@+id/TVslot5"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/frame"
         app:layout_constraintEnd_toEndOf="@+id/frame"
         app:layout_constraintStart_toStartOf="@+id/frame"
         app:layout_constraintTop_toTopOf="@+id/frame">
@@ -265,50 +111,18 @@
     </TextView>
 
 
-    <TextView
-        android:id="@+id/TVslot8"
-        android:layout_width="98dp"
-        android:layout_height="98dp"
-        android:background="#CDDC39"
-        android:gravity="center"
-        android:text=" 🍌 "
-        android:textColor="#757575"
-        android:textSize="40sp"
-        app:layout_constraintBottom_toBottomOf="@+id/frame"
-        app:layout_constraintEnd_toEndOf="@+id/frame"
-        app:layout_constraintStart_toStartOf="@+id/frame"
-        app:layout_constraintTop_toBottomOf="@+id/TVslot5" />
-
-    <TextView
-        android:id="@+id/TVslot88"
-        android:layout_width="98dp"
-        android:layout_height="98dp"
-        android:background="#2196F3"
-        android:gravity="center"
-        android:scaleX="0"
-        android:text="\$"
-        android:textStyle="bold"
-        android:textSize="50sp"
-        android:textColor="#757575"
-        app:layout_constraintBottom_toBottomOf="@+id/frame"
-        app:layout_constraintEnd_toEndOf="@+id/frame"
-        app:layout_constraintStart_toStartOf="@+id/frame"
-        app:layout_constraintTop_toBottomOf="@+id/TVslot5" />
-
-    <TextView
+    <ImageView
         android:id="@+id/TVslot1"
         android:layout_width="98dp"
         android:layout_height="98dp"
         android:background="#CDDC39"
         android:gravity="center"
-
-        android:text="🍓"
-        android:textColor="#757575"
-        android:textSize="40sp"
-        app:layout_constraintBottom_toTopOf="@+id/TVslot4"
+        android:src="@drawable/cherry"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/frame"
         app:layout_constraintEnd_toStartOf="@+id/TVslot2"
         app:layout_constraintStart_toStartOf="@+id/frame"
-        app:layout_constraintTop_toTopOf="@+id/frame"></TextView>
+        app:layout_constraintTop_toTopOf="@+id/frame"></ImageView>
 
     <TextView
         android:id="@+id/TVslot11"
@@ -318,10 +132,10 @@
         android:gravity="center"
         android:scaleX="0"
         android:text="\$"
-        android:textStyle="bold"
-        android:textSize="50sp"
         android:textColor="#757575"
-        app:layout_constraintBottom_toTopOf="@+id/TVslot4"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/frame"
         app:layout_constraintEnd_toStartOf="@+id/TVslot2"
         app:layout_constraintStart_toStartOf="@+id/frame"
         app:layout_constraintTop_toTopOf="@+id/frame"></TextView>
@@ -340,39 +154,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <View
-        android:id="@+id/V_top_horisontal"
-        android:layout_width="0dp"
-        android:layout_height="10dp"
-        android:background="#F84437"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toBottomOf="@+id/TVslot2"
-        app:layout_constraintEnd_toEndOf="@+id/TVslot6"
-        app:layout_constraintStart_toStartOf="@+id/TVslot1"
-        app:layout_constraintTop_toTopOf="@+id/TVslot2" />
-
-    <View
-        android:id="@+id/V_center_horisontal"
-        android:layout_width="0dp"
-        android:layout_height="10dp"
-        android:visibility="invisible"
-        android:background="#F84437"
-        app:layout_constraintBottom_toBottomOf="@+id/frame"
-        app:layout_constraintEnd_toEndOf="@+id/TVslot6"
-        app:layout_constraintStart_toStartOf="@+id/TVslot4"
-        app:layout_constraintTop_toTopOf="@+id/frame" />
-
-    <View
-        android:id="@+id/V_bottom_horisontal"
-        android:layout_width="0dp"
-        android:layout_height="10dp"
-        android:background="#F84437"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toBottomOf="@+id/TVslot8"
-        app:layout_constraintEnd_toEndOf="@+id/TVslot6"
-        app:layout_constraintStart_toStartOf="@+id/TVslot1"
-        app:layout_constraintTop_toTopOf="@+id/TVslot8" />
 
 
     <TextView

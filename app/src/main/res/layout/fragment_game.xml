@@ -1,321 +1,1166 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Mlayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#252525"
-    android:id="@+id/Mlayout"
-    app:layoutDescription="@xml/fragment_game_scene"
-    tools:context=".view.GameFragment">
+    android:background="#F38181"
+    tools:context="com.template.view.MainActivity">
 
     <Button
         android:id="@+id/Bspin"
         android:layout_width="120dp"
         android:layout_height="60dp"
-        android:textColor="#FBFBFB"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="#C8E7ED"
+        android:text="spin"
+        android:textColor="#807A7A"
         android:textSize="30sp"
         android:textStyle="bold"
-        android:backgroundTint="#F84437"
-        android:text="spin"
-
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/frame" />
+        app:layout_constraintStart_toStartOf="parent" />
 
-    <FrameLayout
-        android:id="@+id/frame"
-        android:layout_width="340dp"
-        android:layout_height="340dp"
-        android:background="#4F5050"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="350dp"
+        android:layout_height="120dp"
+        android:background="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-    </FrameLayout>
-
-    <TextView
-        android:id="@+id/TVslot5"
-        android:layout_width="98dp"
-        android:layout_height="98dp"
-        android:background="#CDDC39"
-        android:gravity="center"
-        android:text="🍓"
-        android:textColor="#757575"
-        android:textSize="40sp"
-        app:layout_constraintBottom_toBottomOf="@+id/frame"
-        app:layout_constraintEnd_toEndOf="@+id/frame"
-        app:layout_constraintStart_toStartOf="@+id/frame"
-        app:layout_constraintTop_toTopOf="@+id/frame" />
-
-    <TextView
-        android:id="@+id/TVslot55"
-        android:layout_width="98dp"
-        android:layout_height="98dp"
-        android:background="#2196F3"
-        android:gravity="center"
-        android:text="\$"
-        android:textColor="#757575"
-        android:textSize="50sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/frame"
-        app:layout_constraintEnd_toEndOf="@+id/frame"
-        app:layout_constraintStart_toStartOf="@+id/frame"
-        app:layout_constraintTop_toTopOf="@+id/frame" />
+        <LinearLayout
+            android:id="@+id/LLmainGamePlace"
+            android:layout_width="330dp"
+            android:layout_height="130dp"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
 
 
+            ////////////////////line_1//////////////
 
-    <TextView
-        android:id="@+id/TVslot4"
-        android:layout_width="98dp"
-        android:layout_height="98dp"
-        android:background="#CDDC39"
-        android:gravity="center"
-        android:text="🍓"
-        android:textColor="#757575"
-        android:textSize="40sp"
-        app:layout_constraintBottom_toBottomOf="@+id/frame"
-        app:layout_constraintEnd_toStartOf="@+id/TVslot5"
-        app:layout_constraintStart_toStartOf="@+id/frame"
-        app:layout_constraintTop_toTopOf="@+id/frame" />
+            <LinearLayout
+                android:id="@+id/LLline1"
+                android:layout_width="114dp"
+                android:layout_height="4525dp"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="15dp"
+                android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/TVslot44"
-        android:layout_width="98dp"
-        android:layout_height="98dp"
-        android:background="#2196F3"
-        android:gravity="center"
-        android:scaleY="1"
-        android:text="\$"
-        android:textColor="#757575"
-        android:textSize="50sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/frame"
-        app:layout_constraintEnd_toStartOf="@+id/TVslot5"
-        app:layout_constraintStart_toStartOf="@+id/frame"
-        app:layout_constraintTop_toTopOf="@+id/frame" />
+                <ImageView
+                    android:id="@+id/TVslot1"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
 
-    <TextView
-        android:id="@+id/TVslot3"
-        android:layout_width="98dp"
-        android:layout_height="98dp"
-        android:background="#CDDC39"
-        android:gravity="center"
-        android:text=" 🍌 "
-        android:textColor="#757575"
-        android:textSize="40sp"
-        app:layout_constraintBottom_toTopOf="@+id/TVslot6"
-        app:layout_constraintEnd_toEndOf="@+id/frame"
-        app:layout_constraintStart_toEndOf="@+id/TVslot2"
-        app:layout_constraintTop_toTopOf="@+id/frame">
-    </TextView>
+                <ImageView
+                    android:id="@+id/TVslot4"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
 
-    <TextView
-        android:id="@+id/TVslot33"
-        android:layout_width="98dp"
-        android:layout_height="98dp"
-        android:background="#2196F3"
-        android:gravity="center"
-        android:text="\$"
-        android:textColor="#757575"
-        android:textSize="50sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/TVslot6"
-        app:layout_constraintEnd_toEndOf="@+id/frame"
-        app:layout_constraintStart_toEndOf="@+id/TVslot2"
-        app:layout_constraintTop_toTopOf="@+id/frame"></TextView>
+                <ImageView
+                    android:id="@+id/TVslot7"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
 
-    <TextView
-        android:id="@+id/TVslot6"
-        android:layout_width="98dp"
-        android:layout_height="98dp"
-        android:background="#CDDC39"
-        android:gravity="center"
-        android:text=" 🍌 "
-        android:textColor="#757575"
-        android:textSize="40sp"
-        app:layout_constraintBottom_toBottomOf="@+id/frame"
-        app:layout_constraintEnd_toEndOf="@+id/frame"
-        app:layout_constraintStart_toEndOf="@+id/TVslot5"
-        app:layout_constraintTop_toTopOf="@+id/frame" />
+                <ImageView
+                    android:id="@+id/TVslot10"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
 
-    <TextView
-        android:id="@+id/TVslot66"
-        android:layout_width="98dp"
-        android:layout_height="98dp"
-        android:background="#2196F3"
-        android:gravity="center"
-        android:text="\$"
-        android:textColor="#757575"
-        android:textSize="50sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/frame"
-        app:layout_constraintEnd_toEndOf="@+id/frame"
-        app:layout_constraintStart_toEndOf="@+id/TVslot5"
-        app:layout_constraintTop_toTopOf="@+id/frame" />
+                <ImageView
+                    android:id="@+id/TVslot13"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
 
-    <TextView
-        android:id="@+id/TVslot7"
-        android:layout_width="98dp"
-        android:layout_height="98dp"
-        android:background="#CDDC39"
-        android:gravity="center"
-        android:text="🍓 "
-        android:textColor="#757575"
-        android:textSize="40sp"
-        app:layout_constraintBottom_toBottomOf="@+id/frame"
-        app:layout_constraintEnd_toStartOf="@+id/TVslot8"
-        app:layout_constraintStart_toStartOf="@+id/frame"
-        app:layout_constraintTop_toBottomOf="@+id/TVslot4" />
+                <ImageView
+                    android:id="@+id/TVslot16"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
 
-    <TextView
-        android:id="@+id/TVslot77"
-        android:layout_width="98dp"
-        android:layout_height="98dp"
-        android:background="#2196F3"
-        android:gravity="center"
-        android:text="\$"
-        android:textColor="#757575"
-        android:textSize="50sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/frame"
-        app:layout_constraintEnd_toStartOf="@+id/TVslot8"
-        app:layout_constraintStart_toStartOf="@+id/frame"
-        app:layout_constraintTop_toBottomOf="@+id/TVslot4" />
+                <ImageView
+                    android:id="@+id/TVslot19"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
 
-    <TextView
-        android:id="@+id/TVslot9"
-        android:layout_width="98dp"
-        android:layout_height="98dp"
-        android:background="#CDDC39"
-        android:gravity="center"
-        android:text="🍒"
-        android:textColor="#757575"
-        android:textSize="40sp"
-        app:layout_constraintBottom_toBottomOf="@+id/frame"
-        app:layout_constraintEnd_toEndOf="@+id/frame"
-        app:layout_constraintStart_toEndOf="@+id/TVslot8"
-        app:layout_constraintTop_toBottomOf="@+id/TVslot6" />
+                <ImageView
+                    android:id="@+id/TVslot22"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
 
-    <TextView
-        android:id="@+id/TVslot99"
-        android:layout_width="98dp"
-        android:layout_height="98dp"
-        android:background="#2196F3"
-        android:gravity="center"
-        android:text="\$"
-        android:textColor="#757575"
-        android:textSize="50sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/frame"
-        app:layout_constraintEnd_toEndOf="@+id/frame"
-        app:layout_constraintStart_toEndOf="@+id/TVslot8"
-        app:layout_constraintTop_toBottomOf="@+id/TVslot6" />
+                <ImageView
+                    android:id="@+id/TVslot25"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
 
-    <TextView
-        android:id="@+id/TVslot2"
-        android:layout_width="98dp"
-        android:layout_height="98dp"
-        android:background="#CDDC39"
-        android:gravity="center"
-        android:text="🍒"
-        android:textColor="#757575"
-        android:textSize="40sp"
-        app:layout_constraintBottom_toTopOf="@+id/TVslot5"
-        app:layout_constraintEnd_toEndOf="@+id/frame"
-        app:layout_constraintStart_toStartOf="@+id/frame"
-        app:layout_constraintTop_toTopOf="@+id/frame"/>
+                <ImageView
+                    android:id="@+id/TVslot28"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
 
-    <TextView
-        android:id="@+id/TVslot22"
-        android:layout_width="98dp"
-        android:layout_height="98dp"
-        android:background="#2196F3"
-        android:gravity="center"
-        android:text="\$"
-        android:textColor="#757575"
-        android:textSize="50sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/TVslot5"
-        app:layout_constraintEnd_toEndOf="@+id/frame"
-        app:layout_constraintStart_toStartOf="@+id/frame"
-        app:layout_constraintTop_toTopOf="@+id/frame">
+                <ImageView
+                    android:id="@+id/TVslot31"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
 
+                <ImageView
+                    android:id="@+id/TVslot34"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
 
-    </TextView>
+                <ImageView
+                    android:id="@+id/TVslot37"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
 
+                <ImageView
+                    android:id="@+id/TVslot40"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
 
-    <TextView
-        android:id="@+id/TVslot8"
-        android:layout_width="98dp"
-        android:layout_height="98dp"
-        android:background="#CDDC39"
-        android:gravity="center"
-        android:text=" 🍌 "
-        android:textColor="#757575"
-        android:textSize="40sp"
-        app:layout_constraintBottom_toBottomOf="@+id/frame"
-        app:layout_constraintEnd_toEndOf="@+id/frame"
-        app:layout_constraintStart_toStartOf="@+id/frame"
-        app:layout_constraintTop_toBottomOf="@+id/TVslot5" />
+                <ImageView
+                    android:id="@+id/TVslot43"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
 
-    <TextView
-        android:id="@+id/TVslot88"
-        android:layout_width="98dp"
-        android:layout_height="98dp"
-        android:background="#2196F3"
-        android:gravity="center"
-        android:text="\$"
-        android:textColor="#757575"
-        android:textSize="50sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/frame"
-        app:layout_constraintEnd_toEndOf="@+id/frame"
-        app:layout_constraintStart_toStartOf="@+id/frame"
-        app:layout_constraintTop_toBottomOf="@+id/TVslot5" />
+                <ImageView
+                    android:id="@+id/TVslot46"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
 
-    <TextView
-        android:id="@+id/TVslot1"
-        android:layout_width="98dp"
-        android:layout_height="98dp"
-        android:background="#CDDC39"
-        android:gravity="center"
+                <ImageView
+                    android:id="@+id/TVslot49"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
 
-        android:text="🍓"
-        android:textColor="#757575"
-        android:textSize="40sp"
-        app:layout_constraintBottom_toTopOf="@+id/TVslot4"
-        app:layout_constraintEnd_toStartOf="@+id/TVslot2"
-        app:layout_constraintStart_toStartOf="@+id/frame"
-        app:layout_constraintTop_toTopOf="@+id/frame"></TextView>
+                <ImageView
+                    android:id="@+id/TVslot52"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
 
-    <TextView
-        android:id="@+id/TVslot11"
-        android:layout_width="98dp"
-        android:layout_height="98dp"
-        android:background="#2196F3"
-        android:gravity="center"
-        android:text="\$"
-        android:textColor="#757575"
-        android:textSize="50sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/TVslot4"
-        app:layout_constraintEnd_toStartOf="@+id/TVslot2"
-        app:layout_constraintStart_toStartOf="@+id/frame"
-        app:layout_constraintTop_toTopOf="@+id/frame"></TextView>
+                <ImageView
+                    android:id="@+id/TVslot55"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="20dp"
-        android:src="@drawable/money"
-        app:layout_constraintBottom_toTopOf="@+id/frame"
-        app:layout_constraintEnd_toStartOf="@+id/betCount"
-        app:layout_constraintTop_toTopOf="parent" />
+                <ImageView
+                    android:id="@+id/TVslot58"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot1q"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot4q"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot7q"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot10q"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot13q"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot16q"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot19q"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot22q"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot25q"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot28q"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot31q"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot34q"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot37q"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot40q"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot43q"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot46q"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot49q"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot52q"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot55q"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot58q"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+            </LinearLayout>
+
+            ////////////////////line_2//////////////
+
+            <LinearLayout
+                android:id="@+id/LLline2"
+                android:layout_width="114dp"
+                android:layout_height="4525dp"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="15dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/TVslot2"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot5"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot8"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot11"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot14"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot17"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot20"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot23"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot26"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot29"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot32"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot35"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot38"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot41"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot44"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot47"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot50"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot53"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot56"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot59"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot2q"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot5q"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot8q"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot11q"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot14q"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot17q"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot20q"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot23q"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot26q"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot29q"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot32q"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot35q"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot38q"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot41q"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot44q"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot47q"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot50q"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot53q"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot56q"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot59q"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+            </LinearLayout>
+
+            ////////////////////line_3//////////////
+
+            <LinearLayout
+                android:id="@+id/LLline3"
+                android:layout_width="114dp"
+                android:layout_height="4525dp"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="15dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/TVslot3"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"
+                    android:paddingTop="10dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot6"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot9"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot12"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot15"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot18"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot21"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot24"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot27"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot30"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot33"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot36"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot39"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot42"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot45"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot48"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot51"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot54"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot57"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot60"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot3q"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot6q"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot9q"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot12q"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot15q"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot18q"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot21q"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot24q"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot27q"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot30q"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot33q"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot36q"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot39q"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot42q"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot45q"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot48q"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot51q"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot54q"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot57q"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/TVslot60q"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#930077"
+                    android:gravity="center"
+                    android:padding="20dp"></ImageView>
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
         android:id="@+id/betCount"
@@ -324,10 +1169,9 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:text="300"
-        android:textColor="#EFEDED"
+        android:textColor="#FFFFFF"
         android:textSize="50sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/frame"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -338,7 +1182,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:text="5"
-        android:textColor="#F84437"
+        android:textColor="#FFFFFF"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/betCount"
@@ -349,24 +1193,26 @@
         android:layout_width="80dp"
         android:layout_height="50dp"
 
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="10dp"
-        android:backgroundTint="#F84437"
+        android:backgroundTint="#C8E7ED"
         android:text="bet"
-        android:textColor="#FBFBFB"
-        android:textSize="20sp"
+        android:textColor="#807A7A"
+        android:textSize="25sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/betCount"
+        app:layout_constraintBottom_toBottomOf="@+id/betCount"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/betCount" />
 
     <ImageView
         android:id="@+id/IVback"
         android:layout_width="50dp"
         android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
         android:src="@drawable/back"
-        app:layout_constraintBottom_toTopOf="@+id/imageView"
-        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintBottom_toBottomOf="@+id/betCount"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/betCount" />
 
-</androidx.constraintlayout.motion.widget.MotionLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
