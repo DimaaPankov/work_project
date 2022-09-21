@@ -1,4 +1,4 @@
-package com.template.NewCoinsPresenter
+package com.template.presenter.NewCoinsPresenter
 
 interface NewCoinsViewApi {
    fun clickNewCoins()

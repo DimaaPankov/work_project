@@ -29,9 +29,6 @@
             android:id="@+id/action_gameFragment_to_newCoinsFragment"
             app:destination="@id/newCoinsFragment" />
         <action
-            android:id="@+id/action_gameFragment_to_animationVinFragment"
-            app:destination="@id/animationVinFragment" />
-        <action
             android:id="@+id/action_gameFragment_to_betFragment"
             app:destination="@id/betFragment" />
 
@@ -52,27 +49,6 @@
         <action
             android:id="@+id/action_newCoinsFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/animationVinFragment"
-        android:name="com.template.view.AnimationVinFragment"
-        android:label="fragment_animation_vin"
-        tools:layout="@layout/fragment_animation_vin" >
-        <action
-            android:id="@+id/action_animationVinFragment_to_gameFragment"
-            app:destination="@id/gameFragment" />
-        <argument
-            android:name="arraySlots"
-            app:argType="integer[]" />
-        <argument
-            android:name="xBet"
-            app:argType="integer" />
-        <argument
-            android:name="win"
-            app:argType="integer" />
-        <argument
-            android:name="winLine"
-            app:argType="boolean[]" />
     </fragment>
     <fragment
         android:id="@+id/betFragment"

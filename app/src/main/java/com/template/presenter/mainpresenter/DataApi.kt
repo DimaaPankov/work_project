@@ -1,4 +1,4 @@
-package com.template.mainpresenter
+package com.template.presenter.mainpresenter
 
 interface DataApi {
    fun setMainCount(bet:Int,minusOrPlus:Boolean)

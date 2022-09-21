@@ -7,8 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.template.R
-import com.template.betpresenter.BetPresnter
-import com.template.betpresenter.BetViewApi
+import com.template.presenter.betpresenter.BetPresnter
+import com.template.presenter.betpresenter.BetViewApi
 import com.template.databinding.FragmentBetBinding
 
 class BetFragment : Fragment(), BetViewApi {

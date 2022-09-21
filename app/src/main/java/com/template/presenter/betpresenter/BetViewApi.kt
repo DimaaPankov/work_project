@@ -1,4 +1,4 @@
-package com.template.betpresenter
+package com.template.presenter.betpresenter
 
 interface BetViewApi {
     fun clickListner()

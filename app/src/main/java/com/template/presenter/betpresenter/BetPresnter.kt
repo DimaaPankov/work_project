@@ -1,7 +1,6 @@
-package com.template.betpresenter
+package com.template.presenter.betpresenter
 
-import com.template.mainpresenter.DataApi
-import com.template.mainpresenter.MainViewApi
+import com.template.presenter.mainpresenter.DataApi
 
 class BetPresnter (val data: DataApi) {
     var countBet = ""

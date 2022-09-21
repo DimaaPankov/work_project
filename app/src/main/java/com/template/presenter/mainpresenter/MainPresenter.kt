@@ -1,4 +1,4 @@
-package com.template.mainpresenter
+package com.template.presenter.mainpresenter
 
 class MainPresenter(val data: DataApi) {
 

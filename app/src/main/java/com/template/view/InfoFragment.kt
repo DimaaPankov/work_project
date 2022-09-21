@@ -7,8 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import com.template.R
 import com.template.databinding.FragmentInfoBinding
-import com.template.infopresenter.InfoPresenter
-import com.template.infopresenter.InfoViewApi
+import com.template.presenter.infopresenter.InfoPresenter
+import com.template.presenter.infopresenter.InfoViewApi
 
 
 class InfoFragment : Fragment(),InfoViewApi {

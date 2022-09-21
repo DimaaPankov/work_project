@@ -1,6 +1,6 @@
 package com.template.view
 
-import com.template.mainpresenter.DataApi
+import com.template.presenter.mainpresenter.DataApi
 import com.template.R
 
 

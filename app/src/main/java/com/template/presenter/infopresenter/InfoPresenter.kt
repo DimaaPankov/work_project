@@ -1,6 +1,4 @@
-package com.template.infopresenter
-
-import com.template.mainpresenter.MainViewApi
+package com.template.presenter.infopresenter
 
 class InfoPresenter {
     private var context: InfoViewApi? = null

@@ -1,7 +1,6 @@
-package com.template.NewCoinsPresenter
+package com.template.presenter.NewCoinsPresenter
 
-import com.template.mainpresenter.DataApi
-import com.template.mainpresenter.MainViewApi
+import com.template.presenter.mainpresenter.DataApi
 
 class NewCoinsPresenter (val data: DataApi) {
 

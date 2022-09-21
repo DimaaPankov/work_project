@@ -9,4 +9,15 @@
     <color name="white">#FFFFFFFF</color>
     <color name="red">#F84437</color>
 
+    <color name="blackD">#252525</color>
+    <color name="redD">#F44336</color>
+    <color name="whiteD">#EFEDED</color>
+    <color name="grayD">#4F5050</color>
+    <color name="yellowGreenD">#CDDC39</color>
+    <color name="blueD">#2196F3</color>
+    <color name="orangeD">#FFC107</color>
+
+
+
+
 </resources>

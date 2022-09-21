@@ -8,8 +8,8 @@ import android.view.ViewGroup
 import android.widget.Toast
 import com.template.R
 import com.template.databinding.FragmentMainBinding
-import com.template.mainpresenter.MainPresenter
-import com.template.mainpresenter.MainViewApi
+import com.template.presenter.mainpresenter.MainPresenter
+import com.template.presenter.mainpresenter.MainViewApi
 
 
 class MainFragment : Fragment(),MainViewApi {

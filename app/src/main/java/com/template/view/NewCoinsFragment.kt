@@ -5,8 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.template.NewCoinsPresenter.NewCoinsPresenter
-import com.template.NewCoinsPresenter.NewCoinsViewApi
+import com.template.presenter.NewCoinsPresenter.NewCoinsPresenter
+import com.template.presenter.NewCoinsPresenter.NewCoinsViewApi
 import com.template.R
 import com.template.databinding.FragmentNewCoinsBinding
 

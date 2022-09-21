@@ -1,4 +1,4 @@
-package com.template.gamepresenter
+package com.template.presenter.gamepresenter
 
 interface GameViewApi {
 
@@ -6,5 +6,6 @@ interface GameViewApi {
     fun clickBack()
     fun clickBet()
     fun showData()
+    fun clickOk()
 
 }
