@@ -40,6 +40,13 @@ class qestionFragment : Fragment() {
         binding.btnFalse.setOnClickListener {
             clickFalse()
         }
+
+        binding.TVinfo.setOnClickListener {
+             binding.CVresult.isVisible = true
+        }
+        binding.Bok.setOnClickListener {
+            binding.CVresult.isVisible = false
+        }
     }
 
     private fun setView(){
@@ -149,7 +156,7 @@ class qestionFragment : Fragment() {
                 }
 
 
-                if(quizViewModel.efjdhfh == 5) {
+                if(quizViewModel.efjdhfh == 11) {
                     actionFragment = true
                 }
 

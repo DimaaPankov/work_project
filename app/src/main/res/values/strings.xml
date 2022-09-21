@@ -2,18 +2,46 @@
     <string name="app_name">qestion1</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
-    <string name="XXI">Первое, найденное исследователями слово, похожее на покер, было
-        обнаружено в английском словаре XVII века.</string>
-    <string name="Americans">По данным исследователей, самой азартной нацией на планете являются
-        американцы</string>
-    <string name="sochial_status">Изначально, каждая масть соответствовала конкретной социальной
-        группе граждан</string>
-    <string name="difrient_game">На сегодня известно уже более 130 разновидностей игры в покер</string>
+    <string name="XXI">The first poker-like word found by researchers was
+        found in an English dictionary of the 17th century.</string>
 
-    <string name="five_mastchi">В конце сороковых годов производители карт попытались добавить еще три масти</string>
-    <string name="people">По данным социологических исследований, около 75% людей на планете
-        продолжают утверждать, что покер является азартной игрой, то есть выигрыш по их мнению никак
-        не зависит от уровня профессионализма и подготовки игрока.</string>
+    <string name="Americans">According to researchers, the most gambling nation on the planet are
+        Americans</string>
+
+    <string name="sochial_status">Initially, each suit corresponded to a specific social
+        group of citizens</string>
+
+    <string name="difrient_game">Today, more than 130 varieties of poker are known.</string>
+
+    <string name="five_mastchi">In the late forties, card manufacturers tried to add more
+        three suits</string>
+
+    <string name="people">According to sociological research, about 75% of people on the planet
+        continue to claim that poker is a game of chance, that is, in their opinion, there is no
+        way to win
+        does not depend on the level of professionalism and training of the player.</string>
+
+    <string name="q1">The Bird Cage Theatre in Arizona once hosted a poker game that lasted
+        8 years.</string>
+
+    <string name="q2">The very first poker chips were made from ivory, wood, clay, and bone.</string>
+
+    <string name="q3">January 1, 2000, was when the very first real-money online poker game was
+        played.</string>
+
+    <string name="q4">Early games of poker were played with a deck of just 30 cards.</string>
+
+    <string name="q5">The very first time that a poker tournament was ever televised was
+        in 1973.</string>
+
+    <string name="q6">The very first time that a poker tournament was ever televised was
+        in 1973.</string>
+
+
+
+
+
+
 
     <string name="true_button">True</string>
     <string name="false_button">False</string>
