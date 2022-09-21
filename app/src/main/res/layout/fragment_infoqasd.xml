@@ -42,11 +42,7 @@
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
-            android:text="Добро пожаловать в приложение lucky drum
-         в котором вы сможете проверить свою удачу!\nnравила игры просты:\n\n
-1.Выбираем номер и цвет слота.\n\n\2.Нажимаем на кнопку play.\n\n Если совпадает цвет то вы выйгрываете 2х от ставки,
- если совпадает только номер то тоже выйгрываете 2х, если одновременно
- совпадает и то и то то вы выйгрываете 4х "
+            android:text="Welcome to the lucky drum application where you can test your luck!\nnThe rules of the game are simple:\n\n 1.Choose the number and color of the slot.\n\n\2.Press the play button.\n\n If the color matches then you win 2x of the bet, if only the number matches, then you also win 2x, if both this and that match at the same time, you win 4x"
             android:textSize="22sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -58,9 +54,9 @@
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
             android:backgroundTint="#ffffc7"
+            android:text="ok"
             android:textColor="#548687"
             android:textStyle="bold"
-            android:text="назад"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

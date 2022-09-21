@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/layout/fragment_betqasd.xml" value="0.21666666666666667" />
+        <entry key="app/src/main/res/layout/fragment_bonusqasd.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/fragment_firstqasd.xml" value="0.24722222222222223" />
+        <entry key="app/src/main/res/layout/fragment_infoqasd.xml" value="0.24722222222222223" />
+        <entry key="app/src/main/res/layout/fragment_sum_betqasd.xml" value="0.24722222222222223" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
