@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/qestionFragment"
-        android:name="ru.skillbranch.testnaeblana.view.qestionFrafment.qestionFragment"
+        android:name="rirf.irjewf.rfi.ehehduie.qestionFragment"
         android:label="fragment_qestion"
         tools:layout="@layout/fragment_qestion" >
         <action

@@ -1,4 +1,4 @@
-package ru.skillbranch.testnaeblana.view.qestionFrafment
+package rirf.irjewf.rfi.ehehduie
 
 import android.os.Bundle
 import android.os.CountDownTimer
@@ -18,13 +18,9 @@ import rirf.irjewf.rfi.trueAnswerSize
 import rirf.irjewf.rfi.edud2u8d.rejigfujerigjr
 
 class qestionFragment : Fragment() {
-    lateinit var binding: FragmentQestionBinding
+    val binding by lazy{FragmentQestionBinding.inflate(layoutInflater)}
     lateinit var quizViewModel: rejigfujerigjr
     var actionFragment = false
-
-
-
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -42,16 +38,24 @@ class qestionFragment : Fragment() {
         }
 
         binding.TVinfo.setOnClickListener {
-             binding.CVresult.isVisible = true
+             binding.CVinfo.isVisible = true
         }
         binding.Bok.setOnClickListener {
-            binding.CVresult.isVisible = false
+            binding.CVinfo.isVisible = false
+        }
+        binding.Bplay.setOnClickListener {
+            binding.CLmain.isVisible = false
+            binding.btnTrue.isVisible = true
+            binding.btnFalse.isVisible = true
         }
     }
 
     private fun setView(){
+        binding.CVinfo.isVisible = false
+        binding.btnTrue.isVisible = false
+        binding.btnFalse.isVisible = false
+
         quizViewModel = ViewModelProvider(this).get(rejigfujerigjr::class.java)
-        binding = FragmentQestionBinding.inflate(layoutInflater)
         binding.tvQestion.setText(quizViewModel.rhfurf().textResId)
         binding.imageQestion.setImageResource(quizViewModel.rhfurf().imageResId)
     }
