@@ -2,16 +2,16 @@
     <string name="app_name">qestion1</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
-    <string name="royal_flesh">роял флэш</string>
-    <string name="street">стрит</string>
-    <string name="street_flesh">стрит флэш</string>
-    <string name="set">сет</string>
-    <string name="kare">каре</string>
-    <string name="two_pare">две пары</string>
-    <string name="full_hous">фулхаус</string>
-    <string name="one_pare">одна пара</string>
-    <string name="flesh">флэш</string>
-    <string name="strushnaya_karta">страшная карта</string>
+    <string name="royal_flesh">royal flesh</string>
+    <string name="street">street</string>
+    <string name="street_flesh">street flesh</string>
+    <string name="set">set</string>
+    <string name="kare">kare</string>
+    <string name="two_pare">two pairs</string>
+    <string name="full_hous">full hous</string>
+    <string name="one_pare">one paire</string>
+    <string name="flesh">flesh</string>
+    <string name="strushnaya_karta">senior card</string>
 
 
 

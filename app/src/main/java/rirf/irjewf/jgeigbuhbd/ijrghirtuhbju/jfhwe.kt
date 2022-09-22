@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.view.isVisible
 import androidx.lifecycle.ViewModelProvider
 import rirf.irjewf.jgeigbuhbd.R
 import rirf.irjewf.jgeigbuhbd.databinding.FragmentQestionBinding
@@ -32,6 +33,20 @@ class qestionFragment : Fragment() {
         super.onCreate(savedInstanceState)
         wrigvuerqvujerjuv()
         erbkebj()
+        binding.TVinfo.setOnClickListener {
+            binding.CVinfo.isVisible = true
+        }
+        binding.Bok.setOnClickListener {
+            binding.CVinfo.isVisible = false
+        }
+        binding.Bplay.setOnClickListener {
+            binding.CLmain.isVisible = false
+            binding.btnOne.isVisible = true
+            binding.btnTwo.isVisible = true
+            binding.btnThree.isVisible = true
+            binding.btnFoure.isVisible = true
+
+        }
     }
 
     private fun erbkebj(){

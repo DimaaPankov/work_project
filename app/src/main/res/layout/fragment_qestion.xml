@@ -103,7 +103,7 @@
         android:layout_height="50dp"
         android:text="сет"
         android:backgroundTint="#57C4E5"
-
+        android:visibility="invisible"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -116,6 +116,7 @@
         android:layout_height="50dp"
         android:text="стрит флэш"
         android:backgroundTint="#57C4E5"
+        android:visibility="invisible"
 
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -148,6 +149,7 @@
         android:layout_marginTop="30dp"
         android:layout_marginBottom="50dp"
         android:text="роял флеш"
+        android:visibility="invisible"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
@@ -162,6 +164,7 @@
         android:layout_marginTop="30dp"
         android:layout_marginBottom="50dp"
         android:text="стрит"
+        android:visibility="invisible"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -177,7 +180,7 @@
         android:gravity="center"
         android:padding="20dp"
         android:textColor="#212738"
-        android:text="как называется комбинация карт на фото?"
+        android:text="what is the name of the card combination in the photo?"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/btn_one"
         app:layout_constraintEnd_toEndOf="parent"
@@ -218,4 +221,139 @@
         android:orientation="vertical"
         android:visibility="invisible"
         app:layout_constraintGuide_begin="205dp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/CLmain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#DDDCDC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/Bplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="110dp"
+            android:text="play"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:backgroundTint="#00BCD4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="187dp"
+            android:layout_height="209dp"
+            android:src="@drawable/poker"
+            app:layout_constraintBottom_toTopOf="@+id/Bplay"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="poker_game"
+            android:textColor="#00BCD4"
+            android:textSize="45sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/Bplay"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+        <TextView
+            android:id="@+id/TVinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="50dp"
+            android:textColor="#00BCD4"
+            android:text="info"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CVinfo"
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:alpha="1"
+        android:background="#00BCD4"
+        app:cardCornerRadius="20dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00BCD4"
+            >
+
+            <Button
+                android:id="@+id/Bok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ok"
+                android:textStyle="bold"
+                android:backgroundTint="#FF5722"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TVdiscription"></Button>
+
+            <TextView
+                android:id="@+id/TVe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="the welkome!"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/betCount" />
+
+            <TextView
+                android:id="@+id/TVdiscription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:text="welcome to our tutorial where you can easily strengthen your poker knowledge!"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TVe" />
+
+            <ImageView
+                android:id="@+id/betCount"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="30dp"
+                android:text="300"
+                android:src="@drawable/poker"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
