@@ -2,46 +2,36 @@
     <string name="app_name">qestion1</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
-    <string name="XXI">The first poker-like word found by researchers was
-        found in an English dictionary of the 17th century.</string>
-
+    <string name="XXI">The first word found by researchers similar to poker was
+found in the English dictionary of the XVII century.</string>
     <string name="Americans">According to researchers, the most gambling nation on the planet are
-        Americans</string>
-
+     Americans</string>
     <string name="sochial_status">Initially, each suit corresponded to a specific social
-        group of citizens</string>
+     a group of citizens</string>
+    <string name="difrient_game">Today, more than 130 varieties of poker games are already known
+    </string>
 
-    <string name="difrient_game">Today, more than 130 varieties of poker are known.</string>
-
-    <string name="five_mastchi">In the late forties, card manufacturers tried to add more
-        three suits</string>
-
+    <string name="five_mastchi">In the late forties , card manufacturers tried to add more
+three suits</string>
     <string name="people">According to sociological research, about 75% of people on the planet
-        continue to claim that poker is a game of chance, that is, in their opinion, there is no
-        way to win
-        does not depend on the level of professionalism and training of the player.</string>
-
-    <string name="q1">The Bird Cage Theatre in Arizona once hosted a poker game that lasted
-        8 years.</string>
-
-    <string name="q2">The very first poker chips were made from ivory, wood, clay, and bone.</string>
-
-    <string name="q3">January 1, 2000, was when the very first real-money online poker game was
-        played.</string>
-
-    <string name="q4">Early games of poker were played with a deck of just 30 cards.</string>
-
-    <string name="q5">The very first time that a poker tournament was ever televised was
-        in 1973.</string>
-
-    <string name="q6">The very first time that a poker tournament was ever televised was
-        in 1973.</string>
-
-
-
-
-
-
+        they continue to claim that poker is a gambling game, that is, winning in their opinion
+        it does not depend on the level of professionalism and training of the player.</string>
+    <string name="q1">In poker, there is a hand called a ‘dead man’s hand’ consisting of two aces
+        and two eights, and it is given this name because it is the hand Wild Bill Hickok had when
+        he was shot in the back of the head by Jack McCall.</string>
+    <string name="q2">“Anna Kournikova” is a hand in Poker that “looks better than it plays”.</string>
+    <string name="q3">Richard Nixon was an excellent poker player. He was so good that his first
+        campaign for the House of Representatives was mostly funded by poker winnings from his time
+        in the navy.</string>
+    <string name="q4">Pro poker player Tom Dwan started playing online poker with the $50 his dad
+        gave him for his birthday and earned over $5,000,000 by the next 3-4 years.</string>
+    <string name="q5">Two men were brought up on federal hacking charges when they exploited a bug
+        in video poker machines and won half a million dollars. His lawyer argued, “All these guys
+        did is simply push a sequence of buttons that they were legally entitled to push.” The case
+        was dismissed.</string>
+    <string name="q6">Andrei Karpov was so desperate to stay in a poker game, he put his wife up
+        as a stake after he’d run out of money. He then lost. She was so angry she left him for the
+        winner.</string>
 
     <string name="true_button">True</string>
     <string name="false_button">False</string>

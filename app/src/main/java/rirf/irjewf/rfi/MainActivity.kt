@@ -20,6 +20,10 @@ class MainActivity : AppCompatActivity() {
         deuhwe = Navigation.findNavController(this, R.id.nav_host_fragment)
 
     }
-//vjewrhjvjh
-}
-//edck
+
+    var goBack = {}
+
+    override fun onBackPressed() {
+        goBack()
+    }
+    }
