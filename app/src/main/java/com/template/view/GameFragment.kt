@@ -57,9 +57,14 @@ class GameFragment : Fragment(), GameViewApi {
 
                 if ((presenter.getMainCont() >= presenter.getBet())
                 ) {
-            presenter.animateSlotLine(binding.TVslot58q,binding.TVslot1, binding.LLline1,presenter.lastSlot1,0)
-            presenter.animateSlotLine(binding.TVslot59q,binding.TVslot2,binding.LLline2,presenter.lastSlot2,1000)
-            presenter.animateSlotLine(binding.TVslot60q,binding.TVslot3,binding.LLline3,presenter.lastSlot3,2000)
+                    val heidht = binding.TVslot1.height.toFloat()
+                    val heidhtConteiner = binding.constraintLayout .height.toFloat()
+            presenter.animateSlotLine(binding.TVslot58q,binding.TVslot1, binding.LLline1,
+                presenter.lastSlot1,heidht,heidhtConteiner,0)
+            presenter.animateSlotLine(binding.TVslot59q,binding.TVslot2,binding.LLline2,
+                presenter.lastSlot2,heidht,heidhtConteiner,1000)
+            presenter.animateSlotLine(binding.TVslot60q,binding.TVslot3,binding.LLline3,
+                presenter.lastSlot3,heidht,heidhtConteiner,2000)
             presenter.setMainCount(presenter.getBet(), false)
             binding.TVbalans.text = presenter.getMainCont().toString()
             presenter.animationVin( binding.TVslot1, binding.TVslot2, binding.TVslot3,binding.betCount,

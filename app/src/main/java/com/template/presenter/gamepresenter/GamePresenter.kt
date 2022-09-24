@@ -1,11 +1,20 @@
 package com.template.presenter.gamepresenter
 
+import android.animation.Animator
+import android.animation.AnimatorListenerAdapter
+import android.animation.AnimatorSet
 import android.animation.ObjectAnimator
+import android.content.Context
 import android.os.Handler
 import android.os.Looper
 import android.view.View
+import android.view.ViewGroup
+import android.view.animation.AccelerateInterpolator
+import android.view.animation.LinearInterpolator
+import android.widget.FrameLayout
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.appcompat.widget.AppCompatImageView
 import androidx.core.view.isVisible
 import com.template.presenter.mainpresenter.DataApi
 import com.template.R
@@ -37,13 +46,20 @@ class GamePresenter (val data: DataApi) {
        context!!.clickOk()
 }
 
-    fun animateSlotLine(viewImgStart: ImageView,viewImgFinish:ImageView, viewLine:View, res:Int, time:Long){
+    fun animateSlotLine(viewImgStart: ImageView,viewImgFinish:ImageView, viewLine:View, res:Int,
+                        height:Float, heightConteiner: Float,  time:Long){
 
         viewImgFinish.setImageResource(res)
-        viewLine.y = -12128F
+        //viewLine.y = -12128F
+
+        val animator333 = ObjectAnimator.ofFloat(viewLine, View.TRANSLATION_Y,
+            - viewLine.height.toFloat() + height)// + ((heightConteiner - height)))
+        animator333.duration = 0
+        animator333.start()
 
         Handler(Looper.getMainLooper()).postDelayed({
-            val animator333 = ObjectAnimator.ofFloat(viewLine, View.Y, 3F)
+            val animator333 = ObjectAnimator.ofFloat(viewLine, View.TRANSLATION_Y,0 //viewLine.height - (imgView.height*8)
+                .toFloat())
             animator333.duration = 3000
             animator333.start()
 
@@ -208,4 +224,5 @@ if(( img1 == img2) and (img2 == img3)) {
           },timer)
 
         }}
+
 }

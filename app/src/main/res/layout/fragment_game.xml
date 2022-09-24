@@ -49,7 +49,7 @@
                 android:id="@+id/LLline1"
                 android:layout_width="114dp"
                 android:layout_height="4525dp"
-                android:layout_gravity="bottom"
+                android:layout_gravity="top"
                 android:layout_marginBottom="15dp"
                 android:orientation="vertical">
 
@@ -421,7 +421,7 @@
                 android:id="@+id/LLline2"
                 android:layout_width="114dp"
                 android:layout_height="4525dp"
-                android:layout_gravity="bottom"
+                android:layout_gravity="top"
                 android:layout_marginBottom="15dp"
                 android:orientation="vertical">
 
@@ -793,7 +793,7 @@
                 android:id="@+id/LLline3"
                 android:layout_width="114dp"
                 android:layout_height="4525dp"
-                android:layout_gravity="bottom"
+                android:layout_gravity="top"
                 android:layout_marginBottom="15dp"
                 android:orientation="vertical">
 
@@ -1228,7 +1228,7 @@
         android:id="@+id/CVresult"
         android:layout_width="300dp"
         android:layout_height="400dp"
-        android:alpha="1"
+        android:alpha="0"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
