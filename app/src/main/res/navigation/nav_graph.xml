@@ -7,9 +7,9 @@
 
     <fragment
         android:id="@+id/mainFragment"
-        android:name="com.template.view.MainFragment"
+        android:name="com.template.ksafsa.hdlfhs"
         android:label="fragment_main"
-        tools:layout="@layout/fragment_main" >
+        tools:layout="@layout/fragment_mainn" >
         <action
             android:id="@+id/action_mainFragment_to_gameFragment"
             app:destination="@id/gameFragment" />
@@ -19,9 +19,9 @@
     </fragment>
     <fragment
         android:id="@+id/gameFragment"
-        android:name="com.template.view.GameFragment"
+        android:name="com.template.ksafsa.khdskgh"
         android:label="fragment_game"
-        tools:layout="@layout/fragment_game" >
+        tools:layout="@layout/fragment_gamen" >
         <action
             android:id="@+id/action_gameFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
@@ -35,16 +35,16 @@
     </fragment>
     <fragment
         android:id="@+id/infoFragment"
-        android:name="com.template.view.InfoFragment"
+        android:name="com.template.ksafsa.rgdskh"
         android:label="fragment_info"
-        tools:layout="@layout/fragment_info" >
+        tools:layout="@layout/fragment_infon" >
         <action
             android:id="@+id/action_infoFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
     </fragment>
     <fragment
         android:id="@+id/newCoinsFragment"
-        android:name="com.template.view.NewCoinsFragment"
+        android:name="com.template.ksafsa.ighgkh"
         android:label="NewCoinsFragment" >
         <action
             android:id="@+id/action_newCoinsFragment_to_mainFragment"
@@ -52,9 +52,9 @@
     </fragment>
     <fragment
         android:id="@+id/betFragment"
-        android:name="com.template.view.BetFragment"
+        android:name="com.template.ksafsa.rhbvu"
         android:label="fragment_bet"
-        tools:layout="@layout/fragment_bet" >
+        tools:layout="@layout/fragment_betn" >
         <action
             android:id="@+id/action_betFragment_to_gameFragment"
             app:destination="@id/gameFragment" />
