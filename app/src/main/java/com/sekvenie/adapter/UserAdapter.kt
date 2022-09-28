@@ -9,6 +9,7 @@ import coil.load
 import coil.util.DebugLogger
 import com.sekvenie.R
 import com.sekvenie.deteilpresentr.Deteilpresenter
+import com.sekvenie.model.network.service.Data
 import com.sekvenie.model.network.service.Film
 import kotlinx.android.synthetic.main.cardview_item_film.view.*
 
@@ -16,7 +17,7 @@ import kotlinx.android.synthetic.main.cardview_item_film.view.*
 class UserAdapter(
     val onUserClick: OnUserClickListener
 ) : RecyclerView.Adapter<UserAdapter.UserViewHolder>(){
-    private lateinit var filmsList: List<Film>
+    private lateinit var filmsList: List<Data>
     var Position = 0
     private val presenter by lazy { Deteilpresenter.getInstance() }
     class UserViewHolder(view : View) : RecyclerView.ViewHolder(view)
@@ -27,16 +28,9 @@ class UserAdapter(
     }
 
     override fun onBindViewHolder(holder: UserViewHolder, position: Int) {
-           holder.itemView.TVitem.text = filmsList[position].name
-           holder.itemView.IVcard.load(filmsList[position].imageurl)
+           holder.itemView.TVitem.setText(filmsList[position].title)
+           holder.itemView.IVcard.setImageResource(filmsList[position].img)
 
-        val loader = ImageLoader.Builder(holder.itemView.context)
-            .logger(DebugLogger())
-            .build()
-
-        holder.itemView.IVcard.load(filmsList[position].imageurl,
-            loader
-        )
         holder.itemView.setOnClickListener {
             onUserClick.onClick(filmsList[position])
             presenter.setChooseFilm(filmsList[position])
@@ -48,7 +42,7 @@ class UserAdapter(
     return filmsList.size
     }
       
-    fun setList(list: List<Film>){
+    fun setList(list: List<Data>){
         filmsList = list
     }
 
@@ -58,7 +52,7 @@ class UserAdapter(
 
 
     fun interface OnUserClickListener {
-        fun onClick(film: Film)
+        fun onClick(film: Data)
     }
 }
 

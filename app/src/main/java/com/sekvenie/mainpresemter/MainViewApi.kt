@@ -1,10 +1,11 @@
 package com.sekvenie.mainpresemter
 
-import com.sekvenie.model.network.service.Film
+import com.sekvenie.model.network.service.CATEGORY
+import com.sekvenie.model.network.service.Data
 
 interface MainViewApi {
 
-    fun showFilms(films: List<Film>)
+    fun showFilms(films: List<Data>)
 
     fun showStatus(status: ApiStatus)
 

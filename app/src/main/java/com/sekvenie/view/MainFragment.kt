@@ -11,6 +11,7 @@ import com.sekvenie.mainpresemter.ApiStatus
 import com.sekvenie.mainpresemter.MainPresenter
 import com.sekvenie.mainpresemter.MainViewApi
 import com.sekvenie.model.network.dataimpl.DataImpl
+import com.sekvenie.model.network.service.Data
 import com.sekvenie.model.network.service.Film
 
 
@@ -35,7 +36,7 @@ class MainFragment : Fragment(), MainViewApi {
         }
         }
 
-    override fun showFilms(films: List<Film>) {
+    override fun showFilms(films: List<Data>) {
         binding.recyclerView.adapter = UserAdapter { presenter.openFilm() }
             .apply {
                 clearList()

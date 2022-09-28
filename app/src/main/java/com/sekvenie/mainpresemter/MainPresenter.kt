@@ -5,6 +5,7 @@ import android.widget.Toast
 import androidx.lifecycle.ViewModel
 import com.sekvenie.App
 import com.sekvenie.R
+import com.sekvenie.model.network.service.CATEGORY
 import com.sekvenie.model.network.service.Data
 import com.sekvenie.model.network.service.Film
 import kotlinx.coroutines.CoroutineScope
@@ -15,14 +16,14 @@ import kotlinx.coroutines.launch
 
 enum class ApiStatus{  LOADING,DONE,ERROR }
 
-class MainPresenter(private val api: DataApi<Data>): ViewModel() {
-    private var mainList: List<Film>? = null
+class MainPresenter(private val api: DataApi<Data/*Film*/>): ViewModel() {
+    private var mainList: List<Data>? = null
     private var view: MainViewApi? = null
-    private var sortedList: List<Film> = mutableListOf()
+    private var sortedList: List<Data> = mutableListOf()
     private val categoryList = mutableSetOf<String>()
 
     private fun sortingFilmsFromABC(){
-        mainList = mainList?.sortedWith(compareBy(Film::localizedname))
+        mainList = mainList?.sortedWith(compareBy(Data::title))
     }
 
     fun getMainList() = mainList
@@ -31,9 +32,7 @@ class MainPresenter(private val api: DataApi<Data>): ViewModel() {
 
     private fun setCategory(){
         mainList?.forEach { film ->
-            film.genres.forEach{
-                categoryList.add(it)
-            }
+                categoryList.add(film.group.name)
         }
     }
 
@@ -43,37 +42,27 @@ class MainPresenter(private val api: DataApi<Data>): ViewModel() {
     }
 
     private fun getFilms() {
-        GlobalScope.launch(Dispatchers.IO) {
-            view?.showStatus(ApiStatus.LOADING)
-            try {
-                CoroutineScope(Dispatchers.IO).launch(Dispatchers.Main) {
-                    mainList = api.getData().films
+                    mainList = api.data
                     setCategory()
                     sortingFilmsFromABC()
                     view?.showFilms(mainList!!)
                     view?.showCategory(categoryList)
                     view?.showStatus(ApiStatus.DONE)
-                }
-            } catch (e: Exception) {
-                GlobalScope.launch(Dispatchers.Main) {
+
                     view?.showStatus(ApiStatus.ERROR)
-                }
-            }
-        }
+
     }
 
     fun sortingFilmsFromCategory(chooseCategory: String?){
-        if(!chooseCategory.isNullOrEmpty()){
-            val resultList = mutableListOf<Film>()
+            val resultList = mutableListOf<Data>()
             mainList?.forEach { film ->
-                film.genres.forEach { category ->
-                    if(category == chooseCategory){
+
+                    if(film.group.name == chooseCategory){
                         resultList.add(film)
-                    }
+
                 }
             }
             sortedList = resultList
-        }
     }
 
     fun destroy() {

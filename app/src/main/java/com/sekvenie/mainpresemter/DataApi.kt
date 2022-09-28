@@ -1,5 +1,7 @@
 package com.sekvenie.mainpresemter
 
+import com.sekvenie.model.network.service.Data
+
 interface DataApi<T> {
-   suspend fun getData(): T
+val data:List<Data>
 }

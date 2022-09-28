@@ -1,10 +1,58 @@
 <resources>
-    <string name="app_name">Movie</string>
-    <string name="main">Главная</string>
-    <string name="films">Фильмы</string>
-    <string name="category_films">жанры</string>
+    <string name="app_name">sports men</string>
+    <string name="main">main</string>
+    <string name="films">event</string>
+    <string name="category_films">sport type</string>
     <string name="pacific_rim">Pacific Rim</string>
     <string name="name">Имя</string>
     <string name="year">Год</string>
     <string name="rating">Рейтинг</string>
+
+    <string name="ufc_1">UFC 280: Oliveira-Makhachev</string>
+    <string name="ufc_2">UFC 280: Sterling-Dillashaw</string>
+    <string name="ufc_3">UFC 280: Yan-O Malley</string>
+    <string name="ufc_4">UFC 280: Muhammad-Brady</string>
+    <string name="ufc_5">UFC 280: Dariush-Gamrot</string>
+
+    <string name="box_1">BKFC 31: Richman-Doolittle</string>
+    <string name="box_2">BKFC 31: Girtz-Lindey</string>
+    <string name="box_3">BKFC 31: Camozzi-Mcdaniel</string>
+    <string name="box_4">BKFC 31: Copeland-Costa</string>
+    <string name="box_5">BKFC 31: Guillard-Kurdanov</string>
+    <string name="box_6">BKFC 31: Madden-Torres</string>
+
+    <string name="footbal_1">England-Germany</string>
+    <string name="footbal_2">Romania-Bosnia</string>
+    <string name="footbal_3">North Macedonia-Bulgaria</string>
+    <string name="footbal_4">San Marino-Estonia</string>
+    <string name="footbal_5">Hungary-Italy</string>
+    <string name="footbal_6">Montenegro-Finland</string>
+    <string name="footbal_7">Gibraltar vs Georgia</string>
+
+    <string name="hokey_1">Sakhalinskie Akuly — HC Taifun</string>
+    <string name="hokey_2">Fehervar AV19 — Pioneers Vorarlberg</string>
+    <string name="hokey_3">EC Graz 99Ers — HC TWK Innsbruck</string>
+    <string name="hokey_4">HK Levice — HK Spartak Dubnica</string>
+    <string name="hokey_5">HC 05 Banska Bystrica — HK Nitra</string>
+    <string name="hokey_6">SoenderjyskE Ishockey — Frederikshavn White Hawks</string>
+
+    <string name="tenis_1">Anna Bondar (Games) — Mayar Sherif (Games)</string>
+    <string name="tenis_2">Sara Sorribes Tormo (Games) — Martina Trevisan (Games)</string>
+    <string name="tenis_3">Danka Kovinic (Games) — Oceane Dodin (Games)</string>
+    <string name="tenis_4">Jack Karlsson Wistrand — Albert Saar</string>
+    <string name="tenis_5">Michael Agwi — Jiri Jenicek</string>
+    <string name="tenis_6">Felix Gill — Emilien Voisin</string>
+    <string name="tenis_7">Mao Mushika — Suzuho Oshino</string>
+    <string name="tenis_8">Jan-Lennard Struff — Dusan Lajovic</string>
+    <string name="wrestling_1">Snuider-Sadulaev</string>
+
+    <string name="americans_1">NFL: New York Giants — Dallas Cowboys</string>
+    <string name="americans_2">NFL: Denver Broncos — San Francisco 49ers</string>
+    <string name="americans_3">NFL: Tampa Bay Buccaneers — Green Bay Packers</string>
+    <string name="americans_4">NFL: Arizona Cardinals — Los Angeles Rams</string>
+    <string name="americans_5">NFL: Miami Dolphins — Buffalo Bills</string>
+    <string name="americans_6">NFL: Washington Commanders — Philadelphia Eagles</string>
+    <string name="americans_7">NFL: Carolina Panthers — New Orleans Saints</string>
+    <string name="americans_8">NFL: New England Patriots — Baltimore Ravens</string>
+
 </resources>

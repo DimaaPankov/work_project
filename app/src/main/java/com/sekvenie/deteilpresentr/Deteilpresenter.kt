@@ -1,11 +1,12 @@
 package com.sekvenie.deteilpresentr
 
 import androidx.lifecycle.ViewModel
+import com.sekvenie.model.network.service.Data
 import com.sekvenie.model.network.service.Film
 
 class Deteilpresenter: ViewModel() {
     private var view:DeteilViewApi? = null
-    private var chooseFilm: Film? = null
+    private var chooseFilm: Data? = null
 
     companion object{
         private var presenter: Deteilpresenter? = null
@@ -23,7 +24,7 @@ class Deteilpresenter: ViewModel() {
 
     fun getChooseFilm() = chooseFilm
 
-    fun setChooseFilm(film: Film){
+    fun setChooseFilm(film: Data){
         chooseFilm = film
     }
 
