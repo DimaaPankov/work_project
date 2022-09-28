@@ -41,7 +41,7 @@ class UserAdapter(
     override fun getItemCount(): Int {
     return filmsList.size
     }
-      
+      //sjf
     fun setList(list: List<Data>){
         filmsList = list
     }

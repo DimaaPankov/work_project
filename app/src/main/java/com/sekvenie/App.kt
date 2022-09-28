@@ -6,6 +6,8 @@ import androidx.navigation.Navigation
 import coil.ImageLoader
 import coil.imageLoader
 
+var balans = 1000
+
 class App: Application() {
 
     companion object {

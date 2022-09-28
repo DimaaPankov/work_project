@@ -14,6 +14,7 @@ import androidx.navigation.fragment.findNavController
 import coil.load
 import com.sekvenie.App
 import com.sekvenie.R
+import com.sekvenie.balans
 import com.sekvenie.databinding.FragmentDetailBinding
 import com.sekvenie.deteilpresentr.DeteilViewApi
 import com.sekvenie.deteilpresentr.Deteilpresenter
@@ -107,7 +108,7 @@ class DetailFragment : Fragment(),DeteilViewApi {
             binding.CVdone.visibility = View.VISIBLE
             binding.TVbin.text = "bet: ${text}р."
             binding.TVwin.text = "win: ${DecimalFormat("#0.00").format((text.toFloat()*(spinnerPositionCof).toFloat()))}р."
-
+            balans = balans - text.toInt()
             ObjectAnimator
                 .ofFloat(binding.CVdone, View.ALPHA, 1F)
                 .setDuration(500).start()

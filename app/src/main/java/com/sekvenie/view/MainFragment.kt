@@ -3,6 +3,7 @@ package com.sekvenie.view
 import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.Fragment
+import com.sekvenie.balans
 import com.sekvenie.R
 import com.sekvenie.adapter.UserAdapter
 import com.sekvenie.databinding.ButtonItemBinding
@@ -27,6 +28,7 @@ class MainFragment : Fragment(), MainViewApi {
         super.onCreate(savedInstanceState)
         presenter.init(this)
         binding.options.visibility = View.INVISIBLE
+        binding.balans.text = balans.toString()
         binding.Btitle.setOnClickListener{
             if(binding.options.visibility == View.INVISIBLE){
                 binding.options.visibility = View.VISIBLE
