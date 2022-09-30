@@ -10,6 +10,7 @@ import kotlinx.coroutines.*
 
 
 object DataImpl: DataApi {
+///
 
      private val data = JsonData(listOf<BestSeller>(
         BestSeller(4999,1,true, R.drawable.i111,6599,"poker suitcase"),
