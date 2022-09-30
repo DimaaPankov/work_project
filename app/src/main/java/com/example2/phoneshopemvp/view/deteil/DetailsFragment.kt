@@ -43,6 +43,7 @@ class DetailsFragment : Fragment(),DeteilViewApi {
         binding.img.load(args.urlImage)
         binding.TVtitle.text = args.title
         binding.TVpricea.text = "${args.price}$"
+        binding.TVpricee.text = "${args.price}$"
 
     }
 

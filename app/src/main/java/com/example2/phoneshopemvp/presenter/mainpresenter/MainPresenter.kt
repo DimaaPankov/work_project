@@ -17,7 +17,7 @@ class MainPresenter(val model:DataApi) {
         context = null
     }
 
-    suspend fun setData(){data  =  model.getData<JsonData>()}
+     fun setData(){data  =  model.getData<JsonData>()}
 
     fun setIndexHotSilers() =  if(index < 2) {
         ++index

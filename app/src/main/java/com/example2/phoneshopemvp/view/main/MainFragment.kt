@@ -6,12 +6,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.lifecycleScope
-import androidx.navigation.Navigation.findNavController
 import androidx.navigation.fragment.findNavController
-import coil.load
 
 import com.example2.phoneshopemvp.databinding.FragmentMainBinding
-import com.example2.phoneshopemvp.network.models.JsonData
 import com.example2.phoneshopemvp.network.repository.DataImpl
 import com.example2.phoneshopemvp.presenter.mainpresenter.MainPresenter
 import com.example2.phoneshopemvp.presenter.mainpresenter.MainViewApi
@@ -47,20 +44,18 @@ class MainFragment() : Fragment(),MainViewApi {
 
 
      override fun setContent() {
-    lifecycleScope.launchWhenCreated {
-       withContext(Dispatchers.IO) {
+
            presenter.setData()
-        }
-        withContext(Dispatchers.Main) {
+
         binding.tvBSTitle1.text = presenter?.data?.bestSeller?.getOrNull(0)?.title
         binding.tvBSTitle2.text = presenter?.data?.bestSeller?.getOrNull(1)?.title
         binding.tvBSTitle3.text = presenter?.data?.bestSeller?.getOrNull(2)?.title
         binding.tvBSTitle4.text = presenter?.data?.bestSeller?.getOrNull(3)?.title
 
-        binding.imgBSImage1.load(presenter?.data?.bestSeller?.getOrNull(0)?.picture)
-        binding.imgBSImage2.load(presenter?.data?.bestSeller?.getOrNull(1)?.picture)
-        binding.imgBSImage3.load(presenter?.data?.bestSeller?.getOrNull(2)?.picture)
-        binding.imgBSImage4.load(presenter?.data?.bestSeller?.getOrNull(3)?.picture)
+        binding.imgBSImage1.setImageResource(presenter?.data?.bestSeller?.getOrNull(0)?.picture!!)
+        binding.imgBSImage2.setImageResource(presenter?.data?.bestSeller?.getOrNull(1)?.picture!!)
+        binding.imgBSImage3.setImageResource(presenter?.data?.bestSeller?.getOrNull(2)?.picture!!)
+        binding.imgBSImage4.setImageResource(presenter?.data?.bestSeller?.getOrNull(3)?.picture!!)
 
         binding.tvBSPriceWithoutDiscount1.text =
             presenter?.data?.bestSeller?.getOrNull(0)?.discount_price.toString()
@@ -71,62 +66,49 @@ class MainFragment() : Fragment(),MainViewApi {
         binding.tvBSPriceWithoutDiscount4.text =
             presenter?.data?.bestSeller?.getOrNull(3)?.discount_price.toString()
 
-        //discount price
-        binding.tvBSDiscountPrice1.text =
-            presenter?.data?.bestSeller?.getOrNull(0)?.discount_price.toString()
-        binding.tvBSDiscountPrice2.text =
-            presenter?.data?.bestSeller?.getOrNull(1)?.discount_price.toString()
-        binding.tvBSDiscountPrice3.text =
-            presenter?.data?.bestSeller?.getOrNull(2)?.discount_price.toString()
-        binding.tvBSDiscountPrice4.text =
-            presenter?.data?.bestSeller?.getOrNull(3)?.discount_price.toString()
-
         //image hot silers
-        binding.imgHT.load(presenter?.data?.home_store?.get(presenter.index)?.picture)
-        binding.tvHTtitle.text = presenter?.data?.home_store?.get(presenter.index)?.title
-        binding.tvHSsubtitle.text = presenter?.data?.home_store?.get(presenter.index   )?.subtitle
+        binding.imgHT.setImageResource(presenter?.data?.home_store?.getOrNull(presenter.index)?.picture!!)
             binding.info.visibility = View.VISIBLE
+
     }
-    }}
 
     override fun setClick() {
       binding.TVseeMore.setOnClickListener {
           presenter.setIndexHotSilers()
-          binding.imgHT.load(presenter?.data?.home_store?.get(presenter.index)?.picture)
-          binding.tvHTtitle.text = presenter?.data?.home_store?.get(presenter.index)?.title
-          binding.tvHSsubtitle.text = presenter?.data?.home_store?.get(presenter.index)?.subtitle
+          binding.imgHT.setImageResource(presenter?.data?.home_store?.getOrNull(presenter.index)?.picture!!)
       }
 
         binding.imgHT.setOnClickListener {
             setArgsAndGoSecondFragment(presenter?.data?.home_store?.get(presenter.index)?.picture!!,
                 presenter?.data?.home_store?.get(presenter.index)?.title!!,
-               "250"
+                presenter!!.data!!.home_store.get(presenter.index).price
             )
         }
 
         binding.imgBSImage1.setOnClickListener{
             setArgsAndGoSecondFragment(presenter?.data?.bestSeller?.getOrNull(0)?.picture!!,
                 presenter?.data?.bestSeller?.getOrNull(0)?.title!!,
-                presenter?.data?.bestSeller?.getOrNull(0)?.price_without_discount.toString()!!,)}
+                presenter?.data?.bestSeller?.getOrNull(0)?.price_without_discount!!,)}
+
         binding.imgBSImage2.setOnClickListener{
             setArgsAndGoSecondFragment(presenter?.data?.bestSeller?.getOrNull(1)?.picture!!,
                 presenter?.data?.bestSeller?.getOrNull(1)?.title!!,
-                presenter?.data?.bestSeller?.getOrNull(1)?.price_without_discount.toString()!!,)
+                presenter?.data?.bestSeller?.getOrNull(1)?.price_without_discount!!,)
         }
         binding.imgBSImage3.setOnClickListener{
             setArgsAndGoSecondFragment(presenter?.data?.bestSeller?.getOrNull(2)?.picture!!,
                 presenter?.data?.bestSeller?.getOrNull(2)?.title!!,
-                presenter?.data?.bestSeller?.getOrNull(2)?.price_without_discount.toString()!!,)
+                presenter?.data?.bestSeller?.getOrNull(2)?.price_without_discount!!,)
         }
         binding.imgBSImage4.setOnClickListener{
             setArgsAndGoSecondFragment(presenter?.data?.bestSeller?.getOrNull(3)?.picture!!,
                 presenter?.data?.bestSeller?.getOrNull(3)?.title!!,
-                presenter?.data?.bestSeller?.getOrNull(3)?.price_without_discount.toString()!!,)
+                presenter?.data?.bestSeller?.getOrNull(3)?.price_without_discount!!,)
         }
 
     }
 
-    private fun setArgsAndGoSecondFragment(imgUrl:String,title:String,price:String){
+    private fun setArgsAndGoSecondFragment(imgUrl: Int, title:String, price:Int){
         val discription = MainFragmentDirections
             .actionMainFragmentToDetailsFragment(imgUrl,title,price)
         findNavController().navigate(discription)
