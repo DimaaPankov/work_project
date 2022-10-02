@@ -1,23 +1,16 @@
 package com.template.presenter.gamepresenter
 
-import android.animation.Animator
-import android.animation.AnimatorListenerAdapter
-import android.animation.AnimatorSet
 import android.animation.ObjectAnimator
 import android.content.Context
 import android.os.Handler
 import android.os.Looper
 import android.view.View
-import android.view.ViewGroup
-import android.view.animation.AccelerateInterpolator
-import android.view.animation.LinearInterpolator
-import android.widget.FrameLayout
 import android.widget.ImageView
 import android.widget.TextView
-import androidx.appcompat.widget.AppCompatImageView
 import androidx.core.view.isVisible
 import com.template.presenter.mainpresenter.DataApi
 import com.template.R
+import com.template.view.DataBasePreferences
 import com.template.view.Model
 import java.text.DecimalFormat
 
@@ -27,13 +20,19 @@ class GamePresenter (val data: DataApi) {
     val SIZE_SLOTS_MAX = 1.1F
     val SIZE_SLOTS_MIN = 0.9F
     val SIZE_SLOTS_DEFUELT = 1F
-    val REPLASE_CARD_Y = 0F
     var xBetCount = 0
     var minus = false
     var betCountXXX = 0
     var lastSlot1 = 0
     var lastSlot2 = 0
     var lastSlot3 = 0
+    var lastSlot4 = 0
+    var lastSlot5= 0
+    var lastSlot6 = 0
+    var lastSlot7 = 0
+    var lastSlot8 = 0
+    var lastSlot9 = 0
+
 
 
     fun init(_view: GameViewApi){
@@ -46,26 +45,39 @@ class GamePresenter (val data: DataApi) {
        context!!.clickOk()
 }
 
-    fun animateSlotLine(viewImgStart: ImageView,viewImgFinish:ImageView, viewLine:View, res:Int,
-                        height:Float, heightConteiner: Float,  time:Long){
 
-        viewImgFinish.setImageResource(res)
-        //viewLine.y = -12128F
+    fun animateSlotLine(start1: ImageView,
+                        start2: ImageView,
+                        start3: ImageView,
+                        finish1:ImageView,
+                        finish2:ImageView,
+                        finish3:ImageView,
+                        viewLine:View,
+                        res1:Int,
+                        res2:Int,
+                        res3:Int,
+                        height:Float, heightConteiner: Float, time:Long){
+
+        finish1.setImageResource(res1)
+        finish2.setImageResource(res2)
+        finish3.setImageResource(res3)
 
         val animator333 = ObjectAnimator.ofFloat(viewLine, View.TRANSLATION_Y,
-            - viewLine.height.toFloat() + height)// + ((heightConteiner - height)))
+            - viewLine.height.toFloat() + height + ((heightConteiner - height)))
         animator333.duration = 0
         animator333.start()
 
         Handler(Looper.getMainLooper()).postDelayed({
-            val animator333 = ObjectAnimator.ofFloat(viewLine, View.TRANSLATION_Y,0 //viewLine.height - (imgView.height*8)
+            val animator333 = ObjectAnimator.ofFloat(viewLine, View.TRANSLATION_Y,0
                 .toFloat())
             animator333.duration = 3000
             animator333.start()
 
         }, time)
         Handler(Looper.getMainLooper()).postDelayed({
-            viewImgStart.setImageResource(res)
+            start1.setImageResource(res1)
+            start2.setImageResource(res2)
+            start3.setImageResource(res3)
         },time+500)
     }
 
@@ -84,36 +96,34 @@ fun distroy(){
 context = null
 }
 fun setSlots(){
-data.setSlot()
+    data.setSlot()
     lastSlot1 = data.getSlot()[0]
     lastSlot2 = data.getSlot()[1]
     lastSlot3 = data.getSlot()[2]
+    lastSlot4 = data.getSlot()[3]
+    lastSlot5 = data.getSlot()[4]
+    lastSlot6 = data.getSlot()[5]
+    lastSlot7 = data.getSlot()[6]
+    lastSlot8 = data.getSlot()[7]
+    lastSlot9 = data.getSlot()[8]
 }
-
-//fun getSlots() = data.getSlot()
-
 
 private fun checkLine(img1:Int, img2: Int, img3:Int):Boolean{
 if(( img1 == img2) and (img2 == img3)) {
     when(img1 ) {
-        R.drawable.kiwi -> {
-            xBetCount = 1
+        R.drawable.strawberry -> {
+            xBetCount = xBetCount+2
             winBet = winBet+getBet()
             betCountXXX += xBetCount
         }
-        R.drawable.raspberry -> {
-            xBetCount = 2
+        R.drawable.seven2 -> {
+            xBetCount = xBetCount+3
             winBet = winBet+getBet()*2
             betCountXXX += xBetCount
         }
-        R.drawable.seven2 -> {
-            xBetCount = 5
-            winBet = winBet+getBet()*5
-            betCountXXX += xBetCount
-        }
         R.drawable.cherry -> {
-            xBetCount = 10
-            winBet = winBet+getBet()*10
+            xBetCount = xBetCount+5
+            winBet = winBet+getBet()*5
             betCountXXX += xBetCount
         }
     }
@@ -123,27 +133,54 @@ if(( img1 == img2) and (img2 == img3)) {
           return ( img1 ==  img2) and ( img2 ==  img3)
 }
 
-    fun animationVin(view1:ImageView, view2:ImageView, view3:ImageView, betCount: TextView,
-                     betCountSmile: TextView, TVvin: TextView, TVxxx: TextView, line:View
-                     ,cardView:View,balans:TextView){
-        if (checkLine(data.getSlot()[0], data.getSlot()[1], data.getSlot()[2])) {
+    fun animationVinLine(view1:ImageView, view2:ImageView, view3:ImageView, betCount: TextView,
+                         betCountSmile: TextView, TVvin: TextView, TVxxx: TextView, row:View
+                         , cardView:View, balans:TextView, line:Int){
+
+        var img1 = 0
+        var img2 = 0
+        var img3 = 0
+        when(line){
+            1 ->{
+                img1 = data.getSlot()[0]
+                img2 = data.getSlot()[1]
+                img3 = data.getSlot()[2]
+            }
+            2 ->{
+                img1 = data.getSlot()[3]
+                img2 = data.getSlot()[4]
+                img3 = data.getSlot()[5]
+            }
+            3 ->{
+                img1 = data.getSlot()[6]
+                img2 = data.getSlot()[7]
+                img3 = data.getSlot()[8]
+            }
+        }
+
+
+        if (checkLine(img1, img2, img3)) {
             Handler(Looper.getMainLooper()).postDelayed({
                 animationSlot( view1, betCount, betCountSmile, TVvin)
                 animationSlot( view2, betCount, betCountSmile, TVvin)
                 animationSlot( view3, betCount, betCountSmile, TVvin)
-                animationLine( /*TVxxx,*/ line)
+                animationLine( /*TVxxx,*/ row)
             }, 5000)
             Handler(Looper.getMainLooper()).postDelayed({
                 aimationWinResult(cardView, betCount, balans, TVxxx)
             },7000)
 
+            Handler(Looper.getMainLooper()).postDelayed({
+             xBetCount = 0
+            },8000)
         }
     }
 
     fun aimationWinResult(view:View,result:TextView,balans: TextView,xBet:TextView) {
+
         var time = 500
         xBet.text = "${xBetCount}X BET"
-            val animator = ObjectAnimator.ofFloat(view, View.Y, 600F)
+            val animator = ObjectAnimator.ofFloat(view, View.Y, 400F)
             animator.duration = 500
             animator.start()
             val animator2 = ObjectAnimator.ofFloat(view, View.ALPHA, 1F)
@@ -188,11 +225,10 @@ if(( img1 == img2) and (img2 == img3)) {
                               , betCountSmile: TextView, TVvin: TextView) {
         var timer = 0L
         var visibility = true
-        repeat(21) {
+        repeat(20) {
             timer = timer + 250
             Handler(Looper.getMainLooper()).postDelayed({
             if(visibility){
-           //     animationSmile(betCount, betCountSmile, TVvin)
                 val animator111 = ObjectAnimator.ofFloat(view2, View.SCALE_X, SIZE_SLOTS_MAX,)
                 animator111.duration = 250
                 animator111.start()
@@ -202,8 +238,7 @@ if(( img1 == img2) and (img2 == img3)) {
                 visibility = false
 
             }else {
-                if(it != 20){
-          //      animationSmile(betCount, betCountSmile, TVvin)
+                if(it != 19){
                 val animator111 = ObjectAnimator.ofFloat(view2, View.SCALE_X, SIZE_SLOTS_MIN,)
                 animator111.duration = 250
                 animator111.start()
@@ -212,7 +247,6 @@ if(( img1 == img2) and (img2 == img3)) {
                 animator222.start()
                 visibility = true
                 } else {
-           //         animationSmile(betCount, betCountSmile, TVvin)
                     val animator111 = ObjectAnimator.ofFloat(view2, View.SCALE_X, SIZE_SLOTS_DEFUELT)
                     animator111.duration = 250
                     animator111.start()
@@ -224,5 +258,10 @@ if(( img1 == img2) and (img2 == img3)) {
           },timer)
 
         }}
+
+   /* fun saveBalanseInDataBase(context: Context,balans:Int){
+        DataBasePreferences(context).setBalans(balans)
+    }
+*/
 
 }

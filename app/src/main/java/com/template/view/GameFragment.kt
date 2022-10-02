@@ -17,7 +17,6 @@ import com.template.presenter.gamepresenter.GameViewApi
 
 
 class GameFragment : Fragment(), GameViewApi {
-    var clicable = true
     val presenter = GamePresenter(Model)
     val binding by lazy { FragmentGameBinding.inflate(layoutInflater) }
 
@@ -50,34 +49,94 @@ class GameFragment : Fragment(), GameViewApi {
     override fun clickSpin() {
 
         binding.Bspin.setOnClickListener {
-            presenter.setSlots()
+         //   presenter.setSlots()
             binding.Bspin.isClickable = false
             binding.IVback.isClickable = false
-            binding.Vline.isVisible = false
+            binding.Vline1.isVisible = false
+            binding.Vline2.isVisible = false
+            binding.Vline3.isVisible = false
 
-                if ((presenter.getMainCont() >= presenter.getBet())
+
+            if ((presenter.getMainCont() >= presenter.getBet())
                 ) {
                     val heidht = binding.TVslot1.height.toFloat()
                     val heidhtConteiner = binding.constraintLayout .height.toFloat()
-            presenter.animateSlotLine(binding.TVslot58q,binding.TVslot1, binding.LLline1,
-                presenter.lastSlot1,heidht,heidhtConteiner,0)
-            presenter.animateSlotLine(binding.TVslot59q,binding.TVslot2,binding.LLline2,
-                presenter.lastSlot2,heidht,heidhtConteiner,1000)
-            presenter.animateSlotLine(binding.TVslot60q,binding.TVslot3,binding.LLline3,
-                presenter.lastSlot3,heidht,heidhtConteiner,2000)
+
+                    presenter.animateSlotLine(
+                        binding.TVslot52q,
+                        binding.TVslot55q,
+                        binding.TVslot58q,
+                        binding.TVslot1,
+                        binding.TVslot4,
+                        binding.TVslot7,
+                        binding.LLline1,
+                        presenter.lastSlot1,
+                        presenter.lastSlot4,
+                        presenter.lastSlot7,
+                        heidht,
+                        heidhtConteiner,
+                0)
+
+                    presenter.animateSlotLine(
+                        binding.TVslot53q,
+                        binding.TVslot56q,
+                        binding.TVslot59q,
+                        binding.TVslot2,
+                        binding.TVslot5,
+                        binding.TVslot8,
+                        binding.LLline2,
+                        presenter.lastSlot2,
+                        presenter.lastSlot5,
+                        presenter.lastSlot8,
+                        heidht,
+                        heidhtConteiner,1000)
+
+                    presenter.animateSlotLine(
+                        binding.TVslot54q,
+                        binding.TVslot57q,
+                        binding.TVslot60q,
+                        binding.TVslot3,
+                        binding.TVslot6,
+                        binding.TVslot9,
+                        binding.LLline3,
+                        presenter.lastSlot3,
+                        presenter.lastSlot6,
+                        presenter.lastSlot9,
+                        heidht,
+                        heidhtConteiner,2000)
+
             presenter.setMainCount(presenter.getBet(), false)
             binding.TVbalans.text = presenter.getMainCont().toString()
-            presenter.animationVin( binding.TVslot1, binding.TVslot2, binding.TVslot3,binding.betCount,
-                                     binding.betCountSmile,binding.TVvin,binding.TVxxx,binding.Vline,
-                                                                   binding.CVresult,binding.TVbalans)
+
+            presenter.animationVinLine( binding.TVslot1, binding.TVslot2, binding.TVslot3,binding.betCount,
+                                     binding.betCountSmile,binding.TVvin,binding.TVxxx,binding.Vline1,
+                                      binding.CVresult,binding.TVbalans,1)
+
+            presenter.animationVinLine( binding.TVslot4, binding.TVslot5, binding.TVslot6,binding.betCount,
+                        binding.betCountSmile,binding.TVvin,binding.TVxxx,binding.Vline2,
+                        binding.CVresult,binding.TVbalans,2)
+
+            presenter.animationVinLine( binding.TVslot7, binding.TVslot8, binding.TVslot9,binding.betCount,
+                        binding.betCountSmile,binding.TVvin,binding.TVxxx,binding.Vline3,
+                        binding.CVresult,binding.TVbalans,3)
+
+
+
                 } else {
-                    (requireActivity() as MainActivity).navController.navigate(R.id.action_gameFragment_to_newCoinsFragment)
+                    (requireActivity() as MainActivity).navController.navigate(R.id
+                        .action_gameFragment_to_newCoinsFragment)
+
                     presenter.minus = true
                 }
             Handler(Looper.getMainLooper()).postDelayed({
                 binding.Bspin.isClickable = true
                 binding.IVback.isClickable = true },5000)
+            DataBasePreferences(requireContext()).setBalans(presenter.getMainCont()+
+                    presenter.betCountXXX)
+            presenter.setSlots()
         }
+        DataBasePreferences(requireContext()).setBalans(presenter.getMainCont())
+
     }
 
             override fun clickBack() {
@@ -96,15 +155,15 @@ class GameFragment : Fragment(), GameViewApi {
                 binding.TVbalans.text = Model.getMainCount().toString()
                 binding.betCountMinus.text = Model.getBet().toString()
                 presenter.setSlots()
-                binding.TVslot1.setImageResource(Model.slots.random())
-                binding.TVslot2.setImageResource(Model.slots.random())
-                binding.TVslot3.setImageResource(Model.slots.random())
-                binding.TVslot4.setImageResource(Model.slots.random())
-                binding.TVslot5.setImageResource(Model.slots.random())
-                binding.TVslot6.setImageResource(Model.slots.random())
-                binding.TVslot7.setImageResource(Model.slots.random())
-                binding.TVslot8.setImageResource(Model.slots.random())
-                binding.TVslot9.setImageResource(Model.slots.random())
+                binding.TVslot1.setImageResource(presenter.lastSlot7)
+                binding.TVslot2.setImageResource(presenter.lastSlot8)
+                binding.TVslot3.setImageResource(presenter.lastSlot9)
+                binding.TVslot4.setImageResource(presenter.lastSlot4)
+                binding.TVslot5.setImageResource(presenter.lastSlot5)
+                binding.TVslot6.setImageResource(presenter.lastSlot6)
+                binding.TVslot7.setImageResource(presenter.lastSlot7)
+                binding.TVslot8.setImageResource(presenter.lastSlot8)
+                binding.TVslot9.setImageResource(presenter.lastSlot9)
                 binding.TVslot10.setImageResource(Model.slots.random())
                 binding.TVslot11.setImageResource(Model.slots.random())
                 binding.TVslot12.setImageResource(Model.slots.random())
@@ -205,16 +264,16 @@ class GameFragment : Fragment(), GameViewApi {
                 binding.TVslot48q.setImageResource(Model.slots.random())
                 binding.TVslot49q.setImageResource(Model.slots.random())
                 binding.TVslot50q.setImageResource(Model.slots.random())
-                binding.TVslot52q.setImageResource(Model.slots.random())
-                binding.TVslot53q.setImageResource(Model.slots.random())
-                binding.TVslot54q.setImageResource(Model.slots.random())
-                binding.TVslot55q.setImageResource(Model.slots.random())
-                binding.TVslot55q.setImageResource(Model.slots.random())
-                binding.TVslot56q.setImageResource(Model.slots.random())
-                binding.TVslot57q.setImageResource(Model.slots.random())
-                binding.TVslot58q.setImageResource(presenter.lastSlot1)
-                binding.TVslot59q.setImageResource(presenter.lastSlot2)
-                binding.TVslot60q.setImageResource(presenter.lastSlot3)
+                binding.TVslot51q.setImageResource(Model.slots.random())
+                binding.TVslot52q.setImageResource(presenter.lastSlot7)
+                binding.TVslot53q.setImageResource(presenter.lastSlot8)
+                binding.TVslot54q.setImageResource(presenter.lastSlot9)
+                binding.TVslot55q.setImageResource(presenter.lastSlot4)
+                binding.TVslot56q.setImageResource(presenter.lastSlot5)
+                binding.TVslot57q.setImageResource(presenter.lastSlot6)
+                binding.TVslot58q.setImageResource(presenter.lastSlot7)
+                binding.TVslot59q.setImageResource(presenter.lastSlot8)
+                binding.TVslot60q.setImageResource(presenter.lastSlot9)
             }
 
     override fun clickOk() {

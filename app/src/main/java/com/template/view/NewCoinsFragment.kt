@@ -35,9 +35,9 @@ class NewCoinsFragment : Fragment(),NewCoinsViewApi {
 
     override fun clickNewCoins() {
         binding.BreverdCoins.setOnClickListener {
-            presenter.setMainCount()
+            presenter.setMainCount(requireContext())
             (requireActivity() as MainActivity).navController.navigate(R.id.action_newCoinsFragment_to_mainFragment)
-
+            DataBasePreferences(requireContext()).setBalans(1000)
         }
     }
 }

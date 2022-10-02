@@ -1,5 +1,6 @@
 package com.template.presenter.NewCoinsPresenter
 
+import android.content.Context
 import com.template.presenter.mainpresenter.DataApi
 
 class NewCoinsPresenter (val data: DataApi) {
@@ -9,7 +10,7 @@ class NewCoinsPresenter (val data: DataApi) {
         context = _view
         context!!.clickNewCoins()
     }
-    fun setMainCount(){
+    fun setMainCount(context: Context){
         data.setMainCount(1000)
     }
 

@@ -1,5 +1,7 @@
 package com.template.view
 
+import android.content.Context
+import android.content.SharedPreferences
 import com.template.presenter.mainpresenter.DataApi
 import com.template.R
 
@@ -7,27 +9,16 @@ import com.template.R
 
 object Model: DataApi {
     private var minus = true
-    private var betCountXXX = 0
-    private var winCount = 0
-    private var winLine = booleanArrayOf(false,false,false)
-    private val listSlots = mutableListOf(0,0,0)
+    private val listSlots = mutableListOf(0,0,0,0,0,0,0,0,0)
     private var BET:Int = 5
     private var MAINcount:Int = 1000
 
 
     val slots = listOf(
-        R.drawable.kiwi,R.drawable.kiwi,R.drawable.kiwi,R.drawable.kiwi,R.drawable.kiwi,
-        R.drawable.kiwi,R.drawable.kiwi,R.drawable.kiwi,R.drawable.kiwi,R.drawable.kiwi,
-        R.drawable.kiwi,R.drawable.kiwi,R.drawable.kiwi, //13
-        R.drawable.seven2,R.drawable.seven2,R.drawable.seven2,R.drawable.seven2,R.drawable.seven2,
-        R.drawable.seven2,R.drawable.seven2,//7
-        R.drawable.cherry,R.drawable.cherry,R.drawable.cherry,R.drawable.cherry,R.drawable.cherry,//5
-        R.drawable.raspberry,R.drawable.raspberry,R.drawable.raspberry,R.drawable.raspberry,R.drawable.raspberry,
-        R.drawable.raspberry,R.drawable.raspberry,R.drawable.raspberry,R.drawable.raspberry,R.drawable.raspberry,
-        R.drawable.raspberry,R.drawable.raspberry,R.drawable.raspberry,R.drawable.raspberry,R.drawable.raspberry,//15
-        R.drawable.strawberry,R.drawable.strawberry,R.drawable.strawberry,R.drawable.strawberry,R.drawable.strawberry,
-        R.drawable.strawberry,R.drawable.strawberry,R.drawable.strawberry,R.drawable.strawberry,R.drawable.strawberry,//10
 
+        R.drawable.seven2,
+        R.drawable.cherry,
+        R.drawable.strawberry,R.drawable.strawberry,R.drawable.strawberry
     )
 
 
@@ -53,7 +44,7 @@ object Model: DataApi {
     override fun getBet(): Int = BET
 
     override fun setSlot() {
-        for(i in 0..2)
+        for(i in 0..8)
         listSlots[i] = slots.random()
     }
 
@@ -61,7 +52,24 @@ object Model: DataApi {
 
 }
 
+class DataBasePreferences(val _context: Context) {
+    private var prefs: SharedPreferences
+    private val prefsSetting = _context.getSharedPreferences("databaseInfo", Context.MODE_PRIVATE)
+    private var editor: SharedPreferences.Editor
+    private val editorSettings = prefsSetting.edit()
+    init {
+        prefs = _context.getSharedPreferences(getBalans().toString(), Context.MODE_PRIVATE)
+        editor = prefs.edit()
+    }
 
+    fun getBalans(): Int {
+        return prefsSetting.getInt("size",0)
+    }
+
+    fun setBalans(i:Int) {
+        editorSettings.putInt("size",i).apply()
+    }
+}
 
 
 

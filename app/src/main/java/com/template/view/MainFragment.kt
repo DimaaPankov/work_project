@@ -15,7 +15,8 @@ import com.template.presenter.mainpresenter.MainViewApi
 class MainFragment : Fragment(),MainViewApi {
 
     lateinit var binding: FragmentMainBinding
-    val presenter = MainPresenter(Model)
+
+    val presenter by lazy{MainPresenter(Model)}
     private var countMiliSecond:Long = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -39,7 +40,7 @@ class MainFragment : Fragment(),MainViewApi {
     }
 
     override fun showCoins() {
-        binding.TVcoins.text = presenter.getCoins().toString()
+        binding.TVcoins.text = DataBasePreferences(requireContext()).getBalans().toString()
     }
 
     override fun clickPlay() {

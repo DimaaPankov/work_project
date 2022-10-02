@@ -1,5 +1,7 @@
 package com.template.presenter.mainpresenter
 
+import android.content.Context
+
 class MainPresenter(val data: DataApi) {
 
     private var context: MainViewApi? = null

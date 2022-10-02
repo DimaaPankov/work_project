@@ -5,15 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center_horizontal"
-    android:background="@color/blackD"
+    android:background="@color/background"
     tools:context="com.template.view.MainActivity">
 
     <TextView
         android:id="@+id/TVtextBanan3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="1x"
-        android:textColor="@color/yellowGreenD"
+        android:text="2x"
+        android:textColor="@color/img_back"
         android:textSize="50sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/TVbanan2"
@@ -26,8 +26,8 @@
         android:id="@+id/TVtextBanan2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="2x"
-        android:textColor="@color/yellowGreenD"
+        android:text="5x"
+        android:textColor="@color/img_back"
         android:textSize="50sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/TVbanan"
@@ -41,47 +41,12 @@
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_marginStart="40dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="30dp"
         android:src="@drawable/kiwi"
         android:visibility="visible"
-        app:layout_constraintBottom_toTopOf="@+id/TVbanan"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/TVtextSub2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="10x"
-        android:textColor="@color/yellowGreenD"
-        android:textSize="50sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/TVfr"
-        app:layout_constraintEnd_toEndOf="@+id/TVtextSub"
-        app:layout_constraintStart_toStartOf="@+id/TVtextSub"
-        app:layout_constraintTop_toBottomOf="@+id/TVSub" />
-
-    <ImageView
-        android:id="@+id/TVSub"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="10dp"
-        android:src="@drawable/seven2"
+        app:layout_constraintBottom_toTopOf="@+id/TVlimon"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TVlimon" />
-
-    <TextView
-        android:id="@+id/TVtextSub"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="5x"
-        android:textColor="@color/yellowGreenD"
-        android:textSize="50sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/TVSub"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/TVSub"
-        app:layout_constraintTop_toTopOf="@+id/TVSub" />
+        app:srcCompat="@drawable/strawberry" />
 
     <ImageView
         android:id="@+id/TVlimon"
@@ -91,14 +56,15 @@
         android:src="@drawable/strawberry"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/seven2" />
 
     <TextView
         android:id="@+id/TVtextLimon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="3x"
-        android:textColor="@color/yellowGreenD"
+        android:textColor="@color/img_back"
         android:textSize="50sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/TVlimon"
@@ -112,20 +78,21 @@
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_marginStart="40dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginTop="30dp"
         android:src="@drawable/raspberry"
-        app:layout_constraintBottom_toTopOf="@+id/TVlimon"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVlimon"
+        app:srcCompat="@drawable/cherry" />
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
         android:text="wining"
-        android:textColor="@color/yellowGreenD"
+        android:textColor="@color/img_back"
         android:textSize="50sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/TVbanan2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -134,23 +101,14 @@
         android:id="@+id/Bok"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/button"
         android:text="ok"
-        android:backgroundTint="#C8E7ED"
-        android:textColor="#807A7A"
+        android:textColor="@color/background"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TVfr" />
+        app:layout_constraintTop_toBottomOf="@+id/TVbanan" />
 
-    <ImageView
-        android:id="@+id/TVfr"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_marginTop="10dp"
-        android:src="@drawable/cherry"
-        app:layout_constraintEnd_toEndOf="@+id/TVSub"
-        app:layout_constraintStart_toStartOf="@+id/TVSub"
-        app:layout_constraintTop_toBottomOf="@+id/TVSub" />
 </androidx.constraintlayout.widget.ConstraintLayout>

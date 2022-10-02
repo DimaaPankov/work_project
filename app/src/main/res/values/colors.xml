@@ -9,12 +9,15 @@
     <color name="white">#FFFFFFFF</color>
     <color name="red">#F84437</color>
 
-    <color name="blackD">#252525</color>
-    <color name="redD">#F44336</color>
-    <color name="whiteD">#EFEDED</color>
-    <color name="grayD">#4F5050</color>
-    <color name="yellowGreenD">#CDDC39</color>
-    <color name="blueD">#2196F3</color>
+    <color name="background">#212121</color>
+    <color name="button">#F8BBD0</color>
+    <color name="frame">#F8BBD0</color>
+    <color name="img_back">#F8BBD0</color>
+    <color name="text_button">#FFFFFF</color>
+   <color name="result_frame">#579C8A</color>
+
+
+
     <color name="orangeD">#FFC107</color>
 
 
