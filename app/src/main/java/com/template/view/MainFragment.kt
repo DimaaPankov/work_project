@@ -40,7 +40,7 @@ class MainFragment : Fragment(),MainViewApi {
     }
 
     override fun showCoins() {
-        binding.TVcoins.text = DataBasePreferences(requireContext()).getBalans().toString()
+      binding.TVcoins.text = presenter.getBalansInDataBase(requireContext()).toString()
     }
 
     override fun clickPlay() {

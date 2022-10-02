@@ -1,6 +1,6 @@
 package com.template.presenter.mainpresenter
 
-import android.content.Context
+
 
 interface DataApi {
    fun setMainCount(bet:Int,minusOrPlus:Boolean)

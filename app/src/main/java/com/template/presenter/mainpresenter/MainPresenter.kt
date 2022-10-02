@@ -1,6 +1,7 @@
 package com.template.presenter.mainpresenter
 
 import android.content.Context
+import com.template.view.DataBasePreferences
 
 class MainPresenter(val data: DataApi) {
 
@@ -20,6 +21,6 @@ class MainPresenter(val data: DataApi) {
 
     }
 
-
+    fun getBalansInDataBase(_context:Context) = DataBasePreferences(_context).getBalans()
 
 }

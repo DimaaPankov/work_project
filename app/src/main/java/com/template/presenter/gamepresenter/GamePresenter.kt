@@ -259,9 +259,13 @@ if(( img1 == img2) and (img2 == img3)) {
 
         }}
 
-   /* fun saveBalanseInDataBase(context: Context,balans:Int){
-        DataBasePreferences(context).setBalans(balans)
+   fun saveBalanseInDataBase(_context: Context,balans:Int){
+        DataBasePreferences(_context).setBalans(balans)
     }
-*/
+
+    fun getBalansInDataBase(_context:Context){
+        Model.setMainCount(DataBasePreferences(_context).getBalans())
+    }
+
 
 }

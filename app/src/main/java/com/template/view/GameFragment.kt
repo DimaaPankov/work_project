@@ -131,11 +131,15 @@ class GameFragment : Fragment(), GameViewApi {
             Handler(Looper.getMainLooper()).postDelayed({
                 binding.Bspin.isClickable = true
                 binding.IVback.isClickable = true },5000)
+            /*
             DataBasePreferences(requireContext()).setBalans(presenter.getMainCont()+
+                    presenter.betCountXXX)*/
+            presenter.saveBalanseInDataBase(requireContext(),presenter.getMainCont()+
                     presenter.betCountXXX)
             presenter.setSlots()
         }
-        DataBasePreferences(requireContext()).setBalans(presenter.getMainCont())
+      //  DataBasePreferences(requireContext()).setBalans(presenter.getMainCont())
+
 
     }
 

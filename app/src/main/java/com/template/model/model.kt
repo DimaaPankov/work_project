@@ -43,6 +43,7 @@ object Model: DataApi {
 
     override fun getBet(): Int = BET
 
+
     override fun setSlot() {
         for(i in 0..8)
         listSlots[i] = slots.random()
