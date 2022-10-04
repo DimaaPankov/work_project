@@ -19,7 +19,7 @@ lateinit var binding: FragmentInfoBinding
         binding = FragmentInfoBinding.inflate(layoutInflater)
         presenter.init(this)
         }
-
+//dijsdadd
 
     override fun clickOk() {
         binding.Bok.setOnClickListener {
