@@ -6,16 +6,15 @@
     android:layout_height="match_parent"
     app:layoutDescription="@xml/fragment_splash_scene"
     tools:context=".view.SplashFragment"
-
     android:id="@+id/motionLayout"
-    android:background="#1E1E1E"
+    android:background="@color/black"
     android:paddingTop="24dp">
 
     <ImageView
         android:id="@+id/logoImageView"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:src="@drawable/icon"
+        android:src="@drawable/cards"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -27,7 +26,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:alpha="0.0"
-        android:text="sports bet"
+        android:text="poker events"
         android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
         android:textColor="#fff"
         android:textStyle="bold"

@@ -1,54 +1,38 @@
 package com.sekvenie.model.network.dataimpl
 
-import com.sekvenie.R
-import com.sekvenie.model.network.service.Data
+import com.sekvenie.model.network.service.DataEvent
 import com.sekvenie.mainpresemter.DataApi
-import com.sekvenie.model.network.service.CATEGORY
+import com.sekvenie.model.network.service.Data
+import com.sekvenie.R
 
 
 object DataImpl : DataApi<Data> {
-    override var data = listOf<Data>(
-        Data(R.drawable.footboll,R.string.footbal_1,CATEGORY.FOOTBAL,2.12F,1.09F,3.2F),
-        Data(R.drawable.footboll,R.string.footbal_2,CATEGORY.FOOTBAL,1.34F,1.56F,5.6F),
-        Data(R.drawable.footboll,R.string.footbal_3,CATEGORY.FOOTBAL,2.01F,2.33F,4.7F),
-        Data(R.drawable.footboll,R.string.footbal_4,CATEGORY.FOOTBAL,2.11F,1.08F,8F),
-        Data(R.drawable.footboll,R.string.footbal_5,CATEGORY.FOOTBAL,1.8F,1.3F,4F),
-        Data(R.drawable.footboll,R.string.footbal_6,CATEGORY.FOOTBAL,1.92F,3.89F,5.7F),
-        Data(R.drawable.footboll,R.string.footbal_7,CATEGORY.FOOTBAL,2.07F,1.29F,2.7F),
-        Data(R.drawable.ufc_280,R.string.ufc_1,CATEGORY.MMA,2.23F,1.45F,6.7F),
-        Data(R.drawable.ufc_280,R.string.ufc_2,CATEGORY.MMA,2.12F,1.1F,11.7F),
-        Data(R.drawable.ufc_280,R.string.ufc_3,CATEGORY.MMA,1.59F,1.33F,8.32F),
-        Data(R.drawable.ufc_280,R.string.ufc_4,CATEGORY.MMA,2.15F,2.4F,12.12F),
-        Data(R.drawable.ufc_280,R.string.ufc_5,CATEGORY.MMA,1.67F,1.6F,4.7F),
-        Data(R.drawable.box,R.string.box_1,CATEGORY.BOX,2.1F,2.5F,13.7F),
-        Data(R.drawable.box,R.string.box_2,CATEGORY.BOX,1.41F,3F,9F),
-        Data(R.drawable.box,R.string.box_3,CATEGORY.BOX,1.92F,1.2F,6F),
-        Data(R.drawable.box,R.string.box_4,CATEGORY.BOX,1.53F,1.45F,3.5F),
-        Data(R.drawable.box,R.string.box_5,CATEGORY.BOX,1.27F,1.12F,6.98F),
-        Data(R.drawable.box,R.string.box_6,CATEGORY.BOX,2.41F,1.47F,9.15F),
-        Data(R.drawable.tenis,R.string.tenis_1,CATEGORY.TENIS,2.02F,2.45F,9.07F),
-        Data(R.drawable.tenis,R.string.tenis_2,CATEGORY.TENIS,2.11F,3F,5.1F),
-        Data(R.drawable.tenis,R.string.tenis_3,CATEGORY.TENIS,1.12F,2.43F,9.81F),
-        Data(R.drawable.tenis,R.string.tenis_4,CATEGORY.TENIS,3.12F,1.41F,6.98F),
-        Data(R.drawable.tenis,R.string.tenis_5,CATEGORY.TENIS,1.62F,1.12F,5.82F),
-        Data(R.drawable.tenis,R.string.tenis_6,CATEGORY.TENIS,2.82F,1.5F,4.18F),
-        Data(R.drawable.tenis,R.string.tenis_7,CATEGORY.TENIS,3.29F,1.7F,4.7F),
-        Data(R.drawable.tenis,R.string.tenis_8,CATEGORY.TENIS,1.22F,1.9F,10.8F),
-        Data(R.drawable.americans_footbal,R.string.americans_1,CATEGORY.AMERICANS_FOOTBAL,1.39F,1.39F,3.76F),
-        Data(R.drawable.americans_footbal,R.string.americans_2,CATEGORY.AMERICANS_FOOTBAL,2.94F,1.25F,4.89F),
-        Data(R.drawable.americans_footbal,R.string.americans_3,CATEGORY.AMERICANS_FOOTBAL,1.52F,1.14F,8.7F),
-        Data(R.drawable.americans_footbal,R.string.americans_4,CATEGORY.AMERICANS_FOOTBAL,2.65F,1.97F,4.73F),
-        Data(R.drawable.americans_footbal,R.string.americans_5,CATEGORY.AMERICANS_FOOTBAL,1.42F,1.12F,3.61F),
-        Data(R.drawable.americans_footbal,R.string.americans_6,CATEGORY.AMERICANS_FOOTBAL,1.34F,2F,4.09F),
-        Data(R.drawable.americans_footbal,R.string.americans_7,CATEGORY.AMERICANS_FOOTBAL,2.17F,2.5F,7.41F),
-        Data(R.drawable.americans_footbal,R.string.americans_8,CATEGORY.AMERICANS_FOOTBAL,4.12F,3F,4F),
-        Data(R.drawable.americans_footbal,R.string.americans_8,CATEGORY.AMERICANS_FOOTBAL,3.92F,4.1F,4.07F),
-        Data(R.drawable.wrestling,R.string.wrestling_1,CATEGORY.WRESTLING,2.11F,1.5F,8F),
-        Data(R.drawable.hokey,R.string.hokey_1,CATEGORY.HOKEY,1.79F,1.7F,6.81F),
-        Data(R.drawable.hokey,R.string.hokey_2,CATEGORY.HOKEY,1.28F,2.43F,4.9F),
-        Data(R.drawable.hokey,R.string.hokey_3,CATEGORY.HOKEY,1.08F,1.24F,5.89F),
-        Data(R.drawable.hokey,R.string.hokey_4,CATEGORY.HOKEY,1.15F,1.91F,3.49F),
-        Data(R.drawable.hokey,R.string.hokey_5,CATEGORY.HOKEY,1.38F,2.12F,5.1F),
-        Data(R.drawable.hokey,R.string.hokey_6,CATEGORY.HOKEY,1.67F,2.26F,10.29F)
+    override var data = listOf(
+        Data(R.drawable.logo_10,R.string.d1_01_11,DataEvent.ONE,R.string.place_1,R.string.price_1,R.string.description_1),
+        Data(R.drawable.logo_14,R.string.d2_01_11,DataEvent.ONE,R.string.place_2,R.string.price_2,R.string.description_2),
+        Data(R.drawable.logo_10,R.string.d3_01_11,DataEvent.ONE,R.string.place_3,R.string.price_3,R.string.description_3),
+        Data(R.drawable.logo_20,R.string.d4_02_11,DataEvent.TWO,R.string.place_4,R.string.price_4,R.string.description_4),
+        Data(R.drawable.logo_10,R.string.d5_02_11,DataEvent.TWO,R.string.place_5,R.string.price_5,R.string.description_5),
+        Data(R.drawable.logo_22,R.string.d6_03_11,DataEvent.THREE,R.string.place_6,R.string.price_6,R.string.description_6),
+        Data(R.drawable.logo_18,R.string.d7_03_11,DataEvent.THREE,R.string.place_7,R.string.price_7,R.string.description_7),
+        Data(R.drawable.logo_10,R.string.d8_03_11,DataEvent.THREE,R.string.place_8,R.string.price_8,R.string.description_8),
+        Data(R.drawable.logo_24,R.string.d9_04_11,DataEvent.FOURE,R.string.place_9,R.string.price_9,R.string.description_9),
+        Data(R.drawable.logo_10,R.string.d9_04_11,DataEvent.FOURE,R.string.place_10,R.string.price_10,R.string.description_10),
+        Data(R.drawable.logo_24,R.string.d10_04_11,DataEvent.FOURE,R.string.place_11,R.string.price_11,R.string.description_11),
+        Data(R.drawable.logo_19,R.string.d11_04_11,DataEvent.FOURE,R.string.place_12,R.string.price_12,R.string.description_12),
+        Data(R.drawable.logo_14,R.string.d12_04_11,DataEvent.FOURE,R.string.place_13,R.string.price_13,R.string.description_13),
+        Data(R.drawable.logo_24,R.string.d13_05_11,DataEvent.FIVE,R.string.place_14,R.string.price_14,R.string.description_14),
+        Data(R.drawable.logo_24,R.string.d14_06_11,DataEvent.SIX,R.string.place_15,R.string.price_15,R.string.description_15),
+        Data(R.drawable.logo_10,R.string.d15_07_11,DataEvent.SEVEN,R.string.place_16,R.string.price_16,R.string.description_16),
+        Data(R.drawable.logo_18,R.string.d16_07_11,DataEvent.SEVEN,R.string.place_17,R.string.price_17,R.string.description_17),
+        Data(R.drawable.logo_19,R.string.d17_08_11,DataEvent.EIGHT,R.string.place_18,R.string.price_18,R.string.description_18),
+        Data(R.drawable.logo_20,R.string.d18_09_11,DataEvent.NINE,R.string.place_19,R.string.price_19,R.string.description_19),
+        Data(R.drawable.logo_19,R.string.d19_09_11,DataEvent.NINE,R.string.place_20,R.string.price_20,R.string.description_2),
+        Data(R.drawable.logo_22,R.string.d20_10_11,DataEvent.TEN,R.string.place_21,R.string.price_21,R.string.description_21),
+        Data(R.drawable.logo_20,R.string.d21_10_11,DataEvent.TEN,R.string.place_22,R.string.price_22,R.string.description_22),
+        Data(R.drawable.logo_24,R.string.d22_10_11,DataEvent.TEN,R.string.place_23,R.string.price_23,R.string.description_23),
+        Data(R.drawable.logo_24,R.string.d23_10_11,DataEvent.TEN,R.string.place_24,R.string.price_24,R.string.description_23),
+
         )
+
 }

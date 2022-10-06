@@ -1,22 +1,15 @@
 package com.sekvenie.mainpresemter
 
-import android.util.Log
-import android.widget.Toast
 import androidx.lifecycle.ViewModel
 import com.sekvenie.App
-import com.sekvenie.R
-import com.sekvenie.model.network.service.CATEGORY
 import com.sekvenie.model.network.service.Data
-import com.sekvenie.model.network.service.Film
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.launch
+import com.sekvenie.model.network.service.DataEvent
+import com.sekvenie.R
 
 
 enum class ApiStatus{  LOADING,DONE,ERROR }
 
-class MainPresenter(private val api: DataApi<Data/*Film*/>): ViewModel() {
+class MainPresenter(private val api: DataApi<Data>): ViewModel() {
     private var mainList: List<Data>? = null
     private var view: MainViewApi? = null
     private var sortedList: List<Data> = mutableListOf()
@@ -31,8 +24,8 @@ class MainPresenter(private val api: DataApi<Data/*Film*/>): ViewModel() {
     fun getSortedList() = sortedList
 
     private fun setCategory(){
-        mainList?.forEach { film ->
-                categoryList.add(film.group.name)
+        mainList?.forEach { data ->
+                categoryList.add(data.dataEvent.data)
         }
     }
 
@@ -47,18 +40,15 @@ class MainPresenter(private val api: DataApi<Data/*Film*/>): ViewModel() {
                     sortingFilmsFromABC()
                     view?.showFilms(mainList!!)
                     view?.showCategory(categoryList)
-                    view?.showStatus(ApiStatus.DONE)
 
-                    view?.showStatus(ApiStatus.ERROR)
 
     }
 
     fun sortingFilmsFromCategory(chooseCategory: String?){
             val resultList = mutableListOf<Data>()
-            mainList?.forEach { film ->
-
-                    if(film.group.name == chooseCategory){
-                        resultList.add(film)
+            mainList?.forEach { data ->
+                    if(data.dataEvent.data == chooseCategory){
+                        resultList.add(data)
 
                 }
             }

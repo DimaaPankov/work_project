@@ -2,57 +2,128 @@
     <string name="app_name">sports men</string>
     <string name="main">main</string>
     <string name="films">event</string>
-    <string name="category_films">sport type</string>
+    <string name="category_films">date event</string>
     <string name="pacific_rim">Pacific Rim</string>
     <string name="name">Имя</string>
     <string name="year">Год</string>
     <string name="rating">Рейтинг</string>
 
-    <string name="ufc_1">UFC 280: Oliveira-Makhachev</string>
-    <string name="ufc_2">UFC 280: Sterling-Dillashaw</string>
-    <string name="ufc_3">UFC 280: Yan-O Malley</string>
-    <string name="ufc_4">UFC 280: Muhammad-Brady</string>
-    <string name="ufc_5">UFC 280: Dariush-Gamrot</string>
+    <string name="d1_01.11">Super Satellite for Main Event</string>
+    <string name="d2_01.11">Apollonia Series of Poker - ASOP</string>
+    <string name="d3_01.11">FPS Main Event Qualfier</string>
 
-    <string name="box_1">BKFC 31: Richman-Doolittle</string>
-    <string name="box_2">BKFC 31: Girtz-Lindey</string>
-    <string name="box_3">BKFC 31: Camozzi-Mcdaniel</string>
-    <string name="box_4">BKFC 31: Copeland-Costa</string>
-    <string name="box_5">BKFC 31: Guillard-Kurdanov</string>
-    <string name="box_6">BKFC 31: Madden-Torres</string>
+    <string name="d4_02.11">Satellite to WSOPC NLH 3K 8-Max</string>
+    <string name="d5_02.11">FPS High Roller - Day 2</string>
 
-    <string name="footbal_1">England-Germany</string>
-    <string name="footbal_2">Romania-Bosnia</string>
-    <string name="footbal_3">North Macedonia-Bulgaria</string>
-    <string name="footbal_4">San Marino-Estonia</string>
-    <string name="footbal_5">Hungary-Italy</string>
-    <string name="footbal_6">Montenegro-Finland</string>
-    <string name="footbal_7">Gibraltar vs Georgia</string>
+    <string name="d6_03.11">FPS Knockout - Day 2</string>
+    <string name="d7_03.11">BOM Main Event Day 1A</string>
+    <string name="d8_03.11">King s Resort Live</string>
 
-    <string name="hokey_1">Sakhalinskie Akuly — HC Taifun</string>
-    <string name="hokey_2">Fehervar AV19 — Pioneers Vorarlberg</string>
-    <string name="hokey_3">EC Graz 99Ers — HC TWK Innsbruck</string>
-    <string name="hokey_4">HK Levice — HK Spartak Dubnica</string>
-    <string name="hokey_5">HC 05 Banska Bystrica — HK Nitra</string>
-    <string name="hokey_6">SoenderjyskE Ishockey — Frederikshavn White Hawks</string>
+    <string name="d9_04.11">Casino Malta (Olympic Casino)</string>
+    <string name="d10_04.11">8 Max- Day 1</string>
+    <string name="d11_04.11">SPF Troia Premium Edition Main Event</string>
+    <string name="d12_04.11">FPS Main Event Qualfier</string>
 
-    <string name="tenis_1">Anna Bondar (Games) — Mayar Sherif (Games)</string>
-    <string name="tenis_2">Sara Sorribes Tormo (Games) — Martina Trevisan (Games)</string>
-    <string name="tenis_3">Danka Kovinic (Games) — Oceane Dodin (Games)</string>
-    <string name="tenis_4">Jack Karlsson Wistrand — Albert Saar</string>
-    <string name="tenis_5">Michael Agwi — Jiri Jenicek</string>
-    <string name="tenis_6">Felix Gill — Emilien Voisin</string>
-    <string name="tenis_7">Mao Mushika — Suzuho Oshino</string>
-    <string name="tenis_8">Jan-Lennard Struff — Dusan Lajovic</string>
-    <string name="wrestling_1">Snuider-Sadulaev</string>
+    <string name="d13_05.11">Bounty Your Day</string>
 
-    <string name="americans_1">NFL: New York Giants — Dallas Cowboys</string>
-    <string name="americans_2">NFL: Denver Broncos — San Francisco 49ers</string>
-    <string name="americans_3">NFL: Tampa Bay Buccaneers — Green Bay Packers</string>
-    <string name="americans_4">NFL: Arizona Cardinals — Los Angeles Rams</string>
-    <string name="americans_5">NFL: Miami Dolphins — Buffalo Bills</string>
-    <string name="americans_6">NFL: Washington Commanders — Philadelphia Eagles</string>
-    <string name="americans_7">NFL: Carolina Panthers — New Orleans Saints</string>
-    <string name="americans_8">NFL: New England Patriots — Baltimore Ravens</string>
+    <string name="d14_06.11">SPF High Roller Premium Edition</string>
+
+    <string name="d15_07.11">Satellite to Road to PSPC Main Even</string>
+    <string name="d16_07.11">ETOP PLO Mystery Bounty</string>
+
+    <string name="d17_08.11">Superstack 100</string>
+
+    <string name="d18_09.11">Kickstarter</string>
+    <string name="d19_09.11">Wednesday 500 XL</string>
+
+    <string name="d20_10.11">Satellite</string>
+    <string name="d21_10.11">Mega Satellite to WSOPC</string>
+    <string name="d22_10.11">FPS Turbo</string>
+    <string name="d23_10.11">ETOP Main Event Phase</string>
+
+    <string name="price_1">€ 90 + 10</string>
+    <string name="price_2">€ 250</string>
+    <string name="price_3">€ 115 + 20</string>
+    <string name="price_4">€ 230 + 20</string>
+    <string name="price_5">€ 115 + 20</string>
+    <string name="price_6">€ 90 + 10</string>
+    <string name="price_7">€ 1,000 + 100</string>
+    <string name="price_8">€ 500 + 55</string>
+    <string name="price_9">€ 300 + 30</string>
+    <string name="price_10">€ 130 + 20</string>
+    <string name="price_11">€ 500</string>
+    <string name="price_12">€ 115 + 20</string>
+    <string name="price_13">€ 180 + 20</string>
+    <string name="price_14">€ 1,000</string>
+    <string name="price_15">€ 225 + 25</string>
+    <string name="price_16">€ 60 + 20</string>
+    <string name="price_17">€ 150</string>
+    <string name="price_18">€ 80 + 20</string>
+    <string name="price_19">€ 44 + 6</string>
+    <string name="price_20">€ 500 + 60</string>
+    <string name="price_21">SFr 30 + 5</string>
+    <string name="price_22">€ 200 + 20</string>
+    <string name="price_23">€ 300 + 30</string>
+    <string name="price_24">€ 60</string>
+    <string name="price_25">€ 60 + 20</string>
+    <string name="price_26">€ 130 + 20</string>
+
+    <string name="place_1">Palms Mercure Royale Casino</string>
+    <string name="place_2">Apollonia Casino</string>
+    <string name="place_3">Casino de Divonne-les-Bains</string>
+    <string name="place_4">Kings Resort Live</string>
+    <string name="place_5">Casino de Divonne-les-Bains</string>
+    <string name="place_6">Casino de Divonne-les-Bains</string>
+    <string name="place_7">Casino de Divonne-les-Bains</string>
+    <string name="place_8">Casino Malta (Olympic Casino)</string>
+    <string name="place_9">Kings Resort Live</string>
+    <string name="place_10">Casino Malta</string>
+    <string name="place_11">Kings Resort Live</string>
+    <string name="place_12">Casino De Troia</string>
+    <string name="place_13">Casino de Divonne-les-Bains</string>
+    <string name="place_14">Casino Malta (Olympic Casino)</string>
+    <string name="place_15"> Casino De Troia</string>
+    <string name="place_16">Olympic Casino Donelaitis</string>
+    <string name="place_17">Perla Casino / Hotel</string>
+    <string name="place_18">Card Casino Bratislava</string>
+    <string name="place_19">Pasino Aix en Provence</string>
+    <string name="place_20">Grand Casino Asch ( Aš )</string>
+    <string name="place_21">Le Club Barrière Paris</string>
+    <string name="place_22">Kings Resort Live</string>
+    <string name="place_23">Casino de Divonne-les-Bains</string>
+    <string name="place_24">Card Casino Bratislava</string>
+    <string name="place_25">Casino Sanremo</string>
+    <string name="place_26">Casino Malta (Olympic Casino</string>
+
+    <string name="description_1">price: € 90 + 10 No Limit \n\ndescription: Hold em Super Satellite for Main Event, Palms Mercure Royale Casino, Sofia</string>
+    <string name="description_2">price: € 250 No Limit \n\ndescription: Hold em - Apollonia Series of Poker ASOP #10, Apollonia Casino, Gevgelija</string>
+    <string name="description_3">price: € 115 + 20 No Limit\n\nHold em - FPS Main Event Qualfier, Casino de Divonne-les-Bains, Divonne les Bains</string>
+    <string name="description_4">price: € 230 + 20 \n\ndescription: Satellite to WSOPC NLH 3K 8-Max - Day 1, King s Resort Live, Rozvadov</string>
+    <string name="description_5">price: No Limit \n\ndescription: Hold em - FPS High Roller - Day 2, Casino de Divonne-les-Bains, Divonne les Bains</string>
+    <string name="description_6">price: € 1,000 + 100 No Limit \n\ndescription: Hold em - FPS Main Event - Day 1A, Casino de Divonne-les-Bains, Divonne les Bains</string>
+    <string name="description_7">price: € 500 + 55 No Limit \n\ndescription: Hold em - BOM Main Event Day 1A, Casino Malta (Olympic Casino), St Julians</string>
+    <string name="description_8">price: Pot Limit \n\ndescription: Omaha 8 Max - Final Day, King s Resort Live, Rozvadov</string>
+    <string name="description_9">price: € 130 + 20 No Limit\n\ndescription: Hold em - Side Event, Casino Malta (Olympic Casino), St Julians</string>
+    <string name="description_10">price: € 2,800 + 200 No Limit\n\ndescription: Hold em - 8 Max- Day 1 (Ring Event #10), King s Resort Live, Rozvadov</string>
+    <string name="description_11">price: € 500 No Limit\n\ndescription: Hold em - SPF Troia Premium Edition Main Event (Event 5 - Day 1A), Casino De Troia, Troia</string>
+    <string name="description_12">price: € 115 + 20 No Limit\n\ndescription: Hold em - FPS Main Event Qualfier, Casino de Divonne-les-Bains, Divonne les Bains</string>
+    <string name="description_13">price: € 180 + 20 No Limit\n\ndescription: Hold em - Bounty Your Day, Casino Malta (Olympic Casino), St Julians</string>
+    <string name="description_14">price: € 1,000 No Limit\n\ndescription: Hold em - SPF High Roller Premium Edition (Event 4 - Day 2), Casino De Troia, Troia</string>
+    <string name="description_15">price: € 225 + 25 No Limit\n\ndescription: Hold em - Progressive KO, Olympic Casino Donelaitis, Kaunas</string>
+    <string name="description_16">price: € 60 + 20\n\ndescription: Satellite to Road to PSPC Main Event, Perla Casino / Hotel, Nova Gorica</string>
+    <string name="description_17">price: € 150 Pot Limit\n\ndescription: Omaha - ETOP PLO Mystery Bounty, Card Casino Bratislava, Bratislava</string>
+    <string name="description_18">price: € 80 + 20 No Limit\n\ndescription: Hold em - Superstack 100, Pasino Aix en Provence, Aix En Provence</string>
+    <string name="description_19">price: € 44 + 6 No Limit\n\ndescription: Hold em - Kickstarter, Grand Casino Asch, Asch</string>
+    <string name="description_20">price: € 500 + 60 No Limit\n\ndescription: Hold em - Wednesday 500 XL, Le Club Barrière Paris, Paris</string>
+    <string name="description_21">price: SFr 30 + 5 No Limit\n\ndescription: Hold em - Satellite, Grand Casino Liechtenstein, Gamprin-Bendern</string>
+    <string name="description_22">price: € 200 + 20\n\ndescription: Mega Satellite to WSOPC Main Event Day 1A, King s Resort Live, Rozvadov</string>
+    <string name="description_23">price: € 300 + 30 No Limit\n\ndescription: Hold em - FPS Turbo, Casino de Divonne-les-Bains, Divonne les Bains</string>
+    <string name="description_24">price: € 60 Pot Limit\n\ndescription: Omaha - ETOP Main Event Phase, Card Casino Bratislava, Bratislava</string>
+    <string name="description_25">price: € 60 + 20 No Limit\n\ndescription: Hold em - Superstack 80, Casino Sanremo, Sanremo</string>
+    <string name="description_26">price: € 130 + 20 No Limit\n\ndescription: Hold em - Side Event, Casino Malta (Olympic Casino), St Julians</string>
+
+
+
+
 
 </resources>

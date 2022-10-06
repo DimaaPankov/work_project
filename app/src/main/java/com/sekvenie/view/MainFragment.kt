@@ -3,17 +3,14 @@ package com.sekvenie.view
 import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.Fragment
-import com.sekvenie.balans
-import com.sekvenie.R
 import com.sekvenie.adapter.UserAdapter
-import com.sekvenie.databinding.ButtonItemBinding
-import com.sekvenie.databinding.FragmentMainBinding
-import com.sekvenie.mainpresemter.ApiStatus
 import com.sekvenie.mainpresemter.MainPresenter
 import com.sekvenie.mainpresemter.MainViewApi
 import com.sekvenie.model.network.dataimpl.DataImpl
 import com.sekvenie.model.network.service.Data
-import com.sekvenie.model.network.service.Film
+import com.sekvenie.R
+import com.sekvenie.databinding.ButtonItemBinding
+import com.sekvenie.databinding.FragmentMainBinding
 
 
 class MainFragment : Fragment(), MainViewApi {
@@ -28,7 +25,6 @@ class MainFragment : Fragment(), MainViewApi {
         super.onCreate(savedInstanceState)
         presenter.init(this)
         binding.options.visibility = View.INVISIBLE
-        binding.balans.text = balans.toString()
         binding.Btitle.setOnClickListener{
             if(binding.options.visibility == View.INVISIBLE){
                 binding.options.visibility = View.VISIBLE
@@ -38,11 +34,11 @@ class MainFragment : Fragment(), MainViewApi {
         }
         }
 
-    override fun showFilms(films: List<Data>) {
+    override fun showFilms(date: List<Data>) {
         binding.recyclerView.adapter = UserAdapter { presenter.openFilm() }
             .apply {
                 clearList()
-                setList(films)
+                setList(date)
             }
     }
 
@@ -58,7 +54,7 @@ class MainFragment : Fragment(), MainViewApi {
                 selectedButton?.setBackgroundColor(resources.getColor(R.color.black))
                 if (selectedButton != it) {
                     selectedButton = it
-                    it.setBackgroundColor(resources.getColor(R.color.purple_200))
+                    it.setBackgroundColor(resources.getColor(R.color.orange))
                     presenter.sortingFilmsFromCategory(text)
                     showFilms(presenter.getSortedList())
                 } else{
@@ -73,13 +69,7 @@ class MainFragment : Fragment(), MainViewApi {
         }
     }
 
-    override fun showStatus(status: ApiStatus) {
-        when(status) {
-            ApiStatus.DONE -> {}
-            ApiStatus.ERROR -> {}
-            ApiStatus.LOADING -> {}
-        }
-    }
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
