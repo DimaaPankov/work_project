@@ -9,24 +9,23 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 
 import com.sekvenie.App
-import com.sekvenie.R
 import com.sekvenie.databinding.FragmentDetailBinding
-import com.sekvenie.deteilpresentr.DeteilViewApi
-import com.sekvenie.deteilpresentr.Deteilpresenter
+import com.sekvenie.dkfhkd.soljgfda
+import com.sekvenie.dkfhkd.ekhgfisd
 
 
-class DetailFragment : Fragment(),DeteilViewApi {
+class DetailFragment : Fragment(),soljgfda {
 
-    private val presenter by lazy { Deteilpresenter.getInstance() }
-    private val binding: FragmentDetailBinding by lazy {
+    private val kldhfl by lazy { ekhgfisd.sogfkd() }
+    private val kdffl: FragmentDetailBinding by lazy {
         FragmentDetailBinding.inflate(layoutInflater)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        presenter.init(this)
-        binding.buttonBack.setOnClickListener{
-            App.navController?.popBackStack()
+        kldhfl.hdsasa(this)
+        kdffl.buttonBack.setOnClickListener{
+            App.dsisdjhv?.popBackStack()
         }
 
     }
@@ -35,30 +34,26 @@ class DetailFragment : Fragment(),DeteilViewApi {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return binding.root
+        return kdffl.root
     }
 
     override fun onDestroy() {
         super.onDestroy()
-        presenter.destroy()
+        kldhfl.destroy()
     }
 
-    override fun showDeteil() {
-        val data = presenter.getChooseFilm()
+    override fun osljgf() {
+        val data = kldhfl.sokhfl()
         data?.let{
 
-            val title = getString(data.title)
-            val img = data.img
-            val description = getString(data.description)
+            val khdflhdl = getString(data.bjgds)
+            val klhdlgh = data.img
+            val kdlfhdsk = getString(data.ddkg)
 
-            binding.TVdata.text = "  date: ${data.dataEvent.data}"
-            binding.IVdeteil.setImageResource(img)
-            binding.TVtitle.text = title
-            binding.TVdescription.text = description
+            kdffl.TVdata.text = "  date: ${data.djksf.eoglhfd}"
+            kdffl.IVdeteil.setImageResource(klhdlgh)
+            kdffl.TVtitle.text = khdflhdl
+            kdffl.TVdescription.text = kdlfhdsk
         }
     }
-
-//    private fun getFormatString(keyString: String, valueString: String): String {
-//        return String.format("%s: %s", keyString, valueString)
-   // }
 }

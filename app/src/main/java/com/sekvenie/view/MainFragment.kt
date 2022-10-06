@@ -3,68 +3,68 @@ package com.sekvenie.view
 import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.Fragment
-import com.sekvenie.adapter.UserAdapter
-import com.sekvenie.mainpresemter.MainPresenter
-import com.sekvenie.mainpresemter.MainViewApi
-import com.sekvenie.model.network.dataimpl.DataImpl
-import com.sekvenie.model.network.service.Data
+import com.sekvenie.jdshjlgdsl.eqohsgoids
+import com.sekvenie.jkdbsjkfb.egiokr
+import com.sekvenie.jkdbsjkfb.wrikghoi
+import com.sekvenie.model.dksghdlslk.jkdbfkj.iwtkhd
+import com.sekvenie.model.dksghdlslk.klfslks.egkhds
 import com.sekvenie.R
 import com.sekvenie.databinding.ButtonItemBinding
 import com.sekvenie.databinding.FragmentMainBinding
 
 
-class MainFragment : Fragment(), MainViewApi {
+class MainFragment : Fragment(), wrikghoi {
 
-    private val presenter by lazy { MainPresenter(DataImpl)}
-    private val binding: FragmentMainBinding by lazy {
+    private val djkfj by lazy { egiokr(iwtkhd)}
+    private val kldhkd: FragmentMainBinding by lazy {
         FragmentMainBinding.inflate(layoutInflater)
     }
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        presenter.init(this)
-        binding.options.visibility = View.INVISIBLE
-        binding.Btitle.setOnClickListener{
-            if(binding.options.visibility == View.INVISIBLE){
-                binding.options.visibility = View.VISIBLE
+        djkfj.dkhsg(this)
+        kldhkd.options.visibility = View.INVISIBLE
+        kldhkd.Btitle.setOnClickListener{
+            if(kldhkd.options.visibility == View.INVISIBLE){
+                kldhkd.options.visibility = View.VISIBLE
             } else {
-                binding.options.visibility = View.INVISIBLE
+                kldhkd.options.visibility = View.INVISIBLE
             }
         }
         }
 
-    override fun showFilms(date: List<Data>) {
-        binding.recyclerView.adapter = UserAdapter { presenter.openFilm() }
+    override fun eifkhdl(date: List<egkhds>) {
+        kldhkd.recyclerView.adapter = eqohsgoids { djkfj.adgik() }
             .apply {
                 clearList()
                 setList(date)
             }
     }
 
-    override fun showCategory(categories: Set<String>) {
-        val layout = binding.constraintLayout
-        val options = binding.options
+    override fun idskh(categories: Set<String>) {
+        val dishgl = kldhkd.constraintLayout
+        val jdbgjkds = kldhkd.options
         var selectedButton: View? = null
         categories.forEach{ text ->
-            val bindingButtons = ButtonItemBinding.inflate(layoutInflater)
-            bindingButtons.buttonItem.text = text
-            layout.addView(bindingButtons.root)
-            bindingButtons.buttonItem.setOnClickListener{
+            val djsjdsdkhg = ButtonItemBinding.inflate(layoutInflater)
+            djsjdsdkhg.buttonItem.text = text
+            dishgl.addView(djsjdsdkhg.root)
+            djsjdsdkhg.buttonItem.setOnClickListener{
                 selectedButton?.setBackgroundColor(resources.getColor(R.color.black))
                 if (selectedButton != it) {
                     selectedButton = it
                     it.setBackgroundColor(resources.getColor(R.color.orange))
-                    presenter.sortingFilmsFromCategory(text)
-                    showFilms(presenter.getSortedList())
+                    djkfj.eidgkhdil(text)
+                    eifkhdl(djkfj.fikhl())
                 } else{
                     selectedButton = null
-                    val mainList = presenter.getMainList()
+                    val mainList = djkfj.ejpigf()
                     if(!mainList.isNullOrEmpty()){
-                        showFilms(mainList)
+                        eifkhdl(mainList)
                     }
                 }
-                options.visibility = View.INVISIBLE
+                jdbgjkds.visibility = View.INVISIBLE
             }
         }
     }
@@ -75,12 +75,12 @@ class MainFragment : Fragment(), MainViewApi {
         savedInstanceState: Bundle?
     ): View {
 
-        return binding.root
+        return kldhkd.root
     }
 
     override fun onDestroy() {
         super.onDestroy()
-        presenter.destroy()
+        djkfj.eofhe()
     }
 
 }

@@ -10,20 +10,20 @@ import com.sekvenie.App
 import com.sekvenie.R
 import com.sekvenie.databinding.FragmentSplashBinding
 
-import com.sekvenie.splashpresenter.SplashPresenter
-import com.sekvenie.splashpresenter.SplashViewApi
+import com.sekvenie.sklafknf.dlhfjsdhhf
+import com.sekvenie.sklafknf.kldhlkds
 
-class SplashFragment : Fragment(), SplashViewApi {
+class SplashFragment : Fragment(), kldhlkds {
 
-    lateinit var binding : FragmentSplashBinding
-    private val presenter by lazy { SplashPresenter() }
+    lateinit var jdbfj : FragmentSplashBinding
+    private val jedkjf by lazy { dlhfjsdhhf() }
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        binding = FragmentSplashBinding.inflate(layoutInflater)
+        jdbfj = FragmentSplashBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
-        presenter.init(this)
-        presenter.motion()
+        jedkjf.jhsdfjfd(this)
+        jedkjf.motion()
 
     }
 
@@ -32,16 +32,16 @@ class SplashFragment : Fragment(), SplashViewApi {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return binding.root
+        return jdbfj.root
     }
 
     override fun onDestroy() {
-        presenter.destroy()
+        jedkjf.kleahf()
         super.onDestroy()
     }
 
-    override fun startMotion(){
-        binding.motionLayout.addTransitionListener(object : MotionLayout.TransitionListener {
+    override fun jsfdgj(){
+        jdbfj.motionLayout.addTransitionListener(object : MotionLayout.TransitionListener {
             override fun onTransitionStarted(p0: MotionLayout?, p1: Int, p2: Int) {
 
             }
@@ -56,7 +56,7 @@ class SplashFragment : Fragment(), SplashViewApi {
             }
 
             override fun onTransitionCompleted(p0: MotionLayout?, p1: Int) {
-                App.navController?.navigate(R.id.action_splashFragment_to_mainFragment)
+                App.dsisdjhv?.navigate(R.id.action_splashFragment_to_mainFragment)
             }
 
             override fun onTransitionTrigger(
@@ -66,9 +66,6 @@ class SplashFragment : Fragment(), SplashViewApi {
                 progress: Float
             ) {
             }
-
-
         })
     }
-
 }
