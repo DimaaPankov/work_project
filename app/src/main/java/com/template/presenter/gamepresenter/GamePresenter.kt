@@ -154,10 +154,6 @@ class GamePresenter (val data: DataApi) {
             }
         }
 
-        var iii = 0
-
-        var indexList222 = _indexList
-
         if(winOrFail) {
 
                for (i in _indexList) {
@@ -167,20 +163,17 @@ class GamePresenter (val data: DataApi) {
                                xBetCount = xBetCount + 2
                                winBet = winBet + getBet() * 2
                                betCountXXX += xBetCount
-                               ++iii
                            }
                            4 -> {
                                xBetCount = xBetCount + 3
                                winBet = winBet + getBet() * 3
                                betCountXXX += xBetCount
-                               ++iii
 
                            }
-                           4 -> {
+                           5 -> {
                                xBetCount = xBetCount + 5
                                winBet = winBet + getBet() * 5
                                betCountXXX += xBetCount
-                               ++iii
 
                            }
                        }
