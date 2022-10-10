@@ -46,7 +46,7 @@ class GamePresenter (val data: DataApi) {
         context!!.clickInfo()
         context!!.clickOk()
     }
-
+//sdfvdsvadd .
 
     fun animateSlotLine(start1: ImageView,
                         start2: ImageView,
