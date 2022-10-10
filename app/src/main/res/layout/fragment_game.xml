@@ -1096,8 +1096,8 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/CVresult"
-            android:layout_width="500dp"
-            android:layout_height="500dp"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
             android:alpha="0"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -1133,7 +1133,6 @@
                 android:id="@+id/TVxxx"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
                 android:text="10x BET"
                 android:textColor="#BEFF9800"
                 android:textSize="40sp"
