@@ -7,21 +7,21 @@ import android.view.View
 import android.view.ViewGroup
 import com.template.R
 import com.template.databinding.FragmentInfoBinding
-import com.template.presenter.infopresenter.InfoPresenter
-import com.template.presenter.infopresenter.InfoViewApi
+import com.template.jjsdjkg.jjagkjfgdsjf.jdkajvad
+import com.template.jjsdjkg.jjagkjfgdsjf.jdkfhj
 
 
-class InfoFragment : Fragment(),InfoViewApi {
+class InfoFragment : Fragment(),jdkfhj {
 lateinit var binding: FragmentInfoBinding
- val presenter  = InfoPresenter()
+ val presenter  = jdkajvad()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = FragmentInfoBinding.inflate(layoutInflater)
-        presenter.init(this)
+        presenter.kjsfj(this)
         }
 
 
-    override fun clickOk() {
+    override fun kslhfk() {
         binding.Bok.setOnClickListener {
             (requireActivity() as MainActivity).navController.navigate(R.id
                 .action_infoFragment_to_gameFragment)
@@ -30,7 +30,7 @@ lateinit var binding: FragmentInfoBinding
 
     override fun onDestroy() {
         super.onDestroy()
-        presenter.distroy()
+        presenter.kslf()
     }
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

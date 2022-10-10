@@ -11,12 +11,12 @@ import android.widget.Toast
 
 import com.template.R
 import com.template.databinding.FragmentGameBinding
-import com.template.presenter.gamepresenter.GamePresenter
-import com.template.presenter.gamepresenter.GameViewApi
+import com.template.jjsdjkg.jdsgfjhs.dlhafdlhfskldafjk
+import com.template.jjsdjkg.jdsgfjhs.dskhgdhklgsdjkjgkd
 
 
-class GameFragment : Fragment(), GameViewApi {
-    val presenter = GamePresenter(Model)
+class GameFragment : Fragment(), dskhgdhklgsdjkjgkd {
+    val presenter = dlhafdlhfskldafjk(dsjh)
     val binding by lazy { FragmentGameBinding.inflate(layoutInflater) }
     private var countMiliSecond:Long = 0
 
@@ -26,7 +26,7 @@ class GameFragment : Fragment(), GameViewApi {
 
         (requireContext() as MainActivity).goBack = {exitAppPlusToast()}
 
-        presenter.init(this)
+        presenter.djkglgljm(this)
 
 
     }
@@ -41,16 +41,16 @@ class GameFragment : Fragment(), GameViewApi {
 
     override fun onDestroy() {
         super.onDestroy()
-        presenter.distroy()
+        presenter.jdkgajkdsh()
     }
 
-    override fun clickInfo() {
+    override fun jshf() {
         binding.TVinfo.setOnClickListener {
             (requireActivity() as MainActivity).navController.navigate(R.id.action_gameFragment_to_infoFragment)
         }
     }
 
-    override fun clickSpin() {
+    override fun klshflsjd() {
 
         binding.Bspin.setOnClickListener {
          //   presenter.setSlots()
@@ -58,12 +58,12 @@ class GameFragment : Fragment(), GameViewApi {
 
 
 
-            if ((presenter.getMainCont() >= presenter.getBet())
+            if ((presenter.sfshfa() >= presenter.sgfhgah())
                 ) {
                     val heidht = binding.TVslot1.height.toFloat()
                     val heidhtConteiner = binding.constraintLayout .height.toFloat()
 
-                    presenter.animateSlotLine(
+                    presenter.djkghjd(
                         binding.TVslot52q,
                         binding.TVslot55q,
                         binding.TVslot58q,
@@ -71,14 +71,14 @@ class GameFragment : Fragment(), GameViewApi {
                         binding.TVslot4,
                         binding.TVslot7,
                         binding.LLline1,
-                        presenter.lastSlot1,
-                        presenter.lastSlot4,
-                        presenter.lastSlot7,
+                        presenter.jdgahjldmhag,
+                        presenter.kjdhjhdsjkghdjka,
+                        presenter.lkshfl,
                         heidht,
                         heidhtConteiner,
                 0)
 
-                    presenter.animateSlotLine(
+                    presenter.djkghjd(
                         binding.TVslot53q,
                         binding.TVslot56q,
                         binding.TVslot59q,
@@ -86,13 +86,13 @@ class GameFragment : Fragment(), GameViewApi {
                         binding.TVslot5,
                         binding.TVslot8,
                         binding.LLline2,
-                        presenter.lastSlot2,
-                        presenter.lastSlot5,
-                        presenter.lastSlot8,
+                        presenter.kdhashal,
+                        presenter.djkdhgjkdh,
+                        presenter.klhsf,
                         heidht,
                         heidhtConteiner,1000)
 
-                    presenter.animateSlotLine(
+                    presenter.djkghjd(
                         binding.TVslot54q,
                         binding.TVslot57q,
                         binding.TVslot60q,
@@ -100,177 +100,177 @@ class GameFragment : Fragment(), GameViewApi {
                         binding.TVslot6,
                         binding.TVslot9,
                         binding.LLline3,
-                        presenter.lastSlot3,
-                        presenter.lastSlot6,
-                        presenter.lastSlot9,
+                        presenter.hdaakjhfjdkhf,
+                        presenter.dlmhgkjdshg,
+                        presenter.klshf,
                         heidht,
                         heidhtConteiner,2000)
 
-            presenter.setMainCount(presenter.getBet(), false)
-            binding.TVbalans.text = presenter.getMainCont().toString()
+            presenter.dkgajlsdksgld(presenter.sgfhgah(), false)
+            binding.TVbalans.text = presenter.sfshfa().toString()
 
                 val listView = mutableListOf(binding.TVslot1, binding.TVslot2, binding.TVslot3,
                                               binding.TVslot4, binding.TVslot5, binding.TVslot6,
                                               binding.TVslot7, binding.TVslot8, binding.TVslot9
                 )
 
-                presenter.animationSlots( listView,binding.betCount,
+                presenter.djkaghjdks( listView,binding.betCount,
                                      binding.TVxxx,binding.CVresult,binding.TVbalans,)
 
                 } else {
                     (requireActivity() as MainActivity).navController.navigate(R.id
                         .action_gameFragment_to_newCoinsFragment)
 
-                    presenter.minus = true
+                    presenter.klhdglksdkgdkj = true
                 }
             Handler(Looper.getMainLooper()).postDelayed({
                 binding.Bspin.isClickable = true },5000)
 
-            presenter.saveBalanseInDataBase(requireContext(),presenter.getMainCont()+
-                    presenter.betCountXXX)
-            presenter.setSlots()
+            presenter.kmdagjfhfhlskhska(requireContext(),presenter.sfshfa()+
+                    presenter.khsfilkdajskfjas)
+            presenter.djkagfkjdshf()
         }
 
 
     }
 
-            override fun clickBack() {
+            override fun sklhflskf() {
              }
 
 
-            override fun clickBet() {
+            override fun sldlgjk() {
                 binding.Bbet.setOnClickListener {
-                    presenter.setBet(0)//BET = 0
+                    presenter.jksgfhjdsg(0)//BET = 0
                     (requireActivity() as MainActivity).navController.navigate(R.id.action_gameFragment_to_betFragment)
                 }
             }
-            override fun showData() {
-                binding.TVbalans.text = presenter.getBalansInDataBase(this.requireContext()).toString()
+            override fun oplajdf() {
+                binding.TVbalans.text = presenter.kjshfjkhsdjhfj(this.requireContext()).toString()
 
-                binding.betCountMinus.text = Model.getBet().toString()
-                presenter.setSlots()
-                binding.TVslot1.setImageResource(presenter.lastSlot7)
-                binding.TVslot2.setImageResource(presenter.lastSlot8)
-                binding.TVslot3.setImageResource(presenter.lastSlot9)
-                binding.TVslot4.setImageResource(presenter.lastSlot4)
-                binding.TVslot5.setImageResource(presenter.lastSlot5)
-                binding.TVslot6.setImageResource(presenter.lastSlot6)
-                binding.TVslot7.setImageResource(presenter.lastSlot7)
-                binding.TVslot8.setImageResource(presenter.lastSlot8)
-                binding.TVslot9.setImageResource(presenter.lastSlot9)
-                binding.TVslot10.setImageResource(Model.slots.random())
-                binding.TVslot11.setImageResource(Model.slots.random())
-                binding.TVslot12.setImageResource(Model.slots.random())
-                binding.TVslot13.setImageResource(Model.slots.random())
-                binding.TVslot14.setImageResource(Model.slots.random())
-                binding.TVslot15.setImageResource(Model.slots.random())
-                binding.TVslot16.setImageResource(Model.slots.random())
-                binding.TVslot17.setImageResource(Model.slots.random())
-                binding.TVslot18.setImageResource(Model.slots.random())
-                binding.TVslot19.setImageResource(Model.slots.random())
-                binding.TVslot20.setImageResource(Model.slots.random())
-                binding.TVslot21.setImageResource(Model.slots.random())
-                binding.TVslot22.setImageResource(Model.slots.random())
-                binding.TVslot23.setImageResource(Model.slots.random())
-                binding.TVslot24.setImageResource(Model.slots.random())
-                binding.TVslot25.setImageResource(Model.slots.random())
-                binding.TVslot26.setImageResource(Model.slots.random())
-                binding.TVslot27.setImageResource(Model.slots.random())
-                binding.TVslot28.setImageResource(Model.slots.random())
-                binding.TVslot29.setImageResource(Model.slots.random())
-                binding.TVslot30.setImageResource(Model.slots.random())
-                binding.TVslot31.setImageResource(Model.slots.random())
-                binding.TVslot32.setImageResource(Model.slots.random())
-                binding.TVslot33.setImageResource(Model.slots.random())
-                binding.TVslot34.setImageResource(Model.slots.random())
-                binding.TVslot35.setImageResource(Model.slots.random())
-                binding.TVslot36.setImageResource(Model.slots.random())
-                binding.TVslot37.setImageResource(Model.slots.random())
-                binding.TVslot38.setImageResource(Model.slots.random())
-                binding.TVslot39.setImageResource(Model.slots.random())
-                binding.TVslot40.setImageResource(Model.slots.random())
-                binding.TVslot41.setImageResource(Model.slots.random())
-                binding.TVslot42.setImageResource(Model.slots.random())
-                binding.TVslot43.setImageResource(Model.slots.random())
-                binding.TVslot44.setImageResource(Model.slots.random())
-                binding.TVslot45.setImageResource(Model.slots.random())
-                binding.TVslot46.setImageResource(Model.slots.random())
-                binding.TVslot47.setImageResource(Model.slots.random())
-                binding.TVslot48.setImageResource(Model.slots.random())
-                binding.TVslot49.setImageResource(Model.slots.random())
-                binding.TVslot50.setImageResource(Model.slots.random())
-                binding.TVslot52.setImageResource(Model.slots.random())
-                binding.TVslot53.setImageResource(Model.slots.random())
-                binding.TVslot54.setImageResource(Model.slots.random())
-                binding.TVslot55.setImageResource(Model.slots.random())
-                binding.TVslot55.setImageResource(Model.slots.random())
-                binding.TVslot56.setImageResource(Model.slots.random())
-                binding.TVslot57.setImageResource(Model.slots.random())
-                binding.TVslot58.setImageResource(Model.slots.random())
-                binding.TVslot59.setImageResource(Model.slots.random())
-                binding.TVslot1q.setImageResource(Model.slots.random())
-                binding.TVslot2q.setImageResource(Model.slots.random())
-                binding.TVslot3q.setImageResource(Model.slots.random())
-                binding.TVslot4q.setImageResource(Model.slots.random())
-                binding.TVslot5q.setImageResource(Model.slots.random())
-                binding.TVslot6q.setImageResource(Model.slots.random())
-                binding.TVslot7q.setImageResource(Model.slots.random())
-                binding.TVslot8q.setImageResource(Model.slots.random())
-                binding.TVslot9q.setImageResource(Model.slots.random())
-                binding.TVslot10q.setImageResource(Model.slots.random())
-                binding.TVslot11q.setImageResource(Model.slots.random())
-                binding.TVslot12q.setImageResource(Model.slots.random())
-                binding.TVslot13q.setImageResource(Model.slots.random())
-                binding.TVslot14q.setImageResource(Model.slots.random())
-                binding.TVslot15q.setImageResource(Model.slots.random())
-                binding.TVslot16q.setImageResource(Model.slots.random())
-                binding.TVslot17q.setImageResource(Model.slots.random())
-                binding.TVslot18q.setImageResource(Model.slots.random())
-                binding.TVslot19q.setImageResource(Model.slots.random())
-                binding.TVslot20q.setImageResource(Model.slots.random())
-                binding.TVslot21q.setImageResource(Model.slots.random())
-                binding.TVslot22q.setImageResource(Model.slots.random())
-                binding.TVslot23q.setImageResource(Model.slots.random())
-                binding.TVslot24q.setImageResource(Model.slots.random())
-                binding.TVslot25q.setImageResource(Model.slots.random())
-                binding.TVslot26q.setImageResource(Model.slots.random())
-                binding.TVslot27q.setImageResource(Model.slots.random())
-                binding.TVslot28q.setImageResource(Model.slots.random())
-                binding.TVslot29q.setImageResource(Model.slots.random())
-                binding.TVslot30q.setImageResource(Model.slots.random())
-                binding.TVslot31q.setImageResource(Model.slots.random())
-                binding.TVslot32q.setImageResource(Model.slots.random())
-                binding.TVslot33q.setImageResource(Model.slots.random())
-                binding.TVslot34q.setImageResource(Model.slots.random())
-                binding.TVslot35q.setImageResource(Model.slots.random())
-                binding.TVslot36q.setImageResource(Model.slots.random())
-                binding.TVslot37q.setImageResource(Model.slots.random())
-                binding.TVslot38q.setImageResource(Model.slots.random())
-                binding.TVslot39q.setImageResource(Model.slots.random())
-                binding.TVslot40q.setImageResource(Model.slots.random())
-                binding.TVslot41q.setImageResource(Model.slots.random())
-                binding.TVslot42q.setImageResource(Model.slots.random())
-                binding.TVslot43q.setImageResource(Model.slots.random())
-                binding.TVslot44q.setImageResource(Model.slots.random())
-                binding.TVslot45q.setImageResource(Model.slots.random())
-                binding.TVslot46q.setImageResource(Model.slots.random())
-                binding.TVslot47q.setImageResource(Model.slots.random())
-                binding.TVslot48q.setImageResource(Model.slots.random())
-                binding.TVslot49q.setImageResource(Model.slots.random())
-                binding.TVslot50q.setImageResource(Model.slots.random())
-                binding.TVslot51q.setImageResource(Model.slots.random())
-                binding.TVslot52q.setImageResource(presenter.lastSlot7)
-                binding.TVslot53q.setImageResource(presenter.lastSlot8)
-                binding.TVslot54q.setImageResource(presenter.lastSlot9)
-                binding.TVslot55q.setImageResource(presenter.lastSlot4)
-                binding.TVslot56q.setImageResource(presenter.lastSlot5)
-                binding.TVslot57q.setImageResource(presenter.lastSlot6)
-                binding.TVslot58q.setImageResource(presenter.lastSlot7)
-                binding.TVslot59q.setImageResource(presenter.lastSlot8)
-                binding.TVslot60q.setImageResource(presenter.lastSlot9)
+                binding.betCountMinus.text = dsjh.sdkjg().toString()
+                presenter.djkagfkjdshf()
+                binding.TVslot1.setImageResource(presenter.lkshfl)
+                binding.TVslot2.setImageResource(presenter.klhsf)
+                binding.TVslot3.setImageResource(presenter.klshf)
+                binding.TVslot4.setImageResource(presenter.kjdhjhdsjkghdjka)
+                binding.TVslot5.setImageResource(presenter.djkdhgjkdh)
+                binding.TVslot6.setImageResource(presenter.dlmhgkjdshg)
+                binding.TVslot7.setImageResource(presenter.lkshfl)
+                binding.TVslot8.setImageResource(presenter.klhsf)
+                binding.TVslot9.setImageResource(presenter.klshf)
+                binding.TVslot10.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot11.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot12.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot13.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot14.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot15.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot16.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot17.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot18.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot19.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot20.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot21.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot22.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot23.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot24.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot25.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot26.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot27.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot28.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot29.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot30.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot31.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot32.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot33.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot34.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot35.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot36.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot37.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot38.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot39.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot40.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot41.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot42.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot43.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot44.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot45.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot46.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot47.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot48.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot49.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot50.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot52.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot53.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot54.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot55.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot55.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot56.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot57.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot58.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot59.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot1q.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot2q.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot3q.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot4q.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot5q.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot6q.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot7q.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot8q.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot9q.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot10q.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot11q.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot12q.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot13q.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot14q.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot15q.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot16q.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot17q.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot18q.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot19q.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot20q.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot21q.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot22q.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot23q.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot24q.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot25q.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot26q.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot27q.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot28q.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot29q.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot30q.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot31q.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot32q.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot33q.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot34q.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot35q.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot36q.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot37q.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot38q.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot39q.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot40q.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot41q.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot42q.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot43q.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot44q.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot45q.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot46q.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot47q.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot48q.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot49q.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot50q.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot51q.setImageResource(dsjh.ipdkjgao.random())
+                binding.TVslot52q.setImageResource(presenter.lkshfl)
+                binding.TVslot53q.setImageResource(presenter.klhsf)
+                binding.TVslot54q.setImageResource(presenter.klshf)
+                binding.TVslot55q.setImageResource(presenter.kjdhjhdsjkghdjka)
+                binding.TVslot56q.setImageResource(presenter.djkdhgjkdh)
+                binding.TVslot57q.setImageResource(presenter.dlmhgkjdshg)
+                binding.TVslot58q.setImageResource(presenter.lkshfl)
+                binding.TVslot59q.setImageResource(presenter.klhsf)
+                binding.TVslot60q.setImageResource(presenter.klshf)
             }
 
-    override fun clickOk() {
+    override fun kslfj() {
         binding.Bok.setOnClickListener {
             binding.CVresult.alpha = 0F
             binding.CVresult.y = -600F

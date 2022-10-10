@@ -5,14 +5,14 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.template.presenter.NewCoinsPresenter.NewCoinsPresenter
-import com.template.presenter.NewCoinsPresenter.NewCoinsViewApi
+import com.template.jjsdjkg.jdkhjfsd.osjfhjkf
+import com.template.jjsdjkg.jdkhjfsd.kdafkla
 import com.template.R
 import com.template.databinding.FragmentNewCoinsBinding
 
 
-class NewCoinsFragment : Fragment(),NewCoinsViewApi {
-    val presenter = NewCoinsPresenter(Model)
+class NewCoinsFragment : Fragment(),kdafkla {
+    val presenter = osjfhjkf(dsjh)
     lateinit var binding: FragmentNewCoinsBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,16 +30,16 @@ class NewCoinsFragment : Fragment(),NewCoinsViewApi {
 
     override fun onDestroy() {
         super.onDestroy()
-        presenter.distroy()
+        presenter.kfshlfhklsf()
     }
 
 
     override fun clickNewCoins() {
         binding.BreverdCoins.setOnClickListener {
-            presenter.setMainCount(requireContext())
+            presenter.ksnfk(requireContext())
             (requireActivity() as MainActivity).navController.navigate(R.id.action_newCoinsFragment_to_gameFragment)
            // DataBasePreferences(requireContext()).setBalans(1000)
-            presenter.setBalansInDataBase(requireContext(),1000)
+            presenter.kdfhksskfhs(requireContext(),1000)
         }
     }
 }

@@ -7,19 +7,19 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.template.R
-import com.template.presenter.betpresenter.BetPresnter
-import com.template.presenter.betpresenter.BetViewApi
+import com.template.jjsdjkg.kdhajf.dlhgjds
+import com.template.jjsdjkg.kdhajf.kdhlgds
 import com.template.databinding.FragmentBetBinding
 
-class BetFragment : Fragment(), BetViewApi {
+class BetFragment : Fragment(), kdhlgds {
 
-    lateinit var binding: FragmentBetBinding
-    val presnter = BetPresnter(Model)
+    lateinit var jdbajkg: FragmentBetBinding
+    val jkdabgjmbsd = dlhgjds(dsjh)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = FragmentBetBinding.inflate(layoutInflater)
-        presnter.init(this)
+        jdbajkg = FragmentBetBinding.inflate(layoutInflater)
+        jkdabgjmbsd.init(this)
         (requireContext() as MainActivity).goBack = {findNavController().navigate(R.id.action_betFragment_to_gameFragment)}
     }
 
@@ -27,58 +27,57 @@ class BetFragment : Fragment(), BetViewApi {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return binding.root
+        return jdbajkg.root
     }
 
     override fun onDestroy() {
         super.onDestroy()
-        presnter.distroy()
+        jkdabgjmbsd.distroy()
     }
-    override fun clickListner() {
-        binding.Button0.setOnClickListener {
-            presnter.click0()
-            binding.Input.text = presnter.countBet
+    override fun dlgjklsf() {
+        jdbajkg.Button0.setOnClickListener {
+            jkdabgjmbsd.dkghksdj()
+            jdbajkg.Input.text = jkdabgjmbsd.doikjgsfldjg
         }
 
-        binding.Button1.setOnClickListener {
-            presnter.click1()
-            binding.Input.text = presnter.countBet
+        jdbajkg.Button1.setOnClickListener {
+            jkdabgjmbsd.hdkgjsfdlkg()
+            jdbajkg.Input.text = jkdabgjmbsd.doikjgsfldjg
         }
-        binding.Button2.setOnClickListener {
-            presnter.click2()
-            binding.Input.text = presnter.countBet
+        jdbajkg.Button2.setOnClickListener {
+            jkdabgjmbsd.dkjgksdjgolsd()
+            jdbajkg.Input.text = jkdabgjmbsd.doikjgsfldjg
         }
-        binding.Button3.setOnClickListener {
-            presnter.click3()
-            binding.Input.text = presnter.countBet
+        jdbajkg.Button3.setOnClickListener {
+            jkdabgjmbsd.dljgsdlj()
+            jdbajkg.Input.text = jkdabgjmbsd.doikjgsfldjg
         }
-        binding.Button4.setOnClickListener {
-            presnter.click4()
-            binding.Input.text = presnter.countBet
+        jdbajkg.Button4.setOnClickListener {
+            jkdabgjmbsd.kjdsmhgjfsd()
+            jdbajkg.Input.text = jkdabgjmbsd.doikjgsfldjg
         }
-        binding.Button5.setOnClickListener {
-            presnter.click5()
-            binding.Input.text = presnter.countBet
+        jdbajkg.Button5.setOnClickListener {
+            jkdabgjmbsd.jdsghjshdgjhg()
+            jdbajkg.Input.text = jkdabgjmbsd.doikjgsfldjg
         }
-        binding.Button6.setOnClickListener {
-            presnter.click6()
-            binding.Input.text = presnter.countBet
+        jdbajkg.Button6.setOnClickListener {
+            jkdabgjmbsd.gdggfsjhdgf()
+            jdbajkg.Input.text = jkdabgjmbsd.doikjgsfldjg
         }
-        binding.Button7.setOnClickListener {
-            presnter.click7()
-            binding.Input.text = presnter.countBet
+        jdbajkg.Button7.setOnClickListener {
+            jkdabgjmbsd.jdgkfsjdhgjsk()
+            jdbajkg.Input.text = jkdabgjmbsd.doikjgsfldjg
         }
-        binding.Button8.setOnClickListener {
-            presnter.click8()
-            binding.Input.text = presnter.countBet
+        jdbajkg.Button8.setOnClickListener {
+            jkdabgjmbsd.djoghusdjh()
+            jdbajkg.Input.text = jkdabgjmbsd.doikjgsfldjg
         }
-        binding.Button9.setOnClickListener {
-            presnter.click9()
-            binding.Input.text = presnter.countBet
+        jdbajkg.Button9.setOnClickListener {
+            jkdabgjmbsd.djghjsdhjgd()
+            jdbajkg.Input.text = jkdabgjmbsd.doikjgsfldjg
         }
-        binding.ButtonEquals.setOnClickListener {
-            presnter.clickEquels()
+        jdbajkg.ButtonEquals.setOnClickListener {
+            jkdabgjmbsd.dolghoslkdgjs()
             (requireActivity() as MainActivity).navController.navigate(R.id.action_betFragment_to_gameFragment)
-
         }
     }}
