@@ -156,32 +156,37 @@ class GamePresenter (val data: DataApi) {
 
         var iii = 0
 
+        var indexList222 = _indexList
+
         if(winOrFail) {
 
-            for(i in _indexList){
-            when(i.size+1 ) {
-               3 -> {
-                    xBetCount = xBetCount+2
-                    winBet = winBet+getBet()*2
-                    betCountXXX += xBetCount
-                   ++iii
-                }
-                4 -> {
-                    xBetCount = xBetCount+3
-                    winBet = winBet+getBet()*3
-                    betCountXXX += xBetCount
-                    ++iii
+               for (i in _indexList) {
+                   if(i.size != 0) {
+                       when (i.size + 1) {
+                           3 -> {
+                               xBetCount = xBetCount + 2
+                               winBet = winBet + getBet() * 2
+                               betCountXXX += xBetCount
+                               ++iii
+                           }
+                           4 -> {
+                               xBetCount = xBetCount + 3
+                               winBet = winBet + getBet() * 3
+                               betCountXXX += xBetCount
+                               ++iii
 
-                }
-               5 -> {
-                    xBetCount = xBetCount+5
-                    winBet = winBet+getBet()*5
-                    betCountXXX += xBetCount
-                   ++iii
+                           }
+                           4 -> {
+                               xBetCount = xBetCount + 5
+                               winBet = winBet + getBet() * 5
+                               betCountXXX += xBetCount
+                               ++iii
 
-               }
-            }
-            }
+                           }
+                       }
+                   }
+
+           }
             xBetCount = (xBetCount.toFloat()/2).toInt()
         setMainCount(winBet,true)
             setMainCount(data.getBet(),false)
@@ -193,14 +198,12 @@ class GamePresenter (val data: DataApi) {
                        , cardView:View, balans:TextView){
 
         if (checkLine()) {
-         //   betCountXXX =  (betCountXXX.toFloat() / ( betCountXXX.toFloat() / betCountXXX.toFloat())).toInt()
+
             Handler(Looper.getMainLooper()).postDelayed({
                 for (i in 0..indexList.size - 1) {
-                    //for (src in 0..indexList[i].size-1) {
                         if(indexList[i].size >= 2){
                             animationSlot(imgList[i])
-                  //          indexList.remove(indexList[i])
-                        //}
+
                     }}
 
             }, 5000)
@@ -210,6 +213,8 @@ class GamePresenter (val data: DataApi) {
 
             Handler(Looper.getMainLooper()).postDelayed({
                 xBetCount = 0
+                winBet = 0
+
             },8000)
         }
     }
@@ -218,7 +223,7 @@ class GamePresenter (val data: DataApi) {
     fun aimationWinResult(view:View,result:TextView,balans: TextView,xBet:TextView) {
 
         var time = 500
-        xBet.text = "${xBetCount}X BET"
+        xBet.text = "${xBetCount + 2}X BET"
         val animator = ObjectAnimator.ofFloat(view, View.Y, 400F)
         animator.duration = 500
         animator.start()
@@ -282,11 +287,7 @@ class GamePresenter (val data: DataApi) {
         DataBasePreferences(_context).setBalans(balans)
     }
 
-    fun getBalansInDataBase(_context:Context){
-        Model.setMainCount(DataBasePreferences(_context).getBalans())
-    }
-
-
+    fun getBalansInDataBase(_context:Context) = DataBasePreferences(_context).getBalans()
 }
 
 /*fun animationSlots(

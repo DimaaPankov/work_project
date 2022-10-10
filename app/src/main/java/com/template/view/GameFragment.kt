@@ -145,7 +145,8 @@ class GameFragment : Fragment(), GameViewApi {
                 }
             }
             override fun showData() {
-                binding.TVbalans.text = Model.getMainCount().toString()
+                binding.TVbalans.text = presenter.getBalansInDataBase(this.requireContext()).toString()
+
                 binding.betCountMinus.text = Model.getBet().toString()
                 presenter.setSlots()
                 binding.TVslot1.setImageResource(presenter.lastSlot7)
