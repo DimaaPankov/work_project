@@ -15,7 +15,7 @@ class BetFragment : Fragment(), BetViewApi {
 
     lateinit var binding: FragmentBetBinding
     val presnter = BetPresnter(Model)
-//ccgit
+//ccgitdsgdsgadd
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = FragmentBetBinding.inflate(layoutInflater)
