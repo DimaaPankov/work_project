@@ -1,5 +1,5 @@
 package com.template.presenter.infopresenter
 
-interface InfoViewApi {
-    fun clickOk()
+interface ssjfhf {
+    fun fskhfs()
 }

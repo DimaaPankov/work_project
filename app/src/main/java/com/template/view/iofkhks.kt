@@ -7,36 +7,36 @@ import android.view.View
 import android.view.ViewGroup
 import com.template.R
 import com.template.databinding.FragmentInfoBinding
-import com.template.presenter.infopresenter.InfoPresenter
-import com.template.presenter.infopresenter.InfoViewApi
+import com.template.presenter.infopresenter.fkhsf
+import com.template.presenter.infopresenter.ssjfhf
 
 
-class InfoFragment : Fragment(),InfoViewApi {
-lateinit var binding: FragmentInfoBinding
- val presenter  = InfoPresenter()
+class iofkhks : Fragment(),ssjfhf {
+lateinit var ifhsj: FragmentInfoBinding
+ val skhgdg  = fkhsf()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = FragmentInfoBinding.inflate(layoutInflater)
-        presenter.init(this)
+        ifhsj = FragmentInfoBinding.inflate(layoutInflater)
+        skhgdg.init(this)
         }
 
 
-    override fun clickOk() {
-        binding.Bok.setOnClickListener {
-            (requireActivity() as MainActivity).navController.navigate(R.id
+    override fun fskhfs() {
+        ifhsj.Bok.setOnClickListener {
+            (requireActivity() as MainActivity).iokfh.navigate(R.id
                 .action_infoFragment_to_gameFragment)
     }
     }
 
     override fun onDestroy() {
         super.onDestroy()
-        presenter.distroy()
+        skhgdg.khfsf()
     }
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return binding.root
+        return ifhsj.root
     }
 }

@@ -8,20 +8,20 @@ import com.template.R
 
 class MainActivity : AppCompatActivity() {
 
-    lateinit var navController:NavController
+    lateinit var iokfh:NavController
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        navController = Navigation.findNavController(this, R.id.nav_host_fragment)
+        iokfh = Navigation.findNavController(this, R.id.nav_host_fragment)
 //
-        Model.setMainCount(DataBasePreferences(this).getBalans())
+        sdngklds.jdah(jmdgjd(this).klhf())
 
 
     }
 
-    var goBack = {}
+    var iokhf = {}
 
     override fun onBackPressed() {
-            goBack()
+            iokhf()
     }
 }

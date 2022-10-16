@@ -7,7 +7,7 @@
 
     android:layout_marginBottom="5dp"
     android:orientation="vertical"
-    tools:context=".view.BetFragment">
+    tools:context=".view.shffs">
 
     <LinearLayout
         android:layout_width="match_parent"

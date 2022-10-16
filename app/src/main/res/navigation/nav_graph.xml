@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/gameFragment"
-        android:name="com.template.view.GameFragment"
+        android:name="com.template.view.ishfidogj"
         android:label="fragment_game"
         tools:layout="@layout/fragment_game" >
         <action
@@ -23,7 +23,7 @@
     </fragment>
     <fragment
         android:id="@+id/infoFragment"
-        android:name="com.template.view.InfoFragment"
+        android:name="com.template.view.iofkhks"
         android:label="fragment_info"
         tools:layout="@layout/fragment_info" >
         <action
@@ -32,7 +32,7 @@
     </fragment>
     <fragment
         android:id="@+id/newCoinsFragment"
-        android:name="com.template.view.NewCoinsFragment"
+        android:name="com.template.view.sjhkljgd"
         android:label="NewCoinsFragment" >
         <action
             android:id="@+id/action_newCoinsFragment_to_gameFragment"
@@ -40,7 +40,7 @@
     </fragment>
     <fragment
         android:id="@+id/betFragment"
-        android:name="com.template.view.BetFragment"
+        android:name="com.template.view.shffs"
         android:label="fragment_bet"
         tools:layout="@layout/fragment_bet" >
         <action

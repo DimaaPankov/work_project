@@ -1,5 +1,5 @@
 package com.template.presenter.NewCoinsPresenter
 
-interface NewCoinsViewApi {
-   fun clickNewCoins()
+interface sfh {
+   fun jmhfsklsjf()
 }
