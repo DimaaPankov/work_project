@@ -71,21 +71,4 @@ class GameFragment : Fragment() {
 
     }
 
-    fun aimationWinResult(view:View, xBet: TextView) {
-        var time = 500
-        val animator = ObjectAnimator.ofFloat(view, View.Y, 400F)
-        animator.duration = 500
-        animator.start()
-        val animator2 = ObjectAnimator.ofFloat(view, View.ALPHA, 1F)
-        animator2.duration = 500
-        animator2.start()
-        var plusResult = 0F
-        repeat(100){
-            time += 20
-            Handler(Looper.getMainLooper()).postDelayed({
-                if(it == 19){
-                }
-            }, time.toLong())
-        }
-    }
 }
