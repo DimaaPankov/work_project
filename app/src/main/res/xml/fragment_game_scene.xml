@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:motion="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- A transition describes an animation via start and end state -->
+    <Transition
+
+        motion:constraintSetStart="@+id/start"
+        motion:constraintSetEnd="@+id/end"
+        motion:duration="15000">
+
+
+        <KeyFrameSet>
+
+            <KeyPosition
+                motion:framePosition="75"
+                motion:motionTarget="@id/moon"
+                motion:keyPositionType="parentRelative"
+                motion:percentY="0.55"
+                />
+
+
+            <KeyAttribute
+                motion:framePosition="0"
+                motion:motionTarget="@id/moon"
+                android:alpha="1">
+
+            </KeyAttribute>
+            <KeyAttribute
+                motion:framePosition="100"
+                motion:motionTarget="@id/moon">
+
+            </KeyAttribute>
+            <KeyAttribute
+                motion:framePosition="100"
+                motion:motionTarget="@id/moon">
+
+            </KeyAttribute>
+
+            <!-- Added a hint that flies out and fades after the user swipes to the right -->
+
+            <KeyPosition
+                motion:motionTarget="@+id/Bplay"
+                motion:framePosition="10"
+                motion:keyPositionType="pathRelative"
+                motion:percentX="10" />
+            <KeyAttribute
+                motion:motionTarget="@+id/Bplay"
+                motion:framePosition="2"
+                android:alpha="0" />
+            <KeyAttribute
+                motion:motionTarget="@+id/TVbalans"
+                motion:framePosition="10"
+                android:alpha="0.5" />
+            <KeyPosition
+                motion:motionTarget="@+id/TVbalans"
+                motion:framePosition="10"
+                motion:keyPositionType="deltaRelative"
+                motion:percentY="100" />
+            <KeyPosition
+                motion:motionTarget="@+id/TVbet"
+                motion:framePosition="10"
+                motion:keyPositionType="deltaRelative"
+                motion:percentY="110" />
+            <KeyAttribute
+                motion:motionTarget="@+id/IVstop"
+                motion:framePosition="3"
+                android:alpha="1" />
+        </KeyFrameSet>
+
+    </Transition>
+
+    <!-- Constraints to apply at the start of the animation -->
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@id/moon"
+
+            android:layout_width="130dp"
+            android:layout_height="135dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="300dp"
+            android:layout_marginStart="20dp"
+            motion:layout_editor_absoluteX="221dp"
+            motion:layout_editor_absoluteY="404dp" />
+        <!-- Added a hint that flies out and fades after the user swipes to the right -->
+        <Constraint
+            android:id="@+id/background"
+            android:layout_width="3000dp"
+            android:layout_height="1500dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintHorizontal_bias="0.2"
+            motion:layout_constraintBottom_toBottomOf="parent" />
+        <Constraint
+            android:id="@+id/TVbalans"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toTopOf="@+id/background"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="450dp" />
+        <Constraint
+            android:id="@+id/TVbet"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="30dp"
+            motion:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            android:id="@+id/Bplay"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="81dp"
+            android:layout_height="67dp"
+            android:layout_marginBottom="50dp"
+            motion:layout_constraintBottom_toTopOf="@+id/TVbet"
+            motion:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            android:id="@+id/IVstop"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="75dp"
+            android:layout_height="60dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="80dp"
+            android:alpha="0" />
+    </ConstraintSet>
+
+    <!-- Constraints to apply at the end of the animation -->
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@id/moon"
+            android:layout_width="157dp"
+            android:layout_height="100dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="200dp"
+            android:layout_marginEnd="20dp" />
+        <!-- Added a hint that flies out and fades after the user swipes to the right -->
+        <Constraint
+            android:layout_height="0dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="3000dp"
+            android:id="@+id/background" />
+        <Constraint
+            android:id="@+id/TVbalans"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintBottom_toTopOf="parent"
+            android:alpha="0" />
+        <Constraint
+            android:id="@+id/TVbet"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="parent"
+            android:alpha="0" />
+        <Constraint
+            android:id="@+id/Bplay"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="81dp"
+            android:layout_height="67dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="@+id/TVbet"
+            android:alpha="0" />
+        <Constraint
+            android:id="@+id/IVstop"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintBottom_toTopOf="@+id/TVbet"
+            android:layout_marginBottom="80dp" />
+    </ConstraintSet>
+</MotionScene>
