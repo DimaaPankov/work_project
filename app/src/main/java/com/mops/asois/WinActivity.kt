@@ -13,6 +13,7 @@ import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import com.mops.asois.databinding.ActivityWinBinding
 import com.template.view.*
+import java.text.DecimalFormat
 
 class WinActivity : AppCompatActivity() {
 
@@ -23,7 +24,7 @@ class WinActivity : AppCompatActivity() {
         binding = ActivityWinBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-     binding.TVbalans.text = "your win + ${bet}"
+     binding.TVbalans.text = "your win + ${DecimalFormat("#0.00").format(bet)}"
         if(winOrFalse) {
             animation()
             balance = balance + bet

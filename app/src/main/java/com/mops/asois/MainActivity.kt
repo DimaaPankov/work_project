@@ -19,9 +19,11 @@ import java.text.DecimalFormat
 
 class MainActivity : AppCompatActivity() {
     var winBetM = 0F
+
     val binding by lazy {ActivityMainBinding.inflate(layoutInflater)}
     var nuvController:() -> Unit  = {}
     var clickStop:() -> Unit = {}
+    var plusResult = 0F
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
@@ -34,14 +36,14 @@ class MainActivity : AppCompatActivity() {
         binding.Bstop.setOnClickListener{
             winOrFalse = true
             winBat = bet * winBetM
-          clickStop()
+            clickStop()
+            bet = 10 * plusResult
         }
     }
 
     fun go() {
         var time = 500
         val partResult = 0.05F
-        var plusResult = 0F
         Handler(Looper.getMainLooper()).postDelayed({
         binding.Bstop.isVisible = true
         },500)
@@ -50,8 +52,9 @@ class MainActivity : AppCompatActivity() {
             time += 100
             Handler(Looper.getMainLooper()).postDelayed({
                 plusResult += partResult
-               winBetM = partResult
+                winBetM = partResult
                 binding.xBetCount.text = "X ${DecimalFormat("#0.00").format(plusResult)}"
+
             }, time.toLong())
         }
     }
@@ -72,5 +75,4 @@ class MainActivity : AppCompatActivity() {
             }, time.toLong())
         }
     }
-
 }
