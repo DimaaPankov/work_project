@@ -7,7 +7,6 @@
     tools:context=".MainActivity">
 
 
-
     <fragment
         android:id="@+id/nav_host_fragment"
         android:layout_width="match_parent"
@@ -44,12 +43,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
-            android:id="@+id/imageView2"
+        <FrameLayout
+            android:id="@+id/imageVi"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:scaleType="fitXY"
-            android:src="@drawable/kosmos"
+            android:alpha="0.7"
+            android:background="@color/white"
             app:layout_constraintBottom_toBottomOf="@+id/CVresult"
             app:layout_constraintEnd_toEndOf="@+id/CVresult"
             app:layout_constraintHorizontal_bias="0.0"
@@ -71,16 +70,15 @@
             app:layout_constraintTop_toBottomOf="@+id/betCount"></Button>
 
 
-
         <TextView
             android:id="@+id/betCount"
             android:layout_width="wrap_content"
             android:layout_height="98dp"
+            android:layout_marginTop="50dp"
             android:text="FAIL"
-            android:textColor="#EFEFEF"
+            android:textColor="@color/teal_200"
             android:textSize="90sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -97,5 +95,16 @@
         app:layout_constraintBottom_toBottomOf="@+id/nav_host_fragment"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/orange_run"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/one"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/nav_host_fragment"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></ImageView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

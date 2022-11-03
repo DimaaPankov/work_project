@@ -121,7 +121,7 @@ class GameFragment : Fragment() {
         bindidng.TVbalans.text = "${balance}"
         (requireContext() as MainActivity).binding.xBetCount.isVisible = false
         (requireContext() as MainActivity).binding.Bstop.isVisible = false
-
+        (requireContext() as MainActivity).binding.orangeRun.isVisible = true
         (requireContext() as MainActivity).binding.CVresult.isVisible = false
         (requireContext() as MainActivity).nuvController = {
             (requireContext() as MainActivity).binding.CVresult.isVisible = false
@@ -136,21 +136,25 @@ class GameFragment : Fragment() {
             startActivity(i)
 }
         bindidng.Bplay.setOnClickListener {
+            bindidng.TVbalans.isVisible = false
             (requireContext() as MainActivity).go()
+            bindidng.Bplay.isVisible = false
             Handler(Looper.getMainLooper()).postDelayed({
                (requireContext() as MainActivity).binding.CVresult.isVisible = true
                 bindidng.TVbet.isVisible = false
+                    //   (requireContext() as MainActivity).
                 (requireContext() as MainActivity).binding.xBetCount.isVisible = false
                 (requireContext() as MainActivity).aimationWinResult(
                     (requireContext() as MainActivity).binding.CVresult,
                 )
                 (requireContext() as MainActivity).binding.Bstop.isVisible = false
-            },ramdomList.random())//seconds fail
-            bindidng.motionScene.transitionToEnd()
+                (requireContext() as MainActivity).binding.orangeRun.isVisible = false
+            },ramdomList.random())
+            (requireContext() as MainActivity).startAnimation()
+            //bindidng.motionScene.transitionToEnd()
             Handler(Looper.getMainLooper()).postDelayed({
                (requireContext() as MainActivity).binding.xBetCount.isVisible = true
             },500)
-
             }
     }
 

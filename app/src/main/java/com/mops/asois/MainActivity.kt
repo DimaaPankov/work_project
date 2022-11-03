@@ -24,15 +24,27 @@ class MainActivity : AppCompatActivity() {
     var nuvController:() -> Unit  = {}
     var clickStop:() -> Unit = {}
     var plusResult = 0F
+    val orangeList = listOf(
+        R.drawable.one,
+        R.drawable.two,
+        R.drawable.three,
+        R.drawable.foure,
+        R.drawable.five,
+        R.drawable.six,
+        R.drawable.seven,
+        R.drawable.eight
+        )
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
+        //startAnimation()
         binding.Bok.setOnClickListener{
             winOrFalse = false
             val i = Intent(this, WinActivity::class.java)
 
             startActivity(i)
         }
+
         binding.Bstop.setOnClickListener{
             winOrFalse = true
             winBat = bet * winBetM
@@ -70,9 +82,24 @@ class MainActivity : AppCompatActivity() {
         animator2.start()
         repeat(100){
             time += 20
-            Handler(Looper.getMainLooper()).postDelayed({
-                if(it == 19){}
-            }, time.toLong())
+        }
+    }
+    fun startAnimation() {
+        var index = 0
+        var time = 500L
+        for (o in 0..3000) {
+                Handler(Looper.getMainLooper()).postDelayed({
+                    if(index != 7) {
+                        ++index
+                    }else{
+                        index = 0
+                    }
+                    binding.orangeRun.setImageResource(orangeList[index])
+
+                },time)
+            time = time+80L
+
+         //   }
         }
     }
 }

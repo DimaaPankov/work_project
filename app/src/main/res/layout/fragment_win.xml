@@ -1,23 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#aaf4db"
+
     android:id="@+id/motion_scene"
-    app:layoutDescription="@xml/fragment_game_scene"
     tools:context=".GameFragment">
 
-    <ImageView
-        android:id="@+id/background"
-        android:layout_width="6000dp"
-        android:layout_height="2000dp"
-        android:scaleType="centerCrop"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/kosmos"
-        tools:ignore="ContentDescription"></ImageView>
 
 
 
@@ -25,6 +16,10 @@
         android:id="@+id/moon"
         android:layout_width="120dp"
         android:layout_height="130dp"
+        android:layout_marginStart="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/Bplay"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVbalans"
         app:srcCompat="@drawable/astranavt"
         tools:ignore="ContentDescription" />
 
@@ -32,15 +27,15 @@
         android:id="@+id/TVbalans"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
         android:text="BALANS : 1000"
         android:textColor="@color/white"
         android:textSize="40sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
 
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        ></TextView>
+        app:layout_constraintTop_toTopOf="@+id/background"></TextView>
 
 
     <TextView
@@ -72,6 +67,8 @@
         android:layout_height="67dp"
         android:layout_marginBottom="50dp"
         android:src="@drawable/play"
-        />
+        app:layout_constraintBottom_toTopOf="@+id/TVbet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
-</androidx.constraintlayout.motion.widget.MotionLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
