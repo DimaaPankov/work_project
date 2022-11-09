@@ -143,6 +143,6 @@
         android:layout_marginBottom="30dp"
         app:layout_constraintBottom_toTopOf="@+id/TVbanan3"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/lil_2" />
+        app:srcCompat="@drawable/orange" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

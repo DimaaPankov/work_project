@@ -11,7 +11,6 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.core.view.isVisible
 
-import androidx.navigation.fragment.findNavController
 import com.template.ModelBonus
 import com.template.R
 import com.template.databinding.FragmentGameBinding
@@ -31,27 +30,39 @@ class GameFragment : Fragment(), GameViewApi {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        if(ModelBonus.registraitionOrEntrance){
+            binding.CVregistration.isVisible = false
+            Handler(Looper.getMainLooper()).postDelayed({
+                binding.CVregistration.isVisible = true
+            },3000)
+        }
+
+        binding.Bclose.setOnClickListener{
+            binding.CVregistration.isVisible = false
+            ModelBonus.registraitionOrEntrance = false
+        }
+
         (requireContext() as MainActivity).goBack = {exitAppPlusToast()}
 
         presenter.init(this)
-        binding.CVone.isVisible = false
-        binding.CVthree.isVisible = false
-        binding.Bblue.isVisible = false
-        binding.Bred.isVisible = false
-        binding.CVtwo.isVisible = false
-
+        binding.CVone.alpha = 0F
+        binding.CVthree.alpha = 0F
+        binding.Bblue.alpha = 0F
+        binding.Bred.alpha = 0F
+        binding.CVtwo.alpha = 0F
+       binding.TVbalans.text = DataBasePreferences(requireContext()).getBalans().toString()
 
         drawable = ModelBonus.getRamdomBonus()
         binding.IVbonus.setImageResource(drawable)
 
         binding.Bblue.setOnClickListener {
             clickBonus()
-            clickDrawableButton = R.drawable.lil_1
+            clickDrawableButton = R.drawable.banana
         }
 
         binding.Bred.setOnClickListener {
             clickBonus()
-            clickDrawableButton =  R.drawable.lil_2
+            clickDrawableButton =  R.drawable.orange
         }
 
     }
@@ -140,15 +151,66 @@ class GameFragment : Fragment(), GameViewApi {
 
             presenter.animationVinLine( binding.TVslot1, binding.TVslot2, binding.TVslot3,binding.betCount,
                                      binding.betCountSmile,binding.TVvin,binding.TVxxx,binding.Vline1,
-                                      binding.CVresult,binding.TVbalans,1,{})
+                                      binding.CVresult,binding.TVbalans,1,{
+                    binding.CVone.isClickable = true
+                    binding.CVthree.isClickable = true
+                    binding.Bblue.isClickable = true
+                    binding.Bred.isClickable = true
+                    val animator1 = ObjectAnimator.ofFloat(binding.CVone, View.ALPHA, 1F)
+                    animator1.duration = 500
+                    animator1.start()
+                    val animator2 = ObjectAnimator.ofFloat(binding.CVthree, View.ALPHA, 1F)
+                    animator2.duration = 500
+                    animator2.start()
+                    val animator3 = ObjectAnimator.ofFloat(binding.Bblue, View.ALPHA, 1F)
+                    animator3.duration = 500
+                    animator3.start()
+                    val animator4 = ObjectAnimator.ofFloat(binding.Bred, View.ALPHA, 1F)
+                    animator4.duration = 500
+                    animator4.start()                })
 
             presenter.animationVinLine( binding.TVslot4, binding.TVslot5, binding.TVslot6,binding.betCount,
                         binding.betCountSmile,binding.TVvin,binding.TVxxx,binding.Vline2,
-                        binding.CVresult,binding.TVbalans,2,{})
+                        binding.CVresult,binding.TVbalans,2,{
+                    binding.CVone.isClickable = true
+                    binding.CVthree.isClickable = true
+                    binding.Bblue.isClickable = true
+                    binding.Bred.isClickable = true
+                    val animator1 = ObjectAnimator.ofFloat(binding.CVone, View.ALPHA, 1F)
+                    animator1.duration = 500
+                    animator1.start()
+                    val animator2 = ObjectAnimator.ofFloat(binding.CVthree, View.ALPHA, 1F)
+                    animator2.duration = 500
+                    animator2.start()
+                    val animator3 = ObjectAnimator.ofFloat(binding.Bblue, View.ALPHA, 1F)
+                    animator3.duration = 500
+                    animator3.start()
+                    val animator4 = ObjectAnimator.ofFloat(binding.Bred, View.ALPHA, 1F)
+                    animator4.duration = 500
+                    animator4.start()})
 
             presenter.animationVinLine( binding.TVslot7, binding.TVslot8, binding.TVslot9,binding.betCount,
                         binding.betCountSmile,binding.TVvin,binding.TVxxx,binding.Vline3,
-                        binding.CVresult,binding.TVbalans,3,{})
+                        binding.CVresult,binding.TVbalans,3,{
+
+                    binding.CVone.isClickable = true
+                    binding.CVthree.isClickable = true
+                    binding.Bblue.isClickable = true
+                    binding.Bred.isClickable = true
+
+                    val animator1 = ObjectAnimator.ofFloat(binding.CVone, View.ALPHA, 1F)
+                    animator1.duration = 500
+                    animator1.start()
+                    val animator2 = ObjectAnimator.ofFloat(binding.CVthree, View.ALPHA, 1F)
+                    animator2.duration = 500
+                    animator2.start()
+                    val animator3 = ObjectAnimator.ofFloat(binding.Bblue, View.ALPHA, 1F)
+                    animator3.duration = 500
+                    animator3.start()
+                    val animator4 = ObjectAnimator.ofFloat(binding.Bred, View.ALPHA, 1F)
+                    animator4.duration = 500
+                    animator4.start()
+                })
 
 
 
@@ -317,18 +379,17 @@ class GameFragment : Fragment(), GameViewApi {
     private fun exitAppPlusToast(){  if (countMiliSecond+2000 > System.currentTimeMillis()) {
         (requireContext() as MainActivity).onBackPressed()
     } else {
-        Toast.makeText(requireContext(), "Press the back button twice to exit", Toast.LENGTH_SHORT).show();
+        Toast.makeText(requireContext(), "Press the back button twice to exit", Toast.LENGTH_SHORT).show()
     }
         countMiliSecond = System.currentTimeMillis()
     }
 
-    fun clickBonus(){
-
+    fun clickBonus() {
 
         drawable = ModelBonus.getRamdomBonus()
         binding.IVbonus.setImageResource(drawable)
 
-        if(firstClick) {
+        if (firstClick) {
             binding.IVbonus.setImageResource(ModelBonus.getRamdomBonus())
             Handler(Looper.getMainLooper()).postDelayed({
                 val animator1 = ObjectAnimator.ofFloat(binding.CVtwo, View.TRANSLATION_Y, -600F)
@@ -339,9 +400,11 @@ class GameFragment : Fragment(), GameViewApi {
                 animator2.duration = 1000
                 animator2.start()
             }, 500)
-            firstClick = false
 
-        }else{
+            ModelBonus.xBet = ModelBonus.xBet * 2
+            presenter.xBetCount = ModelBonus.xBet
+            binding.TVbalans.text = ModelBonus.xBet.toString()
+
 
             val animator1 = ObjectAnimator.ofFloat(binding.CVthree, View.TRANSLATION_Y, -600F)
             animator1.duration = 500
@@ -363,19 +426,19 @@ class GameFragment : Fragment(), GameViewApi {
             animator5.duration = 500
             animator5.start()
 
-            val animator6 = ObjectAnimator.ofFloat(binding.CVone,View.SCALE_X,0.8F)
+            val animator6 = ObjectAnimator.ofFloat(binding.CVone, View.SCALE_X, 0.8F)
             animator6.duration = 0
             animator6.start()
 
-            val animator7 = ObjectAnimator.ofFloat(binding.CVone,View.SCALE_Y,0.8F)
+            val animator7 = ObjectAnimator.ofFloat(binding.CVone, View.SCALE_Y, 0.8F)
             animator7.duration = 0
             animator7.start()
 
-            val animator8 = ObjectAnimator.ofFloat(binding.CVone,View.SCALE_X,1F)
+            val animator8 = ObjectAnimator.ofFloat(binding.CVone, View.SCALE_X, 1F)
             animator8.duration = 250
             animator8.start()
 
-            val animator9 = ObjectAnimator.ofFloat(binding.CVone,View.SCALE_Y,1F)
+            val animator9 = ObjectAnimator.ofFloat(binding.CVone, View.SCALE_Y, 1F)
             animator9.duration = 250
             animator9.start()
 
@@ -401,10 +464,12 @@ class GameFragment : Fragment(), GameViewApi {
                 animator5.start()
                 binding.IVbonusThree.setImageResource(drawable)
 
-                if(drawable !== clickDrawableButton) {
+                if (drawable !== clickDrawableButton) {
+
                     ModelBonus.xBet = ModelBonus.xBet * 2
                     binding.TVbalans.text = ModelBonus.xBet.toString()
-                }else{
+
+                } else {
                     val animator1 = ObjectAnimator.ofFloat(binding.CVone, View.ALPHA, 0F)
                     animator1.duration = 500
                     animator1.start()
@@ -417,25 +482,26 @@ class GameFragment : Fragment(), GameViewApi {
                     val animator4 = ObjectAnimator.ofFloat(binding.Bred, View.ALPHA, 0F)
                     animator4.duration = 500
                     animator4.start()
-                   // val animator5 = ObjectAnimator.ofFloat(binding.TVbetWin, View.ALPHA, 0F)
-                   // animator5.duration = 500
-                   // animator5.start()
+
                     binding.CVone.isClickable = false
                     binding.CVthree.isClickable = false
                     binding.Bblue.isClickable = false
                     binding.Bred.isClickable = false
                     //binding.TVbetWin.isClickable = false
-
+                    Handler(Looper.getMainLooper()).postDelayed({
+                        presenter.aimationWinResult(
+                            binding.CVresult,binding.betCount,binding.TVbalans,
+                            binding.TVxxx )
+                        presenter.xBetCount = 0
+                    },500)
                 }
-            },500)
+            }, 500)
+
+            Handler(Looper.getMainLooper()).postDelayed({
+            presenter.xBetCount = 0
+            },2000)
+
         }
-
-    }
-
-}
-
-
-
-
+    }}
 
 

@@ -14,11 +14,12 @@ object Model: DataApi {
     private var MAINcount:Int = 1000
 
 
+
     val slots = listOf(
         R.drawable.v,R.drawable.v,R.drawable.v,
         R.drawable.vi,R.drawable.vi,
         R.drawable.vii,
-        R.drawable.lil_2,R.drawable.lil_2
+        R.drawable.orange,R.drawable.orange
     )
 
 

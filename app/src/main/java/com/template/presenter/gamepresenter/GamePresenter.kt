@@ -109,7 +109,7 @@ fun setSlots(){
     lastSlot9 = data.getSlot()[8]
 }
 
-private fun checkLine(img1:Int, img2: Int, img3:Int,i: ()->Unit):Boolean{
+private fun checkLine(img1:Int, img2: Int, img3:Int):Boolean{
 if(( img1 == img2) and (img2 == img3)) {
     when(img1 ) {
         R.drawable.v -> {
@@ -127,11 +127,10 @@ if(( img1 == img2) and (img2 == img3)) {
             winBet = winBet+getBet()*5
             betCountXXX += xBetCount
         }
-        R.drawable.lil_2 -> {
+        R.drawable.orange -> {
             xBetCount = xBetCount+5
             winBet = winBet+getBet()*5
             betCountXXX += xBetCount
-            i()
         }
     }
     setMainCount(winBet,true)
@@ -139,7 +138,7 @@ if(( img1 == img2) and (img2 == img3)) {
 }
           return ( img1 ==  img2) and ( img2 ==  img3)
 }
-
+//cardView,betCount,balans,TVxxx
     fun animationVinLine(view1:ImageView, view2:ImageView, view3:ImageView, betCount: TextView,
                          betCountSmile: TextView, TVvin: TextView, TVxxx: TextView, row:View
                          , cardView:View, balans:TextView, line:Int,  i : () -> Unit){
@@ -166,7 +165,7 @@ if(( img1 == img2) and (img2 == img3)) {
         }
 
 
-        if (checkLine(img1, img2, img3,{})) {
+        if (checkLine(img1, img2, img3)) {
             Handler(Looper.getMainLooper()).postDelayed({
                 animationSlot( view1, betCount, betCountSmile, TVvin)
                 animationSlot( view2, betCount, betCountSmile, TVvin)
@@ -174,7 +173,14 @@ if(( img1 == img2) and (img2 == img3)) {
                 animationLine( /*TVxxx,*/ row)
             }, 5000)
             Handler(Looper.getMainLooper()).postDelayed({
-                aimationWinResult(cardView, betCount, balans, TVxxx)
+               if (img1 == R.drawable.orange) {
+
+                   i()
+               }else{
+                   aimationWinResult(cardView, betCount, balans, TVxxx)
+
+               }
+
             },7000)
 
             Handler(Looper.getMainLooper()).postDelayed({
@@ -268,11 +274,9 @@ if(( img1 == img2) and (img2 == img3)) {
 
    fun saveBalanseInDataBase(_context: Context,balans:Int){
         DataBasePreferences(_context).setBalans(balans)
-    }
+       Model.setMainCount(DataBasePreferences(_context).getBalans())
 
-    fun getBalansInDataBase(_context:Context){
-        Model.setMainCount(DataBasePreferences(_context).getBalans())
-    }
+   }
 
 
 }
